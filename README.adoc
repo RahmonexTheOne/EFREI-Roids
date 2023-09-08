@@ -1,0 +1,79 @@
+:hardbreaks:
+= Projet EFREIRoids 
+
+== Sujet
+
+Le but de ce projet est d'implémenter un clone simplifié d'Asteroids. Le joueur pilote un vaisseau naviguant dans un champ d'astéroïdes. Le vaisseau doit détruire tous les astéroïdes en leur tirant dessus, en évitant les collisions. 
+
+== Fonctionnalités 
+L'ensemble des objets à l'écran (vaisseau, astéroïdes, missile) sont de forme ronde, afin de faciliter la gestion des hitbox. L'image du vaisseau permet de déterminer l'avant du vaisseau. 
+
+ 
+
+Les astéroïdes se déplacent selon une vitesse constante, déterminée aléatoirement. 
+
+ 
+
+Le vaisseau a un déplacement déterminé par l'inertie, c'est-à-dire que, sans action du joueur, il se déplace en ligne droite, sans perte de vitesse. Le joueur peut utiliser le clavier pour modifier l'orientation du vaisseau, ou pour activer la poussée motrice, ce qui fera dévier et accélérer/ralentir le vaisseau dans le sens de son orientation. 
+
+ 
+
+Lorsque le vaisseau touche un astéroïde, son niveau de bouclier baisse. Si le bouclier était déjà à 0, le vaisseau est détruit. 
+
+ 
+
+Lorsque le vaisseau ou un astéroïde sort de l'écran, il réentre par le côté opposé. 
+
+ 
+
+Le vaisseau tire des projectiles ronds plus petits que le vaisseau et les astéroïdes, se déplaçant à vitesse constante et dans la direction correspondant à l'orientation du vaisseau. Un seul projectile est présent à la fois à l'écran. 
+
+ 
+
+Lorsque le projectile touche un astéroïde de grande taille celui-ci explose en deux astéroïdes plus petits. Si l'astéroïde est trop petit, il est totalement détruit. Lorsqu'un projectile touche un astéroïde, ou qu'il sort de l'écran, il disparait. 
+
+ 
+
+Le jeu se termine lorsque le vaisseau est détruit (défaite), tous les astéroïdes sont détruits (victoire), ou lorsque le joueur appuie sur la touche échap (abandon). 
+
+== Séquencement du projet 
+
+. Prendre en main le Framework d'affichage
+_Notions : Utilisation d'objets, appel de méthode_
+
+. Créer une classe Asteroid
+_Notions : Classes, encapsulation_
+
+. Créer une classe Missile 
+_Notions : Héritage, pointeurs sur objet, réservation et libération de mémoire_ 
+
+. Implémenter la collision entre un missile et un astéroïde 
+_Notions : Généricité, méthodes statiques, cmath, géométrie_
+
+. Créer une classe Spaceship 
+_Notions : Héritage, cmath, géométrie_
+
+
+. Implémenter un modèle MVC - Le Contrôleur 
+_Notions : Design Patterns, MVC, généricité, vector, pointeurs sur objet_
+
+. Implémenter un modèle MVC - Le Modèle 
+_Notions : Design Patterns, MVC, généricité, vector, pointeurs sur objet_
+
+. Implémenter un jeu complet - La Vue 
+_Notions : Design Patterns, MVC, généricité, vector, pointeurs sur objet_
+
+. Initialiser aléatoirement l'astéroïde 
+_Notions : random_ 
+
+. Implémentez des mécanismes de destruction 
+_Notions : MVC, pointeurs sur objet, réservation et libération de mémoire_
+
+. Implémentez un système de bouclier du vaisseau
+Notions : chrono 
+
+. Gérer un ensemble dynamique d'astéroïdes 
+_Notions : vector, généricité, pointeurs sur objets, réservation et libération de mémoire_
+
+. Implémenter l'explosion d'astéroïdes 
+_Notions : MVC, vector, réservation et libération de mémoire_

@@ -1,0 +1,89 @@
+:hardbreaks:
+:source-highlighter: rouge
+= 2 Créer une classe Asteroid 
+
+Cette classe permet de gérer (pas d'afficher) un astéroïde (création, déplacement, destruction). On implémentera ensuite l'affichage de cet astéroïde la fonction main existante. 
+
+ 
+
+* Créez le fichier header ``Asteroid.hpp`` et le fichier source associé Asteroid.cpp implémentant votre classe2. Cette classe contient les attributs suivants : 
+[source,C++]
+----
+double x; 
+double y; 
+double size; 
+double xSpeed; 
+double ySpeed); 
+----
+
+``x`` et ``y`` sont les coordonnées de l'astéroïde à l'écran. ``xSpeed`` et ``ySpeed`` sont les coordonnées (on parle aussi de composantes) du vecteur de vitesse. Lors d'un déplacement, ces valeurs s'ajoutent aux coordonnées de l'astéroïde. Un déplacement de l'astéroïde consiste donc à additionner chaque composante du vecteur avec la coordonnée correspondante, pour obtenir les nouvelles coordonnées de l'astéroïde. 
+
+ 
+
+* Implémentez le constructeur : 
+
+[source,C++]
+----
+/////////////// 
+// Constructeur 
+// ------- 
+// * x, y : position dans l'écran 
+// * size : diamètre de l'objet 
+// * xSpeed, ySpeed : vecteur de vitesse de l'objet 
+
+Asteroid(double x, double y, double size, double xSpeed, double ySpeed); 
+----
+ 
+
+* Implémentez les setters et getters : 
+
+[source,C++]
+----
+////////// 
+// Getters 
+double GetX(); 
+double GetY(); 
+double GetXSpeed(); 
+double GetYSpeed(); 
+double GetSize(); 
+ 
+////////// 
+// Setters 
+void SetX(double xSpeed); 
+void SetY(double ySpeed); 
+void SetXSpeed(double xSpeed); 
+void SetYSpeed(double ySpeed); 
+void SetSize(double size); 
+
+----
+ 
+
+* Implémentez les méthodes suivantes : 
+
+ 
+[source,C++]
+----
+///////////////////////// 
+// Déplacement de l'objet 
+// déplace selon le vecteur de vitesse de l'objet 
+void Move();
+
+/////////////////////////////////////// 
+// Déplacement de l'objet avec réentrée 
+// déplace selon le vecteur de vitesse de l'objet 
+// en cas de sortie des limites de l'écran, fait réapparaitre l'objet 
+// de l'autre côté 
+// ------- 
+// * screenWidth, screenHeight : taille de l'écran 
+void Move(double screenWidth, double screenHeight); 
+----
+
+Ces méthodes modifient les coordonnées de l'astéroïde en fonction du vecteur de vitesse. 
+
+* Créez dans un fichier ``main.cpp`` une fonction ``main`` qui crée et affiche un astéroïde qui se déplace, en utilisant le Framework fourni. 
+
+ 
+
+* Créez un fichier ``CMake`` pour pouvoir compiler votre classe et le fichier ``main.cpp``. 
+
+* Compilez et exécutez votre code.

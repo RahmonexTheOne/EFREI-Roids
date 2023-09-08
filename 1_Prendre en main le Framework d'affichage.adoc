@@ -1,0 +1,46 @@
+:hardbreaks:
+= 1 Prendre en main le Framework d'affichage
+
+L'ensemble des fonctions gérant l'affichage du jeu vous est fourni, au sein d'un Framework reposant sur SDL 2. Vous n'avez pas besoin de connaitre SDL 2, toutes les fonctions nécessaires pour gérer l'affichage ont été implémentées. Vous allez prendre en main ce Framework avant de commencer à travailler sur le jeu lui-même. Le but est simplement : 
+
+* De vérifier l'installation de SDL et tout votre processus de compilation 
+
+* De comprendre l'usage de base de ce Framework 
+
+. Copiez dans le répertoire de votre projet le Framework : 
+
+** Le fichier ``framework.hpp`` : le header du Framework, contient la définition de la classe, incluant l'ensemble des méthodes qu'elle fournit. Ce header est très commenté, vous y trouverez l'ensemble des informations nécessaires à son usage. 
+
+** Le fichier ``framework.cpp`` : l'implémentation du Framework. Vous n'avez pas besoin de regarder le contenu de ce fichier (mais vous pouvez, bien entendu). 
+
+** Le répertoire ``images`` : contient l'ensemble des fichiers de sprites du jeu, au format BMP. 
+
+. Créez un fichier ``main.cpp``, et incluez le header de la bibliothèque du Framework, qui se trouve dans le fichier `framework.hpp`. 
+
+ 
+. Instanciez le Framework, à l'aide de son constructeur. Vérifiez ses paramètres en vous appuyant sur les commentaires présents dans le fichier de header de la bibliothèque.
+Remarques : 
+** Il existe deux constructeurs. Le premier affiche directement le jeu dans la résolution courante de votre écran. Privilégiez cette version. Si l'affichage est trop lent1, le second permet de définir vous-même la résolution à utiliser. Essayez d'afficher le jeu dans une résolution réduite. Vous pouvez aussi réduire le taux de rafraichissement (paramètre ``fps``). De toute façon, chaque fois que l'affichage n'arrivera pas à atteindre les FPS requis, un message d'erreur apparaitra dans la console. 
+** Parmi les paramètres, on retrouve la taille du vaisseau et celle du missile, mais pas celui des astéroïdes. C'est tout simplement parce que ceux-ci diminuent de taille lorsqu'ils sont frappés par un missile. 
+
+. Créez une boucle gérant l'affichage. Dans cette boucle, vous devez : 
+** Ecouter les entrées au clavier du joueur. En cas d'appui sur la touche Échap, le jeu se termine. 
+
+** Rappel : l'ensemble des codes de touche clavier se trouvent dans la documentation de SDL, accessible sur le https://wiki.libsdl.org/SDL2/SDL_Keycode[site web].
+
+** Afficher un missile au centre de l'écran. 
+
+. Compilez et exécutez votre code. N'oubliez pas les options de compilation et d'édition de liens. 
+* Sous Windows : 
+
+** Options de compilation : -Ichemin_vers_SDL2/include/SDL2 (ajustez le chemin chemin_vers_SDL2 à votre installation) 
+
+** Options d'édition de liens : -lmingw32 -lSDL2main -lSDL2 -Lpath (ajustez le chemin path à votre installation) 
+
+* Sous Linux et MacOS : 
+
+** Options de compilation : \`sdl2-config --cflags`
+
+** Options d'édition de liens : \`sdl2-config --libs` 
+
+** N'oubliez pas les backquote (apostrophes inversées)
