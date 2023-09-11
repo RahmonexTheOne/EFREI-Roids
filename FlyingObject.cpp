@@ -1,70 +1,72 @@
 #include <iostream>
-#include "Asteroid.hpp"
+#include "FlyingObject.hpp"
 
 using namespace std;
 
 //------------------Constructeurs :
 
-Asteroid::Asteroid(double x, double y, double size, double xSpeed, double ySpeed) : FlyingObject( x, y, size , xSpeed, ySpeed) {
+FlyingObject::FlyingObject(double x, double y, double size, double xSpeed, double ySpeed) {
+
     this->x =x;
     this->y =y;
     this->size =size;
     this->xSpeed =xSpeed;
     this->ySpeed =ySpeed;
+
 }
+
 //-----------------Getters :
-double Asteroid::GetX() {
+double FlyingObject::GetX() {
     return x;
 }
 
-double Asteroid::GetY() {
+double FlyingObject::GetY() {
     return y;
 }
 
-double Asteroid::GetSize() {
+double FlyingObject::GetSize() {
     return size;
 }
 
-double Asteroid::GetXSpeed() {
+double FlyingObject::GetXSpeed() {
     return xSpeed;
 }
 
-double Asteroid::GetYSpeed() {
+double FlyingObject::GetYSpeed() {
     return ySpeed;
 }
 
 //-----------------Setters :
 
 
-void Asteroid::SetX(double xSpeed) {
+void FlyingObject::SetX(double xSpeed) {
     this->xSpeed = xSpeed;
 }
 
-void Asteroid::SetY(double ySpeed) {
+void FlyingObject::SetY(double ySpeed) {
     this->ySpeed = ySpeed;
 }
 
-void Asteroid::SetSize(double size) {
+void FlyingObject::SetSize(double size) {
     this->size = size;
 }
 
-void Asteroid::SetXSpeed(double xSpeed) {
+void FlyingObject::SetXSpeed(double xSpeed) {
     this->xSpeed = xSpeed;
 }
 
-void Asteroid::SetYSpeed(double ySpeed) {
+void FlyingObject::SetYSpeed(double ySpeed) {
     this->ySpeed = ySpeed;
 }
 
 //--------------------- Movement :
 
-void Asteroid::Move() {
+void FlyingObject::Move() {
     this->x = x + xSpeed;
     this->y = y + ySpeed;
-
 }
 
-void Asteroid::Move(double screenWidth, double screenHeight) {
+void FlyingObject::Move(double screenWidth, double screenHeight) {
     if(x + xSpeed >= screenWidth){
         this->x = 0;
     }

@@ -11,12 +11,17 @@ set(
     main.cpp
     framework.cpp
     Asteroid.cpp
+    FlyingObject.cpp
+    Missile.cpp
 )
 
 set(
     HEADER
     framework.hpp
     Asteroid.hpp
+    Missile.hpp
+    FlyingObject.hpp
+        Missile.hpp
 )
 
 find_package(SDL2 REQUIRED)

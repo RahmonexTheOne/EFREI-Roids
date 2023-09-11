@@ -14,8 +14,8 @@ int WinMain(int argc, char* argv[])
     window.DrawMissile(window.GetScreenWidth()/2,window.GetScreenHeight()/2);
 
     //-----------------Create Asteroid :
-    Asteroid asteroidOne(150,500,100,10,3);
-    Asteroid asteroidTwo(1650,window.GetScreenHeight(),100,-5,-10);
+    Asteroid asteroidOne(150, 500,100, 10, 3);
+    Asteroid asteroidTwo(1600,window.GetScreenHeight(), 100, -5, -10);
     window.Update();
 
 
