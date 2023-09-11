@@ -1,7 +1,6 @@
 #ifndef MISSILE_HPP
 #define MISSILE_HPP
 
-
 #include "FlyingObject.hpp"
 
 class Missile : public FlyingObject{
