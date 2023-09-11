@@ -1,3 +1,4 @@
+#include <iostream>
 #include "Asteroid.hpp"
 
 using namespace std;
@@ -62,20 +63,27 @@ void Asteroid::SetYSpeed(double ySpeed) {
 
 void Asteroid::Move() {
     this->x = x + xSpeed;
-    this->y = ySpeed;
+    cout << "X :" << x+xSpeed<< endl;
+    this->y = y + ySpeed;
+    cout << "Y :" << y+ySpeed<< endl;
+
 }
 
 void Asteroid::Move(double screenWidth, double screenHeight) {
-    if(x + xSpeed > screenWidth){
+    if(x + xSpeed >= screenWidth){
         this->x = 0;
     }
-    else if(x + xSpeed < screenWidth){
-        this->x = x + xSpeed;
+    else if(x+xSpeed<=0){
+        this->x = screenWidth;
     }
-    if(y + ySpeed > screenHeight){
+    else if(y+ySpeed >= screenHeight){
         this->y = 0;
     }
-    else if(y + ySpeed < screenHeight){
+    else if(y+ySpeed <=0){
+        this->y = screenHeight;
+    }
+    else {
+        this->x = x + xSpeed;
         this->y = y + ySpeed;
     }
 }

@@ -49,8 +49,8 @@ double GetSize();
  
 ////////// 
 // Setters 
-void SetX(double xSpeed); 
-void SetY(double ySpeed); 
+void SetX(double x);
+void SetY(double y); 
 void SetXSpeed(double xSpeed); 
 void SetYSpeed(double ySpeed); 
 void SetSize(double size); 

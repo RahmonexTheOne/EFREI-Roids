@@ -1,0 +1,52 @@
+:hardbreaks:
+:source-highlighter: rouge
+= 3 Créer une classe Missile
+
+Cette classe permet de gérer (pas d'afficher) un missile (création, déplacement, destruction). On implémentera ensuite l'affichage de ce missile dans la fonction ``main`` créée précédemment. 
+
+ 
+La classe ``Missile`` utilise plusieurs mécanismes identiques à ceux d'``Asteroid``, on va donc généraliser cette classe : 
+
+ 
+
+* Créez une classe ``FlyingObject``, déplacez dans cette classe les attributs et méthodes des ``Missile`` qui sont communs à ``Asteroid``. N'oubliez pas de gérer dans le header de ``FlyingObject`` les inclusions multiples à l'aide de macro conditionnelles. 
+
+ 
+
+* Modifiez la classe ``Asteroid`` pour qu'elle hérite de ``FlyingObject``. 
+
+ 
+
+* Implémentez la classe ``Missile`` avec l'attribut3 : 
+
+[source,C++]
+----
+double angle; 
+----
+
+et les méthodes suivantes : 
+
+[source,C++]
+----
+/////////////// 
+// Constructeur 
+// ------- 
+// * x, y : position dans l'écran 
+// * size : diamètre du missile 
+// * speed : vitesse de déplacement 
+// * angle : orientation 
+
+Missile(double x, double y, double size, double speed, double angle); 
+
+/////////////////////////////////////////////////////// 
+// déplace selon les vitesses de déplacement de l'objet 
+// ------- 
+// Renvoie : un booléen indiquant s'il y a sortie des limites de l'écran 
+bool Move(double screenWidth, double screenHeight); 
+----
+
+La surcharge de la méthode ``Move`` permettra par la suite de détecter et donc de supprimer un missile qui sort de l'écran. 
+
+* Modifiez la fonction ``main`` pour lancer un missile depuis le milieu de l'écran, qui disparait à la sortie de l'écran. Veillez à correctement réserver et libérer la mémoire correspondante. 
+
+ 
