@@ -12,24 +12,19 @@ public :
     // -------
     // * x, y : position dans l'écran
     // * size : diamètre de l'objet
-    // * xSpeed, ySpeed : vecteur de vitesse de l'objet
-    FlyingObject(double x, double y, double size, double xSpeed, double ySpeed);
+    FlyingObject(double x, double y, double size);
 
 
     //////////
     //---------------------Getters :
     double GetX();
     double GetY();
-    double GetXSpeed();
-    double GetYSpeed();
     double GetSize();
 
     //////////
     //---------------------Setters :
-    void SetX(double xSpeed);
-    void SetY(double ySpeed);
-    void SetXSpeed(double xSpeed);
-    void SetYSpeed(double ySpeed);
+    void SetX(double x);
+    void SetY(double y);
     void SetSize(double size);
 
 
@@ -56,9 +51,7 @@ private :
     double x;
     double y;
     double size;
-    //----------Coordonnées du vecteur vitesse :
-    double xSpeed;
-    double ySpeed;
+
 
 
 

@@ -5,15 +5,25 @@
 
 class Missile : public FlyingObject{
 
+public :
+
     ///////////////
-    // Constructeur
+    // Constructor
     // -------
-    // * x, y : position dans l'écran
+    // * x, y : position in the screen
     // * size : diamètre du missile
     // * speed : vitesse de déplacement
     // * angle : orientation
 
     Missile(double x, double y, double size, double speed, double angle);
+
+
+
+
+    ///////////////
+    // Destructor
+    // -------
+    ~Missile();
 
 
 
@@ -26,6 +36,7 @@ class Missile : public FlyingObject{
 
 private :
     double angle;
+    double speed;
 
 
 
