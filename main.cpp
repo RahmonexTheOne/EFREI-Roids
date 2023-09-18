@@ -12,24 +12,38 @@ int WinMain(int argc, char* argv[])
 //int main(int argc, char* argv[])
 {
 
+
     std::cout << "Oppening EFREI-Roids !" << std::endl;
 
     //---------------- Initialize FrameWork :
-    Framework window(20,20,10);
+    Framework window(20,60,10);
+    //-----------------------------------------
 
     //-----------------Create Asteroid :
     Asteroid* asteroidOne= new Asteroid(150, 500,100, 10, 3);
     Asteroid* asteroidTwo = new Asteroid(1600,window.GetScreenHeight(), 100, -5, -2);
+    //----------------------------------
 
 
     //----------------Create Missile :
     Missile* missileTest = new Missile(window.GetScreenWidth()/2, window.GetScreenHeight()/2,10, 10, 3);
+    //-------------------------------
 
     window.Update();
 
 
 
+    //--------------------------------------------------------------------------------------------------------------- Screen Update :
     while(window.GetInput()!= SDLK_ESCAPE){
+
+
+        //------------------------------------------------------------------------------ Spaceship :
+        window.DrawShip(window.GetScreenWidth()/2,window.GetScreenHeight()/2,30,0.0,false);
+
+        //-------------------------------------------------------------------------------------------
+
+
+
 
         //-------------------------------------------------------------------------------Asteroids :
         if(asteroidOne!=nullptr){
@@ -79,6 +93,7 @@ int WinMain(int argc, char* argv[])
         window.Update();
 
     }
+    //-------------------------------------------------------------------------------------------------------------------------
 
     return 0;
 }

@@ -3,8 +3,6 @@
 
 using namespace std;
 
-using namespace std;
-
 //------------------Constructors :
 
 Missile::Missile(double x, double y, double size, double speed, double angle) : FlyingObject( x, y, size ) {

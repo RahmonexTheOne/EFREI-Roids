@@ -84,6 +84,13 @@ build CMakeFiles/SDLTEST.dir/Missile.cpp.obj: CXX_COMPILER__SDLTEST_unscanned_De
   OBJECT_DIR = CMakeFiles\SDLTEST.dir
   OBJECT_FILE_DIR = CMakeFiles\SDLTEST.dir
 
+build CMakeFiles/SDLTEST.dir/Spaceship.cpp.obj: CXX_COMPILER__SDLTEST_unscanned_Debug C$:/Users/rahmo/OneDrive/Documents/Git/EFREI-Roids/Spaceship.cpp || cmake_object_order_depends_target_SDLTEST
+  DEP_FILE = CMakeFiles\SDLTEST.dir\Spaceship.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/rahmo/OneDrive/Documents/Git/EFREI-Roids/include -isystem C:/Users/rahmo/OneDrive/Documents/Git/EFREI-Roids/include/SDL2
+  OBJECT_DIR = CMakeFiles\SDLTEST.dir
+  OBJECT_FILE_DIR = CMakeFiles\SDLTEST.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target SDLTEST
@@ -92,7 +99,7 @@ build CMakeFiles/SDLTEST.dir/Missile.cpp.obj: CXX_COMPILER__SDLTEST_unscanned_De
 #############################################
 # Link the executable SDLTEST.exe
 
-build SDLTEST.exe: CXX_EXECUTABLE_LINKER__SDLTEST_Debug CMakeFiles/SDLTEST.dir/main.cpp.obj CMakeFiles/SDLTEST.dir/framework.cpp.obj CMakeFiles/SDLTEST.dir/Asteroid.cpp.obj CMakeFiles/SDLTEST.dir/FlyingObject.cpp.obj CMakeFiles/SDLTEST.dir/Missile.cpp.obj | C$:/Users/rahmo/OneDrive/Documents/Git/EFREI-Roids/lib/libSDL2main.a C$:/Users/rahmo/OneDrive/Documents/Git/EFREI-Roids/lib/libSDL2.dll.a
+build SDLTEST.exe: CXX_EXECUTABLE_LINKER__SDLTEST_Debug CMakeFiles/SDLTEST.dir/main.cpp.obj CMakeFiles/SDLTEST.dir/framework.cpp.obj CMakeFiles/SDLTEST.dir/Asteroid.cpp.obj CMakeFiles/SDLTEST.dir/FlyingObject.cpp.obj CMakeFiles/SDLTEST.dir/Missile.cpp.obj CMakeFiles/SDLTEST.dir/Spaceship.cpp.obj | C$:/Users/rahmo/OneDrive/Documents/Git/EFREI-Roids/lib/libSDL2main.a C$:/Users/rahmo/OneDrive/Documents/Git/EFREI-Roids/lib/libSDL2.dll.a
   FLAGS = -g
   LINK_FLAGS = -Wl,--undefined=WinMain
   LINK_LIBRARIES = C:/Users/rahmo/OneDrive/Documents/Git/EFREI-Roids/lib/libSDL2main.a  C:/Users/rahmo/OneDrive/Documents/Git/EFREI-Roids/lib/libSDL2.dll.a  -mwindows  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32

@@ -13,6 +13,7 @@ set(
     Asteroid.cpp
     FlyingObject.cpp
     Missile.cpp
+    Spaceship.cpp
 )
 
 set(
@@ -21,7 +22,8 @@ set(
     Asteroid.hpp
     Missile.hpp
     FlyingObject.hpp
-        Missile.hpp
+    Missile.hpp
+    Spaceship.hpp
 )
 
 find_package(SDL2 REQUIRED)
