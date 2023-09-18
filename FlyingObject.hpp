@@ -14,6 +14,17 @@ public :
     // * size : diamètre de l'objet
     FlyingObject(double x, double y, double size);
 
+    //----
+    /////////////////////////////
+    // Détermination de collision
+    // calcul basé sur l'hypothèse que les objets sont sphériques
+    // -------
+    // * o1, o2 : les deux objets à tester
+    // -------
+    // Renvoie : true si les deux objets se touchent, false sinon
+    static bool Collide(FlyingObject *o1, FlyingObject *o2);
+    //----
+
 
     //////////
     //---------------------Getters :
@@ -51,9 +62,6 @@ private :
     double x;
     double y;
     double size;
-
-
-
 
 };
 

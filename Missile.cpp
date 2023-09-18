@@ -14,7 +14,7 @@ Missile::Missile(double x, double y, double size, double speed, double angle) : 
 
 //------------------ Destructors :
 
-Missile::~Missile() {}
+Missile::~Missile() = default;
 
 
 
