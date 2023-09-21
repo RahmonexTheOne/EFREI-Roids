@@ -2,6 +2,7 @@
 #include "framework.hpp"
 #include "asteroid.hpp"
 #include "Missile.hpp"
+#include "Spaceship.hpp"
 #include <vector>
 #include <memory>
 
@@ -19,6 +20,10 @@ int WinMain(int argc, char* argv[])
     Framework window(20,60,10);
     //-----------------------------------------
 
+    //----------------Create Missile :
+    Spaceship spaceship = Spaceship(window.GetScreenWidth()/2,window.GetScreenHeight()/2,60,0);
+    //-------------------------------
+
     //-----------------Create Asteroid :
     Asteroid* asteroidOne= new Asteroid(150, 500,100, 10, 3);
     Asteroid* asteroidTwo = new Asteroid(1600,window.GetScreenHeight(), 100, -5, -2);
@@ -26,9 +31,10 @@ int WinMain(int argc, char* argv[])
 
 
     //----------------Create Missile :
-    Missile* missileTest = new Missile(window.GetScreenWidth()/2, window.GetScreenHeight()/2,10, 10, 3);
+    Missile* missileTest = new Missile(window.GetScreenWidth()/2, window.GetScreenHeight()/2,10, 10, 0);
     //-------------------------------
 
+    SDL_Event e;
     window.Update();
 
 
@@ -38,7 +44,14 @@ int WinMain(int argc, char* argv[])
 
 
         //------------------------------------------------------------------------------ Spaceship :
-        window.DrawShip(window.GetScreenWidth()/2,window.GetScreenHeight()/2,30,0.0,false);
+        window.DrawShip(spaceship.GetX(),spaceship.GetY(),spaceship.GetAngle(),1.0,false);
+        if(window.GetInput()==SDLK_d){
+            cout << "rotate by 90 deg " << endl;
+            spaceship.Rotate(90);
+        }
+        else if(window.GetInput()==SDLK_q){
+            spaceship.Rotate(-90);
+        }
 
         //-------------------------------------------------------------------------------------------
 
@@ -78,12 +91,8 @@ int WinMain(int argc, char* argv[])
         if(missileTest != nullptr && asteroidTwo != nullptr){
             bool collision = FlyingObject::Collide(missileTest,asteroidTwo);
             if(collision){
-                cout << "Collision entre missile et asteroid" << endl;
                 delete asteroidTwo;
                 asteroidTwo = nullptr;
-            }
-            else {
-                cout << "Pas de collision entre missile et asteroid" << endl;
             }
         }
 

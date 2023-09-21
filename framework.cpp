@@ -80,7 +80,7 @@ int Framework::GetInput() {
         SDL_Quit();
         exit(0);
     }
-    else if (SDL_PollEvent(&e) && e.type == SDL_KEYDOWN)
+    else if (SDL_PollEvent(&e))
         return e.key.keysym.sym;
     else
         return (int)NULL;

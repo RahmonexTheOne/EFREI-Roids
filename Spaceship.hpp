@@ -22,6 +22,8 @@ public :
     // Getters
     double GetAngle();
 
+    void SetAngle(double angle);
+
     ///////////////////////
     // Accélère le vaisseau
     // -------
