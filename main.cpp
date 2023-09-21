@@ -21,7 +21,7 @@ int WinMain(int argc, char* argv[])
     //-----------------------------------------
 
     //----------------Create Missile :
-    Spaceship spaceship = Spaceship(window.GetScreenWidth()/2,window.GetScreenHeight()/2,60,0);
+    Spaceship* spaceship = new Spaceship(window.GetScreenWidth()/2,window.GetScreenHeight()/2,60,0);
     //-------------------------------
 
     //-----------------Create Asteroid :
@@ -35,6 +35,7 @@ int WinMain(int argc, char* argv[])
     //-------------------------------
 
     SDL_Event e;
+
     window.Update();
 
 
@@ -44,14 +45,25 @@ int WinMain(int argc, char* argv[])
 
 
         //------------------------------------------------------------------------------ Spaceship :
-        window.DrawShip(spaceship.GetX(),spaceship.GetY(),spaceship.GetAngle(),1.0,false);
-        if(window.GetInput()==SDLK_d){
-            cout << "rotate by 90 deg " << endl;
-            spaceship.Rotate(90);
+        if(spaceship!= nullptr){
+            window.DrawShip(spaceship->GetX(),spaceship->GetY(),spaceship->GetAngle(),1.0,false);
+            if(e.key==SDLK_d){
+                cout << "rotate by 90 deg " << endl;
+                spaceship->Rotate(30);
+            }
+            else if(window.GetInput()==SDLK_q){
+                spaceship->Rotate(-30);
+            }
+            else if(window.GetInput()==SDLK_z){
+                spaceship->SpeedUp(10);
+            }
+            else if(window.GetInput()==SDLK_s){
+                spaceship->SpeedDown(10);
+            }
+
+            spaceship->Move(window.GetScreenWidth(), window.GetScreenHeight());
         }
-        else if(window.GetInput()==SDLK_q){
-            spaceship.Rotate(-90);
-        }
+
 
         //-------------------------------------------------------------------------------------------
 

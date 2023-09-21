@@ -21,8 +21,10 @@ public :
     //////////
     // Getters
     double GetAngle();
+    double GetSpeed();
 
     void SetAngle(double angle);
+    void SetSpeed(double speed);
 
     ///////////////////////
     // Accélère le vaisseau
@@ -42,8 +44,12 @@ public :
     // * angle : l'angle de rotation, en degrés.
     void Rotate(double rAngle);
 
+    void Move(double screenWidth, double screenHeight);
+
 private :
     double angle;
+    double speed;
+
 
 };
 
