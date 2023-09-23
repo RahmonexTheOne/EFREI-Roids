@@ -1,0 +1,20 @@
+:hardbreaks:
+= 8 Implémenter un jeu complet - La Vue 
+
+Il nous reste la Vue. Cette classe n'est pas la plus compliquée en elle-même, mais elle va nécessiter de modifier légèrement la classe ``FlyingObject``. 
+
+* Modifiez le constructeur de ``Model`` pour qu'il prenne en paramètre le Framework créé par le Contrôleur. En effet, si le Contrôleur en a besoin pour lire les entrée clavier, la Vue en a aussi besoin, pour effectuer l'affichage. Attention, il faut que ce soit un pointeur, pour éviter d'avoir un clone de notre objet Framework qui se promène dans la mémoire4. 
+
+Il faudrait implémenter la méthode de rafraichissement de l'affichage. Cette méthode prend en paramètre un vecteur de pointeurs sur FlyingObject. La difficulté est qu'on ne sait pas de quelle classe est réellement chaque pointeur. Or, selon qu'on a un vaisseau, un missile, ou un astéroïde, l'appel au Framework n'est pas le même. On pourrait essayer de faire de l'introspection, mais c'est assez compliqué en C++, alors on va faire beaucoup plus simple : 
+
+* Modifiez la classe FlyingObject pour lui ajouter une méthode virtuelle GetTypeName() renvoyant un string. Chaque classe héritant de FlyingObject devra donc implémenter cette méthode pour pouvoir être instanciée. Ainsi, chaque classe renverra une chaine de caractère définissant son type, et il suffira d'utiliser cette méthode au niveau de la Vue pour déterminer la classé réelle de chaque objet, et donc savoir comment afficher. 
+
+* Implémentez dans chacune des classes héritant de FlyingObject la méthode GetTypeName(). Chaque classe renverra une chaine de caractères différente.
+
+Maintenant, on peut implémenter la méthode de rafraichissement dans la Vue : 
+
+* Parcourez le vecteur, et pour chacun de ses objets, vérifiez son type exact avec la méthode GetTypeName(). Selon le retour, transtypez correctement l'objet et affichez son sprite avec le Framework.
+
+On a maintenant les trois composants de notre MVC, il ne reste plus qu'à refaire un main(), beaucoup plus court ! Cela se résume à initialiser le Contrôleur, et lancer le jeu. N'oubliez pas de mettre à jour votre Makefile. 
+
+Note : gardez la version précédente de votre main dans un coin, il y a encore du code dedans qu'on va réutiliser. 

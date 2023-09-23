@@ -24,6 +24,12 @@ set(
     FlyingObject.hpp
     Missile.hpp
     Spaceship.hpp
+        Model.cpp
+        Model.hpp
+        View.cpp
+        View.hpp
+        Controller.cpp
+        Controller.hpp
 )
 
 find_package(SDL2 REQUIRED)

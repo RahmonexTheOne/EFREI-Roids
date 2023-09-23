@@ -17,11 +17,11 @@ La classe ``Missile`` utilise plusieurs mécanismes identiques à ceux d'``Aster
 
  
 
-* Implémentez la classe ``Missile`` avec l'attribut3 : 
+* Implémentez la classe ``Missile`` avec l'attribut : 
 
 [source,C++]
 ----
-double angle; 
+double m_angle; 
 ----
 
 et les méthodes suivantes : 
@@ -42,7 +42,7 @@ Missile(double x, double y, double size, double speed, double angle);
 // déplace selon les vitesses de déplacement de l'objet 
 // ------- 
 // Renvoie : un booléen indiquant s'il y a sortie des limites de l'écran 
-bool Move(double screenWidth, double screenHeight); 
+bool move(double screenWidth, double screenHeight); 
 ----
 
 La surcharge de la méthode ``Move`` permettra par la suite de détecter et donc de supprimer un missile qui sort de l'écran. 

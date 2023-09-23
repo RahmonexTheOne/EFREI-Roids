@@ -1,0 +1,57 @@
+:hardbreaks:
+= 6 Implémenter un modèle MVC - Le Contrôleur 
+
+Notre ersatz de jeu est implémenté dans une fonction ``main`` qui menace de devenir très longue et illisible. On va implémenter une vraie architecture de jeu dans un modèle MVC. Dans la réalité, on aurait dû faire ça un plus tôt, avant même d'avoir des classes ``Asteroid``, ``Missile``, et ``Spaceship`` basiques mais fonctionnelles. 
+
+Vous allez donc répartir votre code en trois parties : 
+
+* Le _Modèle_ stocke toutes les données du jeu (le vaisseau, le missile, l'astéroïde) et implémente toutes les logiques de fonctionnement 
+
+* La _Vue_ se charge de gérer l'affichage, à l'aide du Framework fourni 
+
+* Le _Contrôleur_ coordonne le fonctionnement du Modèle et de la Vue, et prend en compte les interactions avec le joueur 
+
+D'après la théorie, la classe qui est en frontal (celle qu'on utilise pour lancer le jeu) devrait être la vue. Dans les faits, c'est la plupart du temps de Contrôleur, et on va s'en tenir à cette pratique. Commençons par cette classe. Ça nous permettra d'imaginer comment on voudrait utiliser les deux autres classes qu'on créera par la suite. 
+
+. Créez deux classes ``Model`` et ``View``, vides. 
+
+ 
+
+. Créez une classe ``Controller`` avec trois attributs : 
+
+.. Le Modèle 
+
+.. La Vue 
+
+.. Le Framework 
+Attention, C++ ne permet pas d'initialiser dynamiquement des attributs objets dans une classe. Ces attributs devront donc être des pointeurs sur ces objets. 
+
+. Implémentez pour ``Controller`` un constructeur qui prendra en paramètre les informations nécessaires pour initialiser le jeu (FPS, taille de vaisseau, taille de missile). Ce constructeur devra initialiser les trois attributs de la classe. Les classes ``Model`` et ``View`` étant vides, elles ont toutes les deux un constructeur par défaut, sans paramètre. Utilisez ces constructeurs pour l'instant. 
+
+. Ajoutez au Contrôleur une méthode ``LaunchGame()``, qui lance la boucle principale du jeu. Cette boucle va : 
+
+.. Lire l'entrée du joueur au clavier, à l'aide du Framework 
+
+.. Demander au Modèle d'appliquer l'action correspondante 
+
+.. Demander au Modèle de mettre à jour ses données, c'est-à-dire calculer les nouvelles coordonnées de chacun des objets actuellement en jeu 
+
+.. Demander à la vue de rafraichir l'affichage 
+
+L'écriture de cette boucle devrait vous amener à imaginer dans la classe ``Model`` plusieurs méthodes : 
+
+* 4 méthodes, correspondant chacune à une action du joueur 
+
+* 1 méthode de mise à jour des données du Modèle 
+
+Par ailleurs, vous devriez aussi avoir imaginé pour la Vue une méthode de rafraichissement de l'affichage. Mais ce rafraichissement a besoin des données. On pourrait lui passer directement en paramètre le Modèle, mais ça casserait le rôle de coordinateur du Contrôleur, et c'est toujours mieux d'avoir un seul endroit où tout est coordonné. 
+
+Imaginons donc que le Modèle dispose d'une méthode renvoyant un vecteur avec tous les objets volants actuellement présents dans le jeu, quel que soit leur type. Après tout, tous les objets sont d'une classe qui hérite de ``FlyingObject``. Ce vecteur devra contenir des pointeurs sur objets, pas directement des objets. En effet, si vous utilisez un vecteur de type ``vector<FlyingObject *>``, vous pourrez y ajouter des pointeurs objets de classe ``Asteroid``, ``Missile``, ou ``Spaceship``, sans même avoir besoin de transtyper. 
+
+Le vecteur renvoyé par cette méthode de ``Model`` pourra être fourni en paramètre à la Vue pour rafraichir l'affichage. 
+
+ 
+
+Remarque : Si vous avez correctement implémenté votre Contrôleur, vous n'avez pas besoin d'inclure les headers correspondant aux différents objets volants, puisque votre classe ne les utilise pas directement. Ce seront le Modèle et la Vue qui s'en chargeront. 
+
+ 

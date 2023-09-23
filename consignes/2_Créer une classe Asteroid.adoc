@@ -9,11 +9,11 @@ Cette classe permet de gérer (pas d'afficher) un astéroïde (création, dépla
 * Créez le fichier header ``Asteroid.hpp`` et le fichier source associé Asteroid.cpp implémentant votre classe2. Cette classe contient les attributs suivants : 
 [source,C++]
 ----
-double x; 
-double y; 
-double size; 
-double xSpeed; 
-double ySpeed); 
+double m_x; 
+double m_y; 
+double m_size; 
+double m_xSpeed; 
+double m_ySpeed); 
 ----
 
 ``x`` et ``y`` sont les coordonnées de l'astéroïde à l'écran. ``xSpeed`` et ``ySpeed`` sont les coordonnées (on parle aussi de composantes) du vecteur de vitesse. Lors d'un déplacement, ces valeurs s'ajoutent aux coordonnées de l'astéroïde. Un déplacement de l'astéroïde consiste donc à additionner chaque composante du vecteur avec la coordonnée correspondante, pour obtenir les nouvelles coordonnées de l'astéroïde. 
@@ -41,19 +41,19 @@ Asteroid(double x, double y, double size, double xSpeed, double ySpeed);
 ----
 ////////// 
 // Getters 
-double GetX(); 
-double GetY(); 
-double GetXSpeed(); 
-double GetYSpeed(); 
-double GetSize(); 
+double getX(); 
+double getY(); 
+double getXSpeed(); 
+double getYSpeed(); 
+double getSize(); 
  
 ////////// 
 // Setters 
-void SetX(double x);
-void SetY(double y); 
-void SetXSpeed(double xSpeed); 
-void SetYSpeed(double ySpeed); 
-void SetSize(double size); 
+void setX(double x);
+void setY(double y); 
+void setXSpeed(double xSpeed); 
+void setYSpeed(double ySpeed); 
+void setSize(double size); 
 
 ----
  
@@ -66,7 +66,7 @@ void SetSize(double size);
 ///////////////////////// 
 // Déplacement de l'objet 
 // déplace selon le vecteur de vitesse de l'objet 
-void Move();
+void move();
 
 /////////////////////////////////////// 
 // Déplacement de l'objet avec réentrée 
@@ -75,7 +75,7 @@ void Move();
 // de l'autre côté 
 // ------- 
 // * screenWidth, screenHeight : taille de l'écran 
-void Move(double screenWidth, double screenHeight); 
+void move(double screenWidth, double screenHeight); 
 ----
 
 Ces méthodes modifient les coordonnées de l'astéroïde en fonction du vecteur de vitesse. 

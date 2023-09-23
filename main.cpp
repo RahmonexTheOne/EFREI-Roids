@@ -58,6 +58,9 @@ int WinMain(int argc, char* argv[])
             else if(window.GetInput()==SDLK_s){
                 spaceship->SpeedDown(10);
             }
+            else {
+
+            }
 
             spaceship->Move(window.GetScreenWidth(), window.GetScreenHeight());
         }

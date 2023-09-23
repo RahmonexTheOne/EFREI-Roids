@@ -59,29 +59,3 @@ bool FlyingObject::Collide(FlyingObject *o1,FlyingObject *o2) {
     }
 }
 
-
-//--------------------- Movement :
-
-/*void FlyingObject::Move() {
-    this->x = x + xSpeed;
-    this->y = y + ySpeed;
-}*/
-
-/*void FlyingObject::Move(double screenWidth, double screenHeight) {
-    if(x + xSpeed >= screenWidth){
-        this->x = 0;
-    }
-    else if(x+xSpeed<=0){
-        this->x = screenWidth;
-    }
-    else if(y+ySpeed >= screenHeight){
-        this->y = 0;
-    }
-    else if(y+ySpeed <=0){
-        this->y = screenHeight;
-    }
-    else {
-        this->x = x + xSpeed;
-        this->y = y + ySpeed;
-    }
-}*/

@@ -13,20 +13,18 @@ Spaceship::Spaceship(double x, double y, double size, double angle) : FlyingObje
 //-------------------------------------------------Movement :
 
 void Spaceship::Rotate(double rAngle) {
-    //Spaceship::SetAngle(((M_PI)*(180-rAngle))/180 + Spaceship::GetAngle());
     double newAngle = (rAngle + Spaceship::GetAngle());
     Spaceship::SetAngle(newAngle);
     std::cout << "angle = " << angle << std::endl;
 }
 
 void Spaceship::SpeedUp(double accelerationFactor) {
-    //Spaceship::SetX(Spaceship::GetX() + accelerationFactor);
-    /*double newSpeed = Spaceship::GetSpeed() + accelerationFactor * cos(Spaceship::DegToRad(Spaceship::GetAngle()));
-    std::cout << "trying taccelerate" << std::endl;
+    if((Spaceship::GetSpeed()+accelerationFactor)>20){
 
-    Spaceship::SetX(Spaceship::GetX() + newSpeed * cos(Spaceship::DegToRad(Spaceship::GetAngle())));
-    Spaceship::SetY(Spaceship::GetY() + newSpeed * sin(Spaceship::DegToRad(Spaceship::GetAngle())));*/
-    Spaceship::SetSpeed(Spaceship::GetSpeed()+accelerationFactor) ;
+    }
+    else if ((Spaceship::GetSpeed()+accelerationFactor)<=20){
+        Spaceship::SetSpeed(Spaceship::GetSpeed()+accelerationFactor) ;
+    }
 
 }
 
@@ -35,7 +33,13 @@ void Spaceship::SpeedDown(double decelerationFactor) {
 
     Spaceship::SetX(Spaceship::GetX() + newSpeed * sin(Spaceship::DegToRad(Spaceship::GetAngle())));
     Spaceship::SetY(Spaceship::GetY() + newSpeed * cos(Spaceship::DegToRad(Spaceship::GetAngle())));*/
-    Spaceship::SetSpeed(Spaceship::GetSpeed()-decelerationFactor) ;
+
+    if((Spaceship::GetSpeed()-decelerationFactor)<=0){
+
+    }
+    else if ((Spaceship::GetSpeed()-decelerationFactor)>=20){
+        Spaceship::SetSpeed(Spaceship::GetSpeed()-decelerationFactor) ;
+    }
 }
 
 

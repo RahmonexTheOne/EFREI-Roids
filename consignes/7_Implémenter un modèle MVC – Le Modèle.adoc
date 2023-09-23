@@ -1,0 +1,13 @@
+:hardbreaks:
+= 7 Implémenter un modèle MVC - Le Modèle
+
+Passons au Modèle. On peut être tenté de commencer par la Vue, mais vu que la logique de fonctionnement est implémentée dans ce Modèle, mieux vaut savoir dès maintenant si les interactions qu'on a imaginées lors de l'implémentation du Contrôleur sont faisables ou pas. 
+
+. Modifiez le constructeur de ``Model`` pour qu'il prenne en paramètres la taille de l'écran, puisque cette information est nécessaire pour implémenter certains mécanismes. Pensez à mettre à jour le code du Contrôleur. 
+
+. Définissez des attributs privés pour stocker le vaisseau, le missile, et l'astéroïde. Comme pour le Contrôleur, pour pouvoir initialiser ces attributs au sein du constructeur, ils devront tous être des pointeurs, et non directement des objets. Pour les paramètres d'initialisation, reprenez les valeurs que vous utilisiez dans votre ``main()``. 
+
+. Reprenez et adaptez le code de votre ``main()`` pour implémenter les 4 méthodes d'interaction avec le joueur, et la méthode de mise à jour des données. 
+
+. Créez une méthode qui renvoie un ``vector`` contenant des pointeurs vers l'ensemble des objets volants actuellement en jeu.  
+Attention, ce ``vector`` ne devra contenir un missile que si celui-ci a bien été tiré par le joueur, et toujours dans l'écran.
