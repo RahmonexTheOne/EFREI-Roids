@@ -34,8 +34,6 @@ int WinMain(int argc, char* argv[])
     Missile* missileTest = new Missile(window.GetScreenWidth()/2, window.GetScreenHeight()/2,10, 10, 0);
     //-------------------------------
 
-    SDL_Event e;
-
     window.Update();
 
 
@@ -43,11 +41,11 @@ int WinMain(int argc, char* argv[])
     //--------------------------------------------------------------------------------------------------------------- Screen Update :
     while(window.GetInput()!= SDLK_ESCAPE){
 
-
         //------------------------------------------------------------------------------ Spaceship :
         if(spaceship!= nullptr){
             window.DrawShip(spaceship->GetX(),spaceship->GetY(),spaceship->GetAngle(),1.0,false);
-            if(e.key==SDLK_d){
+
+            if(window.GetInput()==SDLK_d){
                 cout << "rotate by 90 deg " << endl;
                 spaceship->Rotate(30);
             }

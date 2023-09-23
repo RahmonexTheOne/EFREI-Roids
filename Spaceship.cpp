@@ -21,31 +21,27 @@ void Spaceship::Rotate(double rAngle) {
 
 void Spaceship::SpeedUp(double accelerationFactor) {
     //Spaceship::SetX(Spaceship::GetX() + accelerationFactor);
-    double newSpeed = Spaceship::GetSpeed() + accelerationFactor * cos(Spaceship::GetAngle());
-    std::cout << "trying to accelerate" << std::endl;
+    /*double newSpeed = Spaceship::GetSpeed() + accelerationFactor * cos(Spaceship::DegToRad(Spaceship::GetAngle()));
+    std::cout << "trying taccelerate" << std::endl;
 
-    Spaceship::SetX(Spaceship::GetX() + newSpeed * cos(Spaceship::GetAngle()));
-    Spaceship::SetY(Spaceship::GetY() + newSpeed * sin(Spaceship::GetAngle()));
-    Spaceship::SetSpeed(newSpeed);
+    Spaceship::SetX(Spaceship::GetX() + newSpeed * cos(Spaceship::DegToRad(Spaceship::GetAngle())));
+    Spaceship::SetY(Spaceship::GetY() + newSpeed * sin(Spaceship::DegToRad(Spaceship::GetAngle())));*/
+    Spaceship::SetSpeed(Spaceship::GetSpeed()+accelerationFactor) ;
 
 }
 
 void Spaceship::SpeedDown(double decelerationFactor) {
-    double newSpeed = Spaceship::GetSpeed() - decelerationFactor * cos(angle);
+    /*double newSpeed = Spaceship::GetSpeed() - decelerationFactor * cos(Spaceship::DegToRad(Spaceship::GetAngle()));
 
-    Spaceship::SetX(Spaceship::GetX() + newSpeed * cos(Spaceship::GetAngle()));
-    Spaceship::SetY(Spaceship::GetY() + newSpeed * sin(Spaceship::GetAngle()));
-    Spaceship::SetSpeed(newSpeed) ;
+    Spaceship::SetX(Spaceship::GetX() + newSpeed * sin(Spaceship::DegToRad(Spaceship::GetAngle())));
+    Spaceship::SetY(Spaceship::GetY() + newSpeed * cos(Spaceship::DegToRad(Spaceship::GetAngle())));*/
+    Spaceship::SetSpeed(Spaceship::GetSpeed()-decelerationFactor) ;
 }
 
 
 void Spaceship::Move(double screenWidth, double screenHeight) {
-    double deltaX = Spaceship::GetSpeed() * cos(Spaceship::GetAngle());
-    double deltaY = Spaceship::GetSpeed() * sin(Spaceship::GetAngle());
-
-    // Update the spaceship's position
-    Spaceship::SetX(Spaceship::GetX() + deltaX);
-    Spaceship::SetY(Spaceship::GetY() + deltaY);
+    double speedX = Spaceship::GetSpeed() * sin(Spaceship::DegToRad(Spaceship::GetAngle()));
+    double speedY = Spaceship::GetSpeed() * cos(Spaceship::DegToRad(Spaceship::GetAngle()));
 
     // Wrap around the screen edge
     if (Spaceship::GetX() > screenWidth) {
@@ -61,6 +57,18 @@ void Spaceship::Move(double screenWidth, double screenHeight) {
     else if (Spaceship::GetY() < 0) {
         Spaceship::SetY(screenHeight);
     }
+    else {
+        // Update the spaceship's position
+        Spaceship::SetX(Spaceship::GetX() + speedX);
+        Spaceship::SetY(Spaceship::GetY() + speedY);
+
+    }
+}
+
+double Spaceship::DegToRad(double angle) {
+    double newAngle;
+    newAngle = ((M_PI)*(180-angle))/180;
+    return newAngle;
 }
 
 

@@ -42,7 +42,8 @@ public :
     // Fait pivoter le vaisseau
     // -------
     // * angle : l'angle de rotation, en degrés.
-    void Rotate(double rAngle);
+    void Rotate(double angle);
+    double DegToRad(double angle);
 
     void Move(double screenWidth, double screenHeight);
 
