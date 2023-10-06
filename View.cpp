@@ -10,6 +10,7 @@ View::View() {
 
 }
 
-void View::Refresh() {
+void View::Refresh(std::vector<FlyingObject *>) {
+
 
 }

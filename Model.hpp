@@ -1,29 +1,30 @@
 #ifndef MODEL_HPP
 #define MODEL_HPP
 
+#include "FlyingObject.hpp"
+#include <vector>
+
 class Model {
 
 
 public :
 
     Model();
-
-    void ChooseAction(int action);
-
     void Update();
-
-    void Action1();
-
-    void Action2();
-
-    void Action3();
-
-    void Action4();
+    //------------Actions :
+    void ChooseAction(int action);
+    void SpeedUp();
+    void SpeedDown();
+    void RotateRight();
+    void RotateLeft();
+    //----------Getters :
+    std::vector<FlyingObject *> GetFlyingObjects();
 
 
 
 private :
 
+    std::vector<FlyingObject *> flyingObjects;
 
 
 

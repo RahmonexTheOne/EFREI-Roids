@@ -46,12 +46,12 @@ L'écriture de cette boucle devrait vous amener à imaginer dans la classe ``Mod
 
 Par ailleurs, vous devriez aussi avoir imaginé pour la Vue une méthode de rafraichissement de l'affichage. Mais ce rafraichissement a besoin des données. On pourrait lui passer directement en paramètre le Modèle, mais ça casserait le rôle de coordinateur du Contrôleur, et c'est toujours mieux d'avoir un seul endroit où tout est coordonné. 
 
-Imaginons donc que le Modèle dispose d'une méthode renvoyant un vecteur avec tous les objets volants actuellement présents dans le jeu, quel que soit leur type. Après tout, tous les objets sont d'une classe qui hérite de ``FlyingObject``. Ce vecteur devra contenir des pointeurs sur objets, pas directement des objets. En effet, si vous utilisez un vecteur de type ``vector<FlyingObject *>``, vous pourrez y ajouter des pointeurs objets de classe ``Asteroid``, ``Missile``, ou ``Spaceship``, sans même avoir besoin de transtyper. 
+Imaginons donc que le Modèle dispose d'une méthode renvoyant un vecteur avec tous les objets volants actuellement présents dans le jeu, quel que soit leur type. Après tout, tous les objets sont d'une classe qui hérite de ``FlyingObject``. Ce vecteur devra contenir des pointeurs sur objets, pas directement des objets. En effet, si vous utilisez un vecteur de type ``vector<FlyingObject *>``, vous pourrez y ajouter des pointeurs objets de classe ``Asteroid``, ``Missile``, ou ``Spaceship``, sans même avoir besoin de transtyper.
 
-Le vecteur renvoyé par cette méthode de ``Model`` pourra être fourni en paramètre à la Vue pour rafraichir l'affichage. 
+Le vecteur renvoyé par cette méthode de ``Model`` pourra être fourni en paramètre à la Vue pour rafraichir l'affichage.
 
- 
 
+Je suis ici ---------------------------------------------------------------------------
 Remarque : Si vous avez correctement implémenté votre Contrôleur, vous n'avez pas besoin d'inclure les headers correspondant aux différents objets volants, puisque votre classe ne les utilise pas directement. Ce seront le Modèle et la Vue qui s'en chargeront. 
 
  

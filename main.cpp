@@ -42,8 +42,12 @@ int WinMain(int argc, char* argv[])
     //--------------------------------------------------------------------------------------------------------------- Screen Update :
     while(GameRunning){
 
+
+        //--------------------------- Spaceship :
         if (spaceship!=nullptr){
+
             window.DrawShip(spaceship->GetX(),spaceship->GetY(),spaceship->GetAngle(),1.0,false);
+
             switch (window.GetInput()) {
                 case SDLK_d:
                     spaceship->Rotate(30);
@@ -65,39 +69,12 @@ int WinMain(int argc, char* argv[])
             }
             spaceship->Move(window.GetScreenWidth(), window.GetScreenHeight());
         }
-
-
-        //------------------------------------------------------------------------------ Spaceship :
-        /*if(spaceship!= nullptr){
-            window.DrawShip(spaceship->GetX(),spaceship->GetY(),spaceship->GetAngle(),1.0,false);
-
-            if(window.GetInput()==SDLK_d){
-                cout << "rotate by 90 deg " << endl;
-                spaceship->Rotate(30);
-            }
-            else if(window.GetInput()==SDLK_q){
-                spaceship->Rotate(-30);
-            }
-            else if(window.GetInput()==SDLK_z){
-                spaceship->SpeedUp(10);
-            }
-            else if(window.GetInput()==SDLK_s){
-                spaceship->SpeedDown(10);
-            }
-            else {
-
-            }
-
-            spaceship->Move(window.GetScreenWidth(), window.GetScreenHeight());
-        }*/
-
-
         //-------------------------------------------------------------------------------------------
 
 
 
 
-        //-------------------------------------------------------------------------------Asteroids :
+        //---------------------------------------Asteroids :
         if(asteroidOne!=nullptr){
             window.DrawAsteroid(asteroidOne->GetX(),asteroidOne->GetY(),asteroidOne->GetSize());
             asteroidOne->Move(window.GetScreenWidth(), window.GetScreenHeight());
@@ -111,7 +88,7 @@ int WinMain(int argc, char* argv[])
 
 
 
-        //------------------------------------------------------------------------------Missile :
+        //-------------------------------------Missile :
         if(missileTest != nullptr){
             window.DrawMissile(missileTest->GetX(),missileTest->GetY());
             //Check if the missile is on the screen
@@ -126,7 +103,7 @@ int WinMain(int argc, char* argv[])
 
 
 
-        //------------------------------------------------------------ Test de Collision :
+        //----------------------------------- Test de Collision :
         if(missileTest != nullptr && asteroidTwo != nullptr){
             bool collision = FlyingObject::Collide(missileTest,asteroidTwo);
             if(collision){

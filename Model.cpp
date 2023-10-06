@@ -1,4 +1,5 @@
 #include <iostream>
+#include <SDL_keycode.h>
 #include "Model.hpp"
 
 using namespace std;
@@ -9,18 +10,68 @@ Model::Model() {
 
 
 }
+//-------------------------------
 
 
 
+
+
+//----------------Update :
+
+void Model::Update() {
+
+}
+//-------------------------------
+
+
+
+
+
+
+//-----------------Actions :
 void Model::ChooseAction(int action) {
     switch (action) {
-        case 1:
+        case SDLK_UP:
+            Model::SpeedUp();
             break;
-        case 2:
+        case SDLK_DOWN:
+            Model::SpeedDown();
             break;
-        case 3:
+        case SDLK_RIGHT:
+            Model::RotateRight();
             break;
-        case 4:
+        case SDLK_LEFT:
+            Model::RotateLeft();
             break;
     }
 }
+
+
+void Model::SpeedUp() {
+
+}
+
+void Model::SpeedDown() {
+
+}
+
+void Model::RotateRight() {
+
+}
+
+void Model::RotateLeft() {
+
+}
+
+//------------------------------------------
+
+
+
+
+
+//---------------------Getters:
+std::vector<FlyingObject *> Model::GetFlyingObjects() {
+    return std::vector<FlyingObject *>();
+}
+
+//-------------------------------

@@ -2,6 +2,9 @@
 #define VIEW_HPP
 
 
+#include <vector>
+#include "FlyingObject.hpp"
+
 class View{
 
 
@@ -10,10 +13,15 @@ public:
     //---------------------Constructor :
     View();
 
-    void Refresh();
+    void Refresh(std::vector<FlyingObject *>);
+
+
+private :
+
 
 
 };
+
 
 
 

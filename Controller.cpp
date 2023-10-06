@@ -18,6 +18,6 @@ void Controller::LaunchGame() {
     int input = framework->GetInput();
     model->ChooseAction(input);
     //model->Update();
-    view->Refresh();
+    view->Refresh(model->GetFlyingObjects());
 
 }
