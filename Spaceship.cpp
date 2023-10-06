@@ -15,10 +15,10 @@ Spaceship::Spaceship(double x, double y, double size, double angle) : FlyingObje
 void Spaceship::Rotate(double rAngle) {
     double newAngle = (rAngle + Spaceship::GetAngle());
     Spaceship::SetAngle(newAngle);
-    std::cout << "angle = " << angle << std::endl;
 }
 
 void Spaceship::SpeedUp(double accelerationFactor) {
+    //20 speed limit
     if((Spaceship::GetSpeed()+accelerationFactor)>20){
 
     }
@@ -29,15 +29,10 @@ void Spaceship::SpeedUp(double accelerationFactor) {
 }
 
 void Spaceship::SpeedDown(double decelerationFactor) {
-    /*double newSpeed = Spaceship::GetSpeed() - decelerationFactor * cos(Spaceship::DegToRad(Spaceship::GetAngle()));
-
-    Spaceship::SetX(Spaceship::GetX() + newSpeed * sin(Spaceship::DegToRad(Spaceship::GetAngle())));
-    Spaceship::SetY(Spaceship::GetY() + newSpeed * cos(Spaceship::DegToRad(Spaceship::GetAngle())));*/
-
-    if((Spaceship::GetSpeed()-decelerationFactor)<=0){
+    if((Spaceship::GetSpeed()-decelerationFactor)<0){
 
     }
-    else if ((Spaceship::GetSpeed()-decelerationFactor)>=20){
+    else if ((Spaceship::GetSpeed()-decelerationFactor)>=0){
         Spaceship::SetSpeed(Spaceship::GetSpeed()-decelerationFactor) ;
     }
 }

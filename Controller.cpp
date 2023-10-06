@@ -17,7 +17,7 @@ void Controller::LaunchGame() {
 
     int input = framework->GetInput();
     model->ChooseAction(input);
-    model->Update();
+    //model->Update();
     view->Refresh();
 
 }

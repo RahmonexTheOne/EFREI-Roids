@@ -15,6 +15,7 @@ int WinMain(int argc, char* argv[])
 
 
     std::cout << "Oppening EFREI-Roids !" << std::endl;
+    bool GameRunning = true;
 
     //---------------- Initialize FrameWork :
     Framework window(20,60,10);
@@ -39,10 +40,35 @@ int WinMain(int argc, char* argv[])
 
 
     //--------------------------------------------------------------------------------------------------------------- Screen Update :
-    while(window.GetInput()!= SDLK_ESCAPE){
+    while(GameRunning){
+
+        if (spaceship!=nullptr){
+            window.DrawShip(spaceship->GetX(),spaceship->GetY(),spaceship->GetAngle(),1.0,false);
+            switch (window.GetInput()) {
+                case SDLK_d:
+                    spaceship->Rotate(30);
+                    break;
+                case SDLK_q:
+                    spaceship->Rotate(-30);
+                    break;
+                case SDLK_z:
+                    spaceship->SpeedUp(10);
+                    break;
+                case SDLK_s:
+                    spaceship->SpeedDown(10);
+                    break;
+                case SDLK_ESCAPE:
+                    GameRunning=false;
+                    break;
+                default:
+                    break;
+            }
+            spaceship->Move(window.GetScreenWidth(), window.GetScreenHeight());
+        }
+
 
         //------------------------------------------------------------------------------ Spaceship :
-        if(spaceship!= nullptr){
+        /*if(spaceship!= nullptr){
             window.DrawShip(spaceship->GetX(),spaceship->GetY(),spaceship->GetAngle(),1.0,false);
 
             if(window.GetInput()==SDLK_d){
@@ -63,7 +89,7 @@ int WinMain(int argc, char* argv[])
             }
 
             spaceship->Move(window.GetScreenWidth(), window.GetScreenHeight());
-        }
+        }*/
 
 
         //-------------------------------------------------------------------------------------------
