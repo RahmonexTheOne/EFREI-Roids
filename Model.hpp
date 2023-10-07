@@ -22,6 +22,7 @@ public :
     void RotateLeft();
     //----------Getters :
     std::vector<FlyingObject *> GetFlyingObjects();
+    std::vector<FlyingObject *> GetFlyingObjectsInGame(std::vector<FlyingObject*>& allFlyingObjects);
 
 
 

@@ -1,8 +1,5 @@
 #include <iostream>
 #include "View.hpp"
-#include "Controller.hpp"
-#include "Asteroid.hpp"
-#include "Missile.hpp"
 #include "Spaceship.hpp"
 
 
@@ -15,17 +12,19 @@ View::View(Framework* framework) {
 
 }
 
-void View::Refresh(std::vector<FlyingObject *> flyingObjects,Framework* framework, Model* model) {
+void View::Refresh(std::vector<FlyingObject *> flyingObjects,Framework* framework) {
 
     //----------------Test the list of FlyingObjects:
-    for (int i=0; i<flyingObjects.size(); i++){
+    for (FlyingObject* object : flyingObjects){
         //For an Asteroid :
-        if(flyingObjects[i]->GetTypeName() == "Asteroid"){
-            framework->DrawAsteroid(flyingObjects[i]->GetX(),flyingObjects[i]->GetY(),flyingObjects[i]->GetSize());
+        if(object->GetTypeName() == "Asteroid"){
+            framework->DrawAsteroid(object->GetX(),object->GetY(),object->GetSize());
+            std::cout << "Recognized Asteroid" << std::endl;
+            std::cout << flyingObjects.size() << std::endl;
         }
         //For a Missile :
-        else if(flyingObjects[i]->GetTypeName() == "Missile"){
-            framework->DrawMissile(flyingObjects[i]->GetX(),flyingObjects[i]->GetY());
+        else if(object->GetTypeName() == "Missile"){
+            framework->DrawMissile(object->GetX(),object->GetY());
         }
         //For a Spaceship ??(how to get angle warning and shield if its not explicit in flyingobject)
         /*else if(flyingObjects[i]->GetTypeName() == "Spaceship"){
@@ -33,5 +32,6 @@ void View::Refresh(std::vector<FlyingObject *> flyingObjects,Framework* framewor
         }*/
 
     }
+    framework->Update();
 
 }

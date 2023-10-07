@@ -15,7 +15,7 @@ public:
     //---------------------Constructor :
     View(Framework* framework);
 
-    void Refresh(std::vector<FlyingObject *>, Framework* framework, Model* model);
+    void Refresh(std::vector<FlyingObject *>, Framework* framework);
 
 
 private :

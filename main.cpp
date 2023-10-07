@@ -1,4 +1,5 @@
 #include <iostream>
+#include "Controller.hpp"
 #include "framework.hpp"
 #include "asteroid.hpp"
 #include "Missile.hpp"
@@ -15,7 +16,10 @@ int WinMain(int argc, char* argv[])
 
 
     std::cout << "Oppening EFREI-Roids !" << std::endl;
-    bool GameRunning = true;
+    Controller controller(20,60,10);
+    controller.LaunchGame();
+
+    /*bool GameRunning = true;
 
     //---------------- Initialize FrameWork :
     Framework window(20,60,10);
@@ -117,7 +121,7 @@ int WinMain(int argc, char* argv[])
 
         window.Update();
 
-    }
+    }*/
     //-------------------------------------------------------------------------------------------------------------------------
 
     return 0;

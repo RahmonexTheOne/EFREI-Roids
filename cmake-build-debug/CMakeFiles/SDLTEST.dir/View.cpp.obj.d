@@ -313,6 +313,4 @@ CMakeFiles/SDLTEST.dir/View.cpp.obj: \
  C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\include/SDL2/SDL_timer.h \
  C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\include/SDL2/SDL_version.h \
  C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\include/SDL2/SDL_locale.h \
- C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\include/SDL2/SDL_misc.h \
- C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\Controller.hpp \
- C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\Framework.hpp
+ C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\include/SDL2/SDL_misc.h

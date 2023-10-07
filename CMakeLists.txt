@@ -14,6 +14,9 @@ set(
     FlyingObject.cpp
     Missile.cpp
     Spaceship.cpp
+    Model.cpp
+    View.cpp
+    Controller.cpp
 )
 
 set(
@@ -24,12 +27,9 @@ set(
     FlyingObject.hpp
     Missile.hpp
     Spaceship.hpp
-        Model.cpp
-        Model.hpp
-        View.cpp
-        View.hpp
-        Controller.cpp
-        Controller.hpp
+    Model.hpp
+    View.hpp
+    Controller.hpp
 )
 
 find_package(SDL2 REQUIRED)

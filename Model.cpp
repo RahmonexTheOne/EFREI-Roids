@@ -23,6 +23,12 @@ Model::Model(int screenWidth, int screenHeight) {
     this->missileTest = new Missile(screenWidth/2, screenHeight/2,10, 10, 0);
     //-------------------------------
 
+    //Adding them to the flyingObjects list
+    flyingObjects.push_back(spaceship);
+    flyingObjects.push_back(asteroidOne);
+    flyingObjects.push_back(asteroidTwo);
+    flyingObjects.push_back(missileTest);
+
 
 }
 //-----------------------------------------------------------------------------
@@ -34,7 +40,10 @@ Model::Model(int screenWidth, int screenHeight) {
 //----------------Update :
 
 void Model::Update() {
-//Move the objects :
+
+    //Update the list of Objects :
+    Model::GetFlyingObjectsInGame(flyingObjects);
+    //Move the objects :
 
 }
 //-------------------------------
@@ -87,28 +96,26 @@ void Model::RotateLeft() {
 
 //---------------------Getters:
 std::vector<FlyingObject *> Model::GetFlyingObjects() {
-    return std::vector<FlyingObject *>();
+    return flyingObjects;
 }
 
 
-std::vector<FlyingObject*> GetFlyingObjectsInGame(std::vector<FlyingObject*>& allFlyingObjects) {
-    std::vector<FlyingObject*> flyingObjectsInGame;
+
+std::vector<FlyingObject*> Model::GetFlyingObjectsInGame(std::vector<FlyingObject*>& allFlyingObjects) {
 
     // Parcourez tous les objets du jeu
     for (FlyingObject* object : allFlyingObjects) {
 
         // Vérifiez si l'objet est un missile tiré par le joueur et toujours dans l'écran
-        if ((typeid(object)== typeid(Missile))){
+        if (object->GetTypeName() == "Missile"){
             /*if (object->Move(window.GetScreenWidth(), window.GetScreenHeight())) {
-                flyingObjectsInGame.push_back(object);
+                flyingObjects.push_back(object);
             }*/
         }
-        else{
-            flyingObjectsInGame.push_back(object);
-        }
+
     }
 
-    return flyingObjectsInGame;
+    return flyingObjects;
 }
 
 //-------------------------------

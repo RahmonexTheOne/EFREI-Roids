@@ -11,21 +11,19 @@ Controller::Controller(int fps, int shipSize, int missileSize){
     this->framework = new Framework(fps,shipSize,missileSize);
     this->model = new Model(framework->GetScreenWidth(),framework->GetScreenHeight());
 
-
 }
+
 
 void Controller::LaunchGame() {
 
-    int input = framework->GetInput();
+    framework->GetInput();
 
-    if(input!= SDLK_ESCAPE){
-        model->ChooseAction(input);
+    while(framework->GetInput() != SDLK_ESCAPE){
+        model->ChooseAction(framework->GetInput());
         model->Update();
-        view->Refresh(model->GetFlyingObjects(),framework,model);
+        view->Refresh(model->GetFlyingObjects(),framework);
     }
-    else{
 
-    }
 
 
 }
