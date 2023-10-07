@@ -37,7 +37,7 @@ Model::Model(int screenWidth, int screenHeight) {
 
 
 
-//----------------Update :
+//-----------------------------------------------------------------Update :
 
 void Model::Update(Framework* framework) {
 
@@ -45,25 +45,74 @@ void Model::Update(Framework* framework) {
     Model::GetFlyingObjectsInGame(flyingObjects);
     //Move the objects (different move methods so we need dynamic cast):
     for (FlyingObject* object : flyingObjects){
-        if (object->GetTypeName()=="Missile"){
-            Missile* missile = dynamic_cast<Missile*>(object); // Cast to Missile
-            missile->Move(framework->GetScreenWidth(), framework->GetScreenHeight());
-        }
-        else if(object->GetTypeName()=="Asteroid"){
-            Asteroid* asteroid = dynamic_cast<Asteroid*>(object); // Cast to Missile
-            asteroid->Move(framework->GetScreenWidth(), framework->GetScreenHeight());
-        }
-        else if(object->GetTypeName()=="Spaceship"){
-            Spaceship* spaceship = dynamic_cast<Spaceship*>(object); // Cast to Missile
-            spaceship->Move(framework->GetScreenWidth(), framework->GetScreenHeight());
+        if(object!=nullptr){
+            if (object->GetTypeName()=="Missile"){
+                Missile* missile = dynamic_cast<Missile*>(object); // Cast to Missile
+                missile->Move(framework->GetScreenWidth(), framework->GetScreenHeight());
+            }
+            else if(object->GetTypeName()=="Asteroid"){
+                Asteroid* asteroid = dynamic_cast<Asteroid*>(object); // Cast to Missile
+                asteroid->Move(framework->GetScreenWidth(), framework->GetScreenHeight());
+            }
+            else if(object->GetTypeName()=="Spaceship"){
+                Spaceship* spaceship = dynamic_cast<Spaceship*>(object); // Cast to Missile
+                spaceship->Move(framework->GetScreenWidth(), framework->GetScreenHeight());
+            }
         }
 
     }
 
+    std::vector<FlyingObject*> objectsToRemove;
+    // Test collisions between all missiles and all asteroids
+    for (int i = 0; i < flyingObjects.size(); ++i) {
+        FlyingObject* object = flyingObjects[i];
+        if (object != nullptr && object->GetTypeName() == "Missile") {
+            for (int j = 0; j < flyingObjects.size(); ++j) {
+                FlyingObject* otherObject = flyingObjects[j];
+                if (otherObject != nullptr && otherObject->GetTypeName() == "Asteroid") {
+                    bool collision = FlyingObject::Collide(object, otherObject);
+                    if (collision) {
+                        // Remove otherObject from the vector
+                        flyingObjects.erase(flyingObjects.begin() + j);
+                        delete otherObject;
+                    }
+                }
+            }
+        }
+    }
+    /*for (FlyingObject* object : flyingObjects) {
+        if(object!=nullptr){
+            // Check if object is a Missile
+            if (object->GetTypeName() == "Missile") {
+                for (FlyingObject* otherObject : flyingObjects) {
+                    // Check if otherObject is an Asteroid
+                    if(otherObject!=nullptr){
+                        if (otherObject->GetTypeName() == "Asteroid") {
+                            bool collision = FlyingObject::Collide(object, otherObject);
+                            if (collision) {
+                                objectsToRemove.push_back(otherObject);
+                                flyingObjects.erase(otherObject,1);
+                                delete otherObject;
+                                otherObject = nullptr;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }*/
+
+    // Remove objects from the vector in reverse order to avoid invalidating indices
+    /*for (int i = objectsToRemove.size() - 1; i >= 0; --i) {
+        FlyingObject* indexToRemove = objectsToRemove[i];
+        flyingObjects.erase(flyingObjects.begin() + indexToRemove);
+    }*/
+
 
 
 }
-//-------------------------------
+//---------------------------------------------------------------------------------------
 
 
 
