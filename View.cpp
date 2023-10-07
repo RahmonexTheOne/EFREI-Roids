@@ -8,7 +8,6 @@ using namespace std;
 
 View::View(Framework* framework) {
 
-
 }
 
 void View::Refresh(std::vector<FlyingObject *> flyingObjects,Framework* framework) {
@@ -22,15 +21,16 @@ void View::Refresh(std::vector<FlyingObject *> flyingObjects,Framework* framewor
                 std::cout << flyingObjects.size() << std::endl;
             }
 
-                //For a Missile :
+            //For a Missile :
             else if(object->GetTypeName() == "Missile"){
                 framework->DrawMissile(object->GetX(),object->GetY());
             }
 
             //For a Spaceship ??(how to get angle warning and shield if its not explicit in flyingobject)
-            /*else if(flyingObjects[i]->GetTypeName() == "Spaceship"){
-                framework->DrawShip(flyingObjects[i]->GetX(),flyingObjects[i]->GetY(),flyingObjects[i]->GetSize(),flyingObjects[i]->GetAngle(),f);
-            }*/
+            else if(object->GetTypeName() == "Spaceship"){
+                Spaceship* spaceship = dynamic_cast<Spaceship*>(object); // Cast to Spaceship
+                framework->DrawShip(spaceship->GetX(),spaceship->GetY(),spaceship->GetAngle(),spaceship->GetShieldLevel(),spaceship->GetWarning());
+            }
         }
 
 

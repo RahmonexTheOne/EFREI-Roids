@@ -17,11 +17,15 @@ Controller::Controller(int fps, int shipSize, int missileSize){
 void Controller::LaunchGame() {
 
     framework->GetInput();
+    bool gameIsRunning = true;
 
-    while(framework->GetInput() != SDLK_ESCAPE){
+    while(gameIsRunning){
         model->ChooseAction(framework->GetInput());
         model->Update(framework);
         view->Refresh(model->GetFlyingObjects(),framework);
+        if(framework->GetInput() == SDLK_ESCAPE){
+            gameIsRunning = false;
+        }
     }
 
 

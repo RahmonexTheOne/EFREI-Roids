@@ -7,6 +7,8 @@
 
 Spaceship::Spaceship(double x, double y, double size, double angle) : FlyingObject( x, y, size ){
     this -> angle = angle;
+    this -> warning = false;
+    this -> shieldLevel = 1.0;
 }
 //----------------------------------------------------------
 
@@ -96,6 +98,14 @@ void Spaceship::SetAngle(double angle) {
 
 void Spaceship::SetSpeed(double speed) {
     this->speed = speed;
+}
+
+double Spaceship::GetWarning() {
+    return this->warning;
+}
+
+double Spaceship::GetShieldLevel() {
+    return this->shieldLevel;
 }
 
 //---------------------------------------------- Destructors :

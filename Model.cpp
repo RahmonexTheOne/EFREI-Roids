@@ -42,7 +42,7 @@ Model::Model(int screenWidth, int screenHeight) {
 void Model::Update(Framework* framework) {
 
     //Update the list of Objects :
-    Model::GetFlyingObjectsInGame(flyingObjects);
+    Model::GetFlyingObjectsInGame(flyingObjects, framework);
     //Move the objects (different move methods so we need dynamic cast):
     for (FlyingObject* object : flyingObjects){
         if(object!=nullptr){
@@ -51,11 +51,11 @@ void Model::Update(Framework* framework) {
                 missile->Move(framework->GetScreenWidth(), framework->GetScreenHeight());
             }
             else if(object->GetTypeName()=="Asteroid"){
-                Asteroid* asteroid = dynamic_cast<Asteroid*>(object); // Cast to Missile
+                Asteroid* asteroid = dynamic_cast<Asteroid*>(object); // Cast to Asteroid
                 asteroid->Move(framework->GetScreenWidth(), framework->GetScreenHeight());
             }
             else if(object->GetTypeName()=="Spaceship"){
-                Spaceship* spaceship = dynamic_cast<Spaceship*>(object); // Cast to Missile
+                Spaceship* spaceship = dynamic_cast<Spaceship*>(object); // Cast to Spaceship
                 spaceship->Move(framework->GetScreenWidth(), framework->GetScreenHeight());
             }
         }
@@ -80,36 +80,6 @@ void Model::Update(Framework* framework) {
             }
         }
     }
-    /*for (FlyingObject* object : flyingObjects) {
-        if(object!=nullptr){
-            // Check if object is a Missile
-            if (object->GetTypeName() == "Missile") {
-                for (FlyingObject* otherObject : flyingObjects) {
-                    // Check if otherObject is an Asteroid
-                    if(otherObject!=nullptr){
-                        if (otherObject->GetTypeName() == "Asteroid") {
-                            bool collision = FlyingObject::Collide(object, otherObject);
-                            if (collision) {
-                                objectsToRemove.push_back(otherObject);
-                                flyingObjects.erase(otherObject,1);
-                                delete otherObject;
-                                otherObject = nullptr;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
-    }*/
-
-    // Remove objects from the vector in reverse order to avoid invalidating indices
-    /*for (int i = objectsToRemove.size() - 1; i >= 0; --i) {
-        FlyingObject* indexToRemove = objectsToRemove[i];
-        flyingObjects.erase(flyingObjects.begin() + indexToRemove);
-    }*/
-
-
 
 }
 //---------------------------------------------------------------------------------------
@@ -139,19 +109,19 @@ void Model::ChooseAction(int action) {
 
 
 void Model::SpeedUp() {
-
+    spaceship->SpeedUp(10);
 }
 
 void Model::SpeedDown() {
-
+    spaceship->SpeedDown(10);
 }
 
 void Model::RotateRight() {
-
+    spaceship->Rotate(30);
 }
 
 void Model::RotateLeft() {
-
+    spaceship->Rotate(-30);
 }
 
 //------------------------------------------
@@ -167,17 +137,24 @@ std::vector<FlyingObject *> Model::GetFlyingObjects() {
 
 
 
-std::vector<FlyingObject*> Model::GetFlyingObjectsInGame(std::vector<FlyingObject*>& allFlyingObjects) {
+std::vector<FlyingObject*> Model::GetFlyingObjectsInGame(std::vector<FlyingObject*>& allFlyingObjects, Framework* framework) {
 
-    // Parcourez tous les objets du jeu
-    for (FlyingObject* object : allFlyingObjects) {
+    // Check all the objects in the game
+    for (auto it = flyingObjects.begin(); it != flyingObjects.end();) {
+        FlyingObject* object = *it;
 
-        // Vérifiez si l'objet est un missile tiré par le joueur et toujours dans l'écran
-        if (object->GetTypeName() == "Missile"){
-            /*if (object->Move(window.GetScreenWidth(), window.GetScreenHeight())) {
-                flyingObjects.push_back(object);
-            }*/
+        // Check if the object is a missile
+        if (object->GetTypeName() == "Missile") {
+            Missile* missile = dynamic_cast<Missile*>(object);
+
+            // Check if the missile is not on the screen
+            if (missile->NotOnScreen(framework->GetScreenWidth(), framework->GetScreenHeight())) {
+                delete missile;
+                it = flyingObjects.erase(it); // Remove the missile from flyingObjects
+                continue;
+            }
         }
+        ++it;
 
     }
 

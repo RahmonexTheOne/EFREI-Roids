@@ -22,6 +22,8 @@ public :
     // Getters
     double GetAngle();
     double GetSpeed();
+    double GetWarning();
+    double GetShieldLevel();
     std::string GetTypeName() const override;
 
     void SetAngle(double angle);
@@ -51,6 +53,8 @@ public :
 private :
     double angle;
     double speed;
+    bool warning;
+    float shieldLevel;
 
 
 };

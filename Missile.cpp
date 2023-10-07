@@ -18,18 +18,30 @@ Missile::~Missile() = default;
 
 //----------------Other Functions
 
-bool Missile::Move(double screenWidth, double screenHeight) {
+void Missile::Move(double screenWidth, double screenHeight) {
     if (FlyingObject::GetX() + speed >= screenWidth || FlyingObject::GetX() + speed <= 0 ||
         FlyingObject::GetY() + speed >= screenHeight || FlyingObject::GetY() + speed <= 0) {
-        cout << "stop " << endl;
-        return false;
-    } else {
+
+    }
+    else {
         FlyingObject::SetX(FlyingObject::GetX() + speed);
         FlyingObject::SetY(FlyingObject::GetY() + speed);
-        return true;
     }
 }
 
+
+
 std::string Missile::GetTypeName() const {
     return "Missile";
+}
+
+bool Missile::NotOnScreen(double screenWidth, double screenHeight) {
+    if (FlyingObject::GetX() + speed >= screenWidth || FlyingObject::GetX() + speed <= 0 ||
+        FlyingObject::GetY() + speed >= screenHeight || FlyingObject::GetY() + speed <= 0) {
+        return true;
+
+    }
+    else {
+        return false;
+    }
 }
