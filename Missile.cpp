@@ -16,6 +16,8 @@ Missile::~Missile() = default;
 
 
 
+//----------------Other Functions
+
 bool Missile::Move(double screenWidth, double screenHeight) {
     if (FlyingObject::GetX() + speed >= screenWidth || FlyingObject::GetX() + speed <= 0 ||
         FlyingObject::GetY() + speed >= screenHeight || FlyingObject::GetY() + speed <= 0) {
@@ -26,4 +28,8 @@ bool Missile::Move(double screenWidth, double screenHeight) {
         FlyingObject::SetY(FlyingObject::GetY() + speed);
         return true;
     }
+}
+
+std::string Missile::GetTypeName() const {
+    return "Missile";
 }

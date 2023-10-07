@@ -20,15 +20,15 @@ void View::Refresh(std::vector<FlyingObject *> flyingObjects,Framework* framewor
     //----------------Test the list of FlyingObjects:
     for (int i=0; i<flyingObjects.size(); i++){
         //For an Asteroid :
-        if(typeid(*flyingObjects[i]) == typeid(Asteroid)){
+        if(flyingObjects[i]->GetTypeName() == "Asteroid"){
             framework->DrawAsteroid(flyingObjects[i]->GetX(),flyingObjects[i]->GetY(),flyingObjects[i]->GetSize());
         }
         //For a Missile :
-        else if(typeid(*flyingObjects[i]) == typeid(Missile)){
+        else if(flyingObjects[i]->GetTypeName() == "Missile"){
             framework->DrawMissile(flyingObjects[i]->GetX(),flyingObjects[i]->GetY());
         }
         //For a Spaceship ??(how to get angle warning and shield if its not explicit in flyingobject)
-        /*else if(typeid(*flyingObjects[i]) == typeid(Spaceship)){
+        /*else if(flyingObjects[i]->GetTypeName() == "Spaceship"){
             framework->DrawShip(flyingObjects[i]->GetX(),flyingObjects[i]->GetY(),flyingObjects[i]->GetSize(),flyingObjects[i]->GetAngle(),f);
         }*/
 

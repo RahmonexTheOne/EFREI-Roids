@@ -31,6 +31,7 @@ public :
     double GetX();
     double GetY();
     double GetSize();
+    virtual std::string GetTypeName() const;
 
     //////////
     //---------------------Setters :

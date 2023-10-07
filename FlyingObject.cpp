@@ -27,6 +27,10 @@ double FlyingObject::GetSize() {
     return size;
 }
 
+std::string FlyingObject::GetTypeName() const {
+    return "FlyingObject";
+}
+
 
 
 //-----------------Setters :

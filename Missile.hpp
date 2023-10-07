@@ -33,6 +33,8 @@ public :
     // Renvoie : un booléen indiquant s'il y a sortie des limites de l'écran
     bool Move(double screenWidth, double screenHeight);
 
+    std::string GetTypeName() const override;
+
 
 private :
     double angle;

@@ -22,6 +22,7 @@ public :
     // Getters
     double GetAngle();
     double GetSpeed();
+    std::string GetTypeName() const override;
 
     void SetAngle(double angle);
     void SetSpeed(double speed);

@@ -20,6 +20,7 @@ public :
     //---------------------Getters :
     double GetXSpeed();
     double GetYSpeed();
+    std::string GetTypeName() const override;
 
     //////////
     //---------------------Setters :

@@ -83,6 +83,10 @@ double Spaceship::GetSpeed() {
     return speed;
 }
 
+std::string Spaceship::GetTypeName() const {
+    return "Spaceship";
+}
+
 
 
 //Setters :
