@@ -159,6 +159,9 @@ CMakeFiles/SDLTEST.dir/Model.cpp.obj: \
  C:/Users/rahmo/OneDrive/Documents/Git/EFREI-Roids/include/SDL2/SDL_scancode.h \
  C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\Model.hpp \
  C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\FlyingObject.hpp \
+ C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\Spaceship.hpp \
+ C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\Asteroid.hpp \
+ C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\Missile.hpp \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/vector \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_uninitialized.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h \

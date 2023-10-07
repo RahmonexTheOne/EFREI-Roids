@@ -4,6 +4,8 @@
 
 #include <vector>
 #include "FlyingObject.hpp"
+#include "Model.hpp"
+#include "framework.hpp"
 
 class View{
 
@@ -11,9 +13,9 @@ class View{
 public:
 
     //---------------------Constructor :
-    View();
+    View(Framework* framework);
 
-    void Refresh(std::vector<FlyingObject *>);
+    void Refresh(std::vector<FlyingObject *>, Framework* framework, Model* model);
 
 
 private :

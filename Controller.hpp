@@ -16,8 +16,10 @@ public :
     //---------------------Constructor :
     Controller(int fps, int shipSize, int missileSize);
 
-
     void LaunchGame();
+
+    //-------------Getters :
+    Framework* GetFramework();
 
 
 
