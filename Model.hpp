@@ -5,6 +5,7 @@
 #include "Spaceship.hpp"
 #include "Asteroid.hpp"
 #include "Missile.hpp"
+#include "framework.hpp"
 #include <vector>
 
 class Model {
@@ -13,7 +14,7 @@ class Model {
 public :
 
     Model(int screenWidth, int screenHeight);
-    void Update();
+    void Update(Framework* framework);
     //------------Actions :
     void ChooseAction(int action);
     void SpeedUp();

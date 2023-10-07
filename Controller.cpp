@@ -20,7 +20,7 @@ void Controller::LaunchGame() {
 
     while(framework->GetInput() != SDLK_ESCAPE){
         model->ChooseAction(framework->GetInput());
-        model->Update();
+        model->Update(framework);
         view->Refresh(model->GetFlyingObjects(),framework);
     }
 

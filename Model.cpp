@@ -39,11 +39,28 @@ Model::Model(int screenWidth, int screenHeight) {
 
 //----------------Update :
 
-void Model::Update() {
+void Model::Update(Framework* framework) {
 
     //Update the list of Objects :
     Model::GetFlyingObjectsInGame(flyingObjects);
-    //Move the objects :
+    //Move the objects (different move methods so we need dynamic cast):
+    for (FlyingObject* object : flyingObjects){
+        if (object->GetTypeName()=="Missile"){
+            Missile* missile = dynamic_cast<Missile*>(object); // Cast to Missile
+            missile->Move(framework->GetScreenWidth(), framework->GetScreenHeight());
+        }
+        else if(object->GetTypeName()=="Asteroid"){
+            Asteroid* asteroid = dynamic_cast<Asteroid*>(object); // Cast to Missile
+            asteroid->Move(framework->GetScreenWidth(), framework->GetScreenHeight());
+        }
+        else if(object->GetTypeName()=="Spaceship"){
+            Spaceship* spaceship = dynamic_cast<Spaceship*>(object); // Cast to Missile
+            spaceship->Move(framework->GetScreenWidth(), framework->GetScreenHeight());
+        }
+
+    }
+
+
 
 }
 //-------------------------------

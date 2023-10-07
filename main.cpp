@@ -21,28 +21,6 @@ int WinMain(int argc, char* argv[])
 
     /*bool GameRunning = true;
 
-    //---------------- Initialize FrameWork :
-    Framework window(20,60,10);
-    //-----------------------------------------
-
-    //----------------Create Missile :
-    Spaceship* spaceship = new Spaceship(window.GetScreenWidth()/2,window.GetScreenHeight()/2,60,0);
-    //-------------------------------
-
-    //-----------------Create Asteroid :
-    Asteroid* asteroidOne= new Asteroid(150, 500,100, 10, 3);
-    Asteroid* asteroidTwo = new Asteroid(1600,window.GetScreenHeight(), 100, -5, -2);
-    //----------------------------------
-
-
-    //----------------Create Missile :
-    Missile* missileTest = new Missile(window.GetScreenWidth()/2, window.GetScreenHeight()/2,10, 10, 0);
-    //-------------------------------
-
-    window.Update();
-
-
-
     //--------------------------------------------------------------------------------------------------------------- Screen Update :
     while(GameRunning){
 
