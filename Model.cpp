@@ -104,6 +104,10 @@ void Model::ChooseAction(int action) {
         case SDLK_LEFT:
             Model::RotateLeft();
             break;
+        case SDLK_ESCAPE:
+            SDL_Quit();
+            exit(0);
+            break;
     }
 }
 
