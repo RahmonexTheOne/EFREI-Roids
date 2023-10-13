@@ -1,5 +1,6 @@
 #include <iostream>
 #include <SDL_keycode.h>
+#include <random>
 #include "Model.hpp"
 #include "Spaceship.hpp"
 #include "Asteroid.hpp"
@@ -15,8 +16,12 @@ Model::Model(int screenWidth, int screenHeight) {
     //-------------------------------
 
     //-----------------Create Asteroid :
-    this->asteroidOne= new Asteroid(150, 500,100, 10, 3);
-    this->asteroidTwo = new Asteroid(1600,screenHeight, 100, -5, -2);
+
+    this->nbAsteroids = 5;
+    for(int i = 0; i <nbAsteroids; i++){
+        InitializeAsteroids(screenWidth,screenHeight);
+    }
+
     //----------------------------------
 
     //----------------Create Missile :
@@ -25,8 +30,6 @@ Model::Model(int screenWidth, int screenHeight) {
 
     //Adding them to the flyingObjects list
     flyingObjects.push_back(spaceship);
-    flyingObjects.push_back(asteroidOne);
-    flyingObjects.push_back(asteroidTwo);
     flyingObjects.push_back(missileTest);
 
 
@@ -121,11 +124,11 @@ void Model::SpeedDown() {
 }
 
 void Model::RotateRight() {
-    spaceship->Rotate(30);
+    spaceship->Rotate(15);
 }
 
 void Model::RotateLeft() {
-    spaceship->Rotate(-30);
+    spaceship->Rotate(-15);
 }
 
 //------------------------------------------
@@ -163,6 +166,57 @@ std::vector<FlyingObject*> Model::GetFlyingObjectsInGame(std::vector<FlyingObjec
     }
 
     return flyingObjects;
+}
+
+void Model::InitializeAsteroids(double screenWidth, double screenHeight) {
+    //---Espace de creation :
+    std::uniform_int_distribution<int> spaceDistribution(0, 7);
+    //std::default_random_engine generator;
+    std::random_device generator;
+    int spaceToUse = spaceDistribution(generator);
+    std::uniform_real_distribution<double> xDistribution(0.0, screenWidth);
+    std::uniform_real_distribution<double> yDistribution(0.0, screenHeight);
+
+    //---Assignement des espaces :
+    if(spaceToUse == 0){
+        std::uniform_real_distribution<double> xDistribution(0.0,screenWidth/3);
+        std::uniform_real_distribution<double> yDistribution(0.0,screenHeight/3);
+    }
+    else if(spaceToUse == 1){
+        std::uniform_real_distribution<double> xDistribution(screenWidth/3,2*screenWidth/3);
+        std::uniform_real_distribution<double> yDistribution(0.0,screenHeight/3);
+    }
+    else if(spaceToUse == 2){
+        std::uniform_real_distribution<double> xDistribution(2*screenWidth/3,3*screenWidth/3);
+        std::uniform_real_distribution<double> yDistribution(0.0,screenHeight/3);
+    }
+    else if(spaceToUse == 3){
+        std::uniform_real_distribution<double> xDistribution(0.0,screenWidth/3);
+        std::uniform_real_distribution<double> yDistribution(screenHeight/3,2*screenHeight/3);
+    }
+    else if(spaceToUse == 4){
+        std::uniform_real_distribution<double> xDistribution(2*screenWidth/3,3*screenWidth/3);
+        std::uniform_real_distribution<double> yDistribution(screenHeight/3,2*screenHeight/3);
+    }
+    else if(spaceToUse == 5){
+        std::uniform_real_distribution<double> xDistribution(0.0,screenWidth/3);
+        std::uniform_real_distribution<double> yDistribution(2*screenHeight/3,3*screenHeight/3);
+    }
+    else if(spaceToUse == 6){
+        std::uniform_real_distribution<double> xDistribution(screenWidth/3,2*screenWidth/3);
+        std::uniform_real_distribution<double> yDistribution(2*screenHeight/3,3*screenHeight/3);
+    }
+    else if(spaceToUse == 7){
+        std::uniform_real_distribution<double> xDistribution(2*screenWidth/3,3*screenWidth/3);
+        std::uniform_real_distribution<double> yDistribution(2*screenHeight/3,3*screenHeight/3);
+    }
+
+    double xToUse = xDistribution(generator);
+    double yToUse = yDistribution(generator);
+
+    Asteroid* asteroidGenerated = new Asteroid(xToUse,yToUse,100, 10, 3);
+    flyingObjects.push_back(asteroidGenerated);
+    std::cout<<"Generated an asteroid with x and y values " << xToUse << "," << yToUse << std::endl;
 }
 
 //-------------------------------

@@ -21,6 +21,7 @@ public :
     void SpeedDown();
     void RotateRight();
     void RotateLeft();
+    void InitializeAsteroids(double screenWidth, double sreenHeight);
     //----------Getters :
     std::vector<FlyingObject *> GetFlyingObjects();
     std::vector<FlyingObject *> GetFlyingObjectsInGame(std::vector<FlyingObject*>& allFlyingObjects, Framework* framework);
@@ -36,6 +37,7 @@ private :
     Asteroid* asteroidOne;
     Asteroid* asteroidTwo;
     Missile* missileTest;
+    int nbAsteroids;
 
 
 
