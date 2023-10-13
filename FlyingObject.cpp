@@ -63,3 +63,9 @@ bool FlyingObject::Collide(FlyingObject *o1,FlyingObject *o2) {
     }
 }
 
+double FlyingObject::DegToRad(double angle) {
+    double newAngle;
+    newAngle = ((M_PI)*(180-angle))/180;
+    return newAngle;
+}
+

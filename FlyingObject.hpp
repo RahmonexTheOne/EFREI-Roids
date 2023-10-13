@@ -57,6 +57,8 @@ public :
     // * screenWidth, screenHeight : taille de l'écran
     void Move(double screenWidth, double screenHeight);
 
+    double DegToRad(double angle);
+
 
 private :
     //-----------Cordonées de l'asteroide :

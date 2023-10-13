@@ -1,54 +1,61 @@
 #include <iostream>
+#include <valarray>
 #include "Asteroid.hpp"
 
 using namespace std;
 
 //------------------Constructeurs :
 
-Asteroid::Asteroid(double x, double y, double size, double xSpeed, double ySpeed) : FlyingObject( x, y, size) {
-
-    this->xSpeed = xSpeed;
-    this->ySpeed = ySpeed;
+Asteroid::Asteroid(double x, double y, double size, double speed, double angle) : FlyingObject( x, y, size) {
+    this -> speed = speed;
+    this -> angle = angle;
 
 }
 
 //------------------Getters :
 
-double Asteroid::GetXSpeed() {
-    return xSpeed;
+double Asteroid::GetSpeed() {
+    return speed;
 }
 
-double Asteroid::GetYSpeed() {
-    return ySpeed;
+double Asteroid::GetAngle() {
+    return angle;
 }
 
 //-----------------Setters :
 
-void Asteroid::SetXSpeed(double xSpeed) {
-    this->xSpeed = xSpeed;
+void Asteroid::SetSpeed(double speed) {
+    this->speed = speed;
 }
 
-void Asteroid::SetYSpeed(double ySpeed) {
-    this->ySpeed = ySpeed;
+void Asteroid::SetAngle(double angle) {
+    this->angle = angle;
 }
 
 
 void Asteroid::Move(double screenWidth, double screenHeight) {
-    if( FlyingObject::GetX() + xSpeed >= screenWidth){
-        FlyingObject::SetX(0) ;
+    double speedX = Asteroid::GetSpeed() * sin(FlyingObject::DegToRad(Asteroid::GetAngle()));
+    double speedY = Asteroid::GetSpeed() * cos(FlyingObject::DegToRad(Asteroid::GetAngle()));
+
+    // Wrap around the screen edge
+    if (Asteroid::GetX() > screenWidth) {
+        Asteroid::SetX(0);
     }
-    else if(FlyingObject::GetX() + xSpeed<=0){
-        FlyingObject::SetX(screenWidth) ;
+    else if (Asteroid::GetX() < 0) {
+        Asteroid::SetX(screenWidth);
     }
-    else if(FlyingObject::GetY() + ySpeed >= screenHeight){
-        FlyingObject::SetY(0);
+
+    if (Asteroid::GetY() > screenHeight) {
+        Asteroid::SetY(0);
     }
-    else if(FlyingObject::GetY() +ySpeed <=0){
-        FlyingObject::SetY(screenHeight);
+    else if (Asteroid::GetY() < 0) {
+        Asteroid::SetY(screenHeight);
     }
     else {
-        FlyingObject::SetX(FlyingObject::GetX() + xSpeed) ;
-        FlyingObject::SetY(FlyingObject::GetY() + ySpeed) ;
+        // Update the FlyingObject's position
+        Asteroid::SetX(Asteroid::GetX() + speedX);
+        Asteroid::SetY(Asteroid::GetY() + speedY);
+
     }
 }
 

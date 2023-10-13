@@ -170,9 +170,8 @@ std::vector<FlyingObject*> Model::GetFlyingObjectsInGame(std::vector<FlyingObjec
 
 void Model::InitializeAsteroids(double screenWidth, double screenHeight) {
     //---Espace de creation :
-    std::uniform_int_distribution<int> spaceDistribution(0, 7);
-    //std::default_random_engine generator;
     std::random_device generator;
+    std::uniform_int_distribution<int> spaceDistribution(0, 7);
     int spaceToUse = spaceDistribution(generator);
     std::uniform_real_distribution<double> xDistribution(0.0, screenWidth);
     std::uniform_real_distribution<double> yDistribution(0.0, screenHeight);
@@ -214,7 +213,10 @@ void Model::InitializeAsteroids(double screenWidth, double screenHeight) {
     double xToUse = xDistribution(generator);
     double yToUse = yDistribution(generator);
 
-    Asteroid* asteroidGenerated = new Asteroid(xToUse,yToUse,100, 10, 3);
+    std::uniform_int_distribution<int> angleValues(-180, 180);
+    int angle = angleValues(generator);
+
+    Asteroid* asteroidGenerated = new Asteroid(xToUse,yToUse,100, 10, angle);
     flyingObjects.push_back(asteroidGenerated);
     std::cout<<"Generated an asteroid with x and y values " << xToUse << "," << yToUse << std::endl;
 }

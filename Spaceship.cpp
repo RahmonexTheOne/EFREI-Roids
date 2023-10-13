@@ -12,6 +12,7 @@ Spaceship::Spaceship(double x, double y, double size, double angle) : FlyingObje
 }
 //----------------------------------------------------------
 
+
 //-------------------------------------------------Movement :
 
 void Spaceship::Rotate(double rAngle) {
@@ -21,10 +22,10 @@ void Spaceship::Rotate(double rAngle) {
 
 void Spaceship::SpeedUp(double accelerationFactor) {
     //20 speed limit
-    if((Spaceship::GetSpeed()+accelerationFactor)>20){
+    if((Spaceship::GetSpeed()+accelerationFactor)>40){
 
     }
-    else if ((Spaceship::GetSpeed()+accelerationFactor)<=20){
+    else if ((Spaceship::GetSpeed()+accelerationFactor)<=40){
         Spaceship::SetSpeed(Spaceship::GetSpeed()+accelerationFactor) ;
     }
 
@@ -41,8 +42,8 @@ void Spaceship::SpeedDown(double decelerationFactor) {
 
 
 void Spaceship::Move(double screenWidth, double screenHeight) {
-    double speedX = Spaceship::GetSpeed() * sin(Spaceship::DegToRad(Spaceship::GetAngle()));
-    double speedY = Spaceship::GetSpeed() * cos(Spaceship::DegToRad(Spaceship::GetAngle()));
+    double speedX = Spaceship::GetSpeed() * sin(FlyingObject::DegToRad(Spaceship::GetAngle()));
+    double speedY = Spaceship::GetSpeed() * cos(FlyingObject::DegToRad(Spaceship::GetAngle()));
 
     // Wrap around the screen edge
     if (Spaceship::GetX() > screenWidth) {
@@ -66,11 +67,6 @@ void Spaceship::Move(double screenWidth, double screenHeight) {
     }
 }
 
-double Spaceship::DegToRad(double angle) {
-    double newAngle;
-    newAngle = ((M_PI)*(180-angle))/180;
-    return newAngle;
-}
 
 
 //-----------------------------------------------------------

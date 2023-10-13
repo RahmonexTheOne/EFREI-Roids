@@ -14,18 +14,18 @@ public :
     // * x, y : position dans l'écran
     // * size : diamètre de l'objet
     // * xSpeed, ySpeed : vecteur de vitesse de l'objet
-    Asteroid(double x, double y, double size, double xSpeed, double ySpeed);
+    Asteroid(double x, double y, double size, double speed, double angle);
 
     //////////
     //---------------------Getters :
-    double GetXSpeed();
-    double GetYSpeed();
+    double GetSpeed();
+    double GetAngle();
     std::string GetTypeName() const override;
 
     //////////
     //---------------------Setters :
-    void SetXSpeed(double xSpeed);
-    void SetYSpeed(double ySpeed);
+    void SetSpeed(double speed);
+    void SetAngle(double angle);
 
 
     ///////////////////////////////////////
@@ -39,8 +39,8 @@ public :
 
 
 private :
-    double xSpeed;
-    double ySpeed;
+    double speed;
+    double angle;
 
 };
 
