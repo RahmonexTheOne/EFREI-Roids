@@ -1,0 +1,30 @@
+:hardbreaks:
+= 10 Implémentez des mécanismes de destruction 
+
+Ces fonctionnalités permettent de : 
+
+* Faire tirer un missile au vaisseau 
+
+* Détecter les collisions entre le vaisseau et l'astéroïde 
+
+* Détecter les collisions entre le missile et l'astéroïde 
+
+. Modifiez le Contrôleur pour faire tirer un missile au vaisseau lorsqu'on appuie sur la touche Espace, et le Modèle pour intégrer cette action. Le missile aura une vitesse fixe, et prendra la direction du vaisseau (son orientation, pas la direction de son déplacement). Le vaisseau ne peut tirer qu'un missile à la fois (il faut attendre que le missile soit sorti de l'écran pour pouvoir en tirer un autre). Pour calculer les vitesses horizontale et verticale du missile, vous devrez utiliser à nouveau la trigonométrie. 
+
+. Modifiez la Vue pour que le missile apparaisse à l'écran. 
+
+. Reprenez le code de détection de collision entre le missile et l'astéroïde, et déplacez-le dans le Modèle. 
+
+. Ajoutez la détection de collision entre l'astéroïde et le vaisseau. 
+
+. Arrêtez le jeu en cas de victoire ou défaite. Pour cela : 
+
+** Modifiez le type de retour de la méthode de mise à jour du Modèle pour qu'elle renvoie un entier : 
+
+*** 1 en cas de victoire (plus aucun astéroïde à l'écran) 
+
+*** -1 en cas de défaite (collision avec le vaisseau ayant son bouclier à 0) 
+
+*** 0 en cas de jeu toujours en cours 
+
+** Modifiez le Contrôleur pour qu'il tienne compte de cette valeur de retour, et stoppe si nécessaire le jeu avec un message. 

@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 #include "Missile.hpp"
 
 using namespace std;
@@ -19,18 +20,28 @@ Missile::~Missile() = default;
 //----------------Other Functions
 
 void Missile::Move(double screenWidth, double screenHeight) {
+    double speedX = Missile::GetSpeed() * sin(FlyingObject::DegToRad(Missile::GetAngle()));
+    double speedY = Missile::GetSpeed() * cos(FlyingObject::DegToRad(Missile::GetAngle()));
+
     if (FlyingObject::GetX() + speed >= screenWidth || FlyingObject::GetX() + speed <= 0 ||
         FlyingObject::GetY() + speed >= screenHeight || FlyingObject::GetY() + speed <= 0) {
 
     }
     else {
-        FlyingObject::SetX(FlyingObject::GetX() + speed);
-        FlyingObject::SetY(FlyingObject::GetY() + speed);
+        FlyingObject::SetX(FlyingObject::GetX() + speedX);
+        FlyingObject::SetY(FlyingObject::GetY() + speedY);
     }
 }
 
 
+//Getters :
+double Missile::GetAngle() {
+    return angle;
+}
 
+double Missile::GetSpeed() {
+    return speed;
+}
 std::string Missile::GetTypeName() const {
     return "Missile";
 }

@@ -36,6 +36,8 @@ public :
     bool NotOnScreen(double screenWidth, double screenHeight);
 
     std::string GetTypeName() const override;
+    double GetAngle();
+    double GetSpeed();
 
 
 private :

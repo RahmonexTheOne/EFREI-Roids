@@ -21,11 +21,11 @@ void Spaceship::Rotate(double rAngle) {
 }
 
 void Spaceship::SpeedUp(double accelerationFactor) {
-    //20 speed limit
-    if((Spaceship::GetSpeed()+accelerationFactor)>40){
+    //30 speed limit
+    if((Spaceship::GetSpeed()+accelerationFactor)>20){
 
     }
-    else if ((Spaceship::GetSpeed()+accelerationFactor)<=40){
+    else if ((Spaceship::GetSpeed()+accelerationFactor)<=20){
         Spaceship::SetSpeed(Spaceship::GetSpeed()+accelerationFactor) ;
     }
 

@@ -78,12 +78,12 @@
 			[
 				{
 					"backtrace" : 6,
-					"path" : "C:/Users/rahmo/OneDrive/Documents/Git/EFREI-Roids/include"
+					"path" : "C:/Users/rahmo/Documents/Git/EFREI-Roids/include"
 				},
 				{
 					"backtrace" : 6,
 					"isSystem" : true,
-					"path" : "C:/Users/rahmo/OneDrive/Documents/Git/EFREI-Roids/include/SDL2"
+					"path" : "C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2"
 				}
 			],
 			"language" : "CXX",
@@ -121,17 +121,17 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "-LC:\\Users\\rahmo\\OneDrive\\Documents\\Git\\EFREI-Roids\\lib",
+				"fragment" : "-LC:\\Users\\rahmo\\Documents\\Git\\EFREI-Roids\\lib",
 				"role" : "libraryPath"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "C:\\Users\\rahmo\\OneDrive\\Documents\\Git\\EFREI-Roids\\lib\\libSDL2main.a",
+				"fragment" : "C:\\Users\\rahmo\\Documents\\Git\\EFREI-Roids\\lib\\libSDL2main.a",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "C:\\Users\\rahmo\\OneDrive\\Documents\\Git\\EFREI-Roids\\lib\\libSDL2.dll.a",
+				"fragment" : "C:\\Users\\rahmo\\Documents\\Git\\EFREI-Roids\\lib\\libSDL2.dll.a",
 				"role" : "libraries"
 			},
 			{

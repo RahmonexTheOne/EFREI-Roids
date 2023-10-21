@@ -1,0 +1,29 @@
+:hardbreaks:
+= 13 Implémenter l'explosion d'astéroïdes
+
+Lorsqu'un missile a encore des explosions autorisées, s'il touche un astéroïde, il explose en deux astéroïdes plus petits. On implémente ce comportement en : 
+
+* diminuant sa taille 
+
+* créant un nouvel astéroïde de même taille, au même endroit, mais avec un déplacement différent (par exemple, la direction du missile qui l'a touché, ou une orientation aléatoire) 
+
+* Modifiez le constructeur de la classe Asteroid pour ajouter un paramètre double nbExplosionsLeft et le getter associé. Ajoutez dans la classe Asteroid la méthode suivante : 
+
+[source,C++]
+----
+/////////////////////////////////////// 
+// Applique une explosion à l'astéroïde 
+// Si l'astéroïde a encore des explosions autorisées, sa taille est diminuée, 
+// et un nouvel astéroïde est créé 
+// ------- 
+// * xSpeed, ySpeed : vecteur de vitesse du nouvel astéroïde si créé 
+// ------- 
+// Renvoie : 
+// * Si l'astéroïde a encore des explosions autorisées: Le nouvel astéroïde avec la même position et le vecteur de vitesse passé en paramètre 
+// * Sinon : nullptr 
+Asteroid * Explode(double xSpeed, double ySpeed); 
+----
+
+Cette méthode est appelée à chaque fois que l'astéroïde est frappé par un missile. Si l'astéroïde a encore des explosions autorisées, cette méthode diminue la taille de l'astéroïde, et renvoie un nouvel astéroïde. Il n'y a pas de setter pour l'attribut nbExplosionsLeft puisque la mise à jour est effectuée à chaque explosion. Il faut tout de même le getter, puisque l'objet ne peut pas s'auto-détruire, ça doit être fait depuis le Modèle. 
+
+* Modifiez le Modèle pour qu'un astéroïde ne soit pas détruit par le missile, mais soit explosé en deux astéroïdes plus petits, jusqu'à ce qu'il ne reste plus d'explosions autorisées sur cet astéroïde. Si un nouvel astéroïde est créé, il est ajouté au vecteur à la fin de la boucle de traitement des collisions. Si au contraire, l'astéroïde heurté est détruit, il faut le supprimer du vecteur (attention à ne pas décaler la lecture !!!). Veillez à correctement réserver et libérer la mémoire correspondante. 

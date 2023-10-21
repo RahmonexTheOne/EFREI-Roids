@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/rahmo/OneDrive/Documents/Git/EFREI-Roids
+# Install script for directory: C:/Users/rahmo/Documents/Git/EFREI-Roids
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/rahmo/OneDrive/Documents/Git/EFREI-Roids/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/rahmo/Documents/Git/EFREI-Roids/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

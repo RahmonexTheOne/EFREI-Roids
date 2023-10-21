@@ -1,5 +1,5 @@
 CMakeFiles/SDLTEST.dir/View.cpp.obj: \
- C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\View.cpp \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\View.cpp \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/requires_hosted.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
@@ -142,25 +142,25 @@ CMakeFiles/SDLTEST.dir/View.cpp.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ostream.tcc \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc \
- C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\View.hpp \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\View.hpp \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/vector \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_uninitialized.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_bvector.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/vector.tcc \
- C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\FlyingObject.hpp \
- C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\Model.hpp \
- C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\Spaceship.hpp \
- C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\Asteroid.hpp \
- C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\Missile.hpp \
- C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\framework.hpp \
- C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\include/SDL2/SDL.h \
- C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\include/SDL2/SDL_main.h \
- C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\include/SDL2/SDL_stdinc.h \
- C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\include/SDL2/SDL_config.h \
- C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\include/SDL2/SDL_platform.h \
- C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\include/SDL2/begin_code.h \
- C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\include/SDL2/close_code.h \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\FlyingObject.hpp \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\Model.hpp \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\Spaceship.hpp \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\Asteroid.hpp \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\Missile.hpp \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\framework.hpp \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL.h \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_main.h \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_stdinc.h \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_config.h \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_platform.h \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/begin_code.h \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/close_code.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/x86_64-w64-mingw32/include/winsdkver.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/x86_64-w64-mingw32/include/winapifamily.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/x86_64-w64-mingw32/include/sdkddkver.h \
@@ -169,16 +169,16 @@ CMakeFiles/SDLTEST.dir/View.cpp.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/x86_64-w64-mingw32/include/_mingw_stdarg.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdint.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/x86_64-w64-mingw32/include/stdint.h \
- C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\include/SDL2/SDL_assert.h \
- C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\include/SDL2/SDL_atomic.h \
- C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\include/SDL2/SDL_audio.h \
- C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\include/SDL2/SDL_error.h \
- C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\include/SDL2/SDL_endian.h \
- C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\include/SDL2/SDL_mutex.h \
- C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\include/SDL2/SDL_thread.h \
- C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\include/SDL2/SDL_rwops.h \
- C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\include/SDL2/SDL_clipboard.h \
- C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\include/SDL2/SDL_cpuinfo.h \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_assert.h \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_atomic.h \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_audio.h \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_error.h \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_endian.h \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_mutex.h \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_thread.h \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_rwops.h \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_clipboard.h \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_cpuinfo.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/x86_64-w64-mingw32/include/intrin.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/x86_64-w64-mingw32/include/setjmp.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/x86_64-w64-mingw32/include/psdk_inc/intrin-impl.h \
@@ -281,36 +281,36 @@ CMakeFiles/SDLTEST.dir/View.cpp.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/ammintrin.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/xopintrin.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/cpuid.h \
- C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\include/SDL2/SDL_events.h \
- C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\include/SDL2/SDL_video.h \
- C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\include/SDL2/SDL_pixels.h \
- C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\include/SDL2/SDL_rect.h \
- C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\include/SDL2/SDL_surface.h \
- C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\include/SDL2/SDL_blendmode.h \
- C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\include/SDL2/SDL_keyboard.h \
- C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\include/SDL2/SDL_keycode.h \
- C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\include/SDL2/SDL_scancode.h \
- C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\include/SDL2/SDL_mouse.h \
- C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\include/SDL2/SDL_joystick.h \
- C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\include/SDL2/SDL_guid.h \
- C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\include/SDL2/SDL_gamecontroller.h \
- C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\include/SDL2/SDL_sensor.h \
- C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\include/SDL2/SDL_quit.h \
- C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\include/SDL2/SDL_gesture.h \
- C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\include/SDL2/SDL_touch.h \
- C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\include/SDL2/SDL_filesystem.h \
- C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\include/SDL2/SDL_haptic.h \
- C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\include/SDL2/SDL_hidapi.h \
- C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\include/SDL2/SDL_hints.h \
- C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\include/SDL2/SDL_loadso.h \
- C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\include/SDL2/SDL_log.h \
- C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\include/SDL2/SDL_messagebox.h \
- C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\include/SDL2/SDL_metal.h \
- C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\include/SDL2/SDL_power.h \
- C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\include/SDL2/SDL_render.h \
- C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\include/SDL2/SDL_shape.h \
- C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\include/SDL2/SDL_system.h \
- C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\include/SDL2/SDL_timer.h \
- C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\include/SDL2/SDL_version.h \
- C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\include/SDL2/SDL_locale.h \
- C:\Users\rahmo\OneDrive\Documents\Git\EFREI-Roids\include/SDL2/SDL_misc.h
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_events.h \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_video.h \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_pixels.h \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_rect.h \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_surface.h \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_blendmode.h \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_keyboard.h \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_keycode.h \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_scancode.h \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_mouse.h \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_joystick.h \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_guid.h \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_gamecontroller.h \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_sensor.h \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_quit.h \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_gesture.h \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_touch.h \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_filesystem.h \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_haptic.h \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_hidapi.h \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_hints.h \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_loadso.h \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_log.h \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_messagebox.h \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_metal.h \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_power.h \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_render.h \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_shape.h \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_system.h \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_timer.h \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_version.h \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_locale.h \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_misc.h

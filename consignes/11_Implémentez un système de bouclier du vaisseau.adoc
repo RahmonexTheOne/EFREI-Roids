@@ -1,0 +1,43 @@
+:hardbreaks:
+= 11 Implémentez un système de bouclier du vaisseau 
+
+Cette fonctionnalité permet au vaisseau d'avoir un bouclier, afin de ne pas être détruit dès le premier contact avec un astéroïde. Lorsqu'un astéroïde touche le vaisseau, son niveau de bouclier baisse, et le vaisseau n'est détruit qu'une fois que son bouclier est à 0. 
+
+* Modifiez la classe ``Spaceship`` pour lui ajouter un attribut ``double shieldLevel``. Ce niveau de bouclier doit être entre ``1.0`` (bouclier plein) et ``0.0`` (plus de bouclier). 
+
+* Modifiez le constructeur de ``Spaceship`` pour que le bouclier soit initialisé à ``1.0``. 
+
+* Ajoutez le setter et le getter associés. 
+
+ 
+
+Lorsqu'un astéroïde touche le vaisseau, son niveau de bouclier doit baisser, mais il faut alors que le vaisseau devienne invincible pendant quelques instantes. À défaut, le vaisseau perdrait un niveau de bouclier à chaque image, et le joueur perdrait tout de suite. 
+
+* Ajoutez les méthodes suivantes à ``Spaceship`` : 
+
+[source,C++]
+----
+//////////////////////////////////////// 
+// Indique si le vaisseau est invincible 
+// ------- 
+// Renvoie:  true si le vaisseau est dans une période d'invincibilité, false sinon 
+bool GetInvincible(); 
+
+/////////////////////////////////////// 
+// Place le vaisseau en mode invincible 
+// ------- 
+// * duration : durée pendant laquelle le vaisseau est invincible 
+void SetInvincibleFor(double duration); 
+----
+ 
+La première méthode indique si le vaisseau est actuellement dans une phase d'invincibilité. La deuxième rend le vaisseau invincible pendant un temps passé en paramètres. Utilisez la classe ``chrono`` de la librairie ``std`` pour calculer et stocker la date de fin de période d'invincibilité, et vérifier si le temps courant est inférieur à cette date. 
+
+ 
+
+* Modifiez le Modèle pour que le contact entre le vaisseau et l'astéroïde fasse baisser son niveau de bouclier, rende le vaisseau invincible pendant quelques secondes, et qu'il ne soit détruit que lorsque ce niveau est à 0. 
+
+* Modifiez la Vue pour que le niveau de bouclier du vaisseau soit affiché correctement : 
+
+** Lorsque le vaisseau est en mode invincibilité, son affichage doit être modifié en passant le paramètre ``warning`` de la méthode ``DrawShip`` du Framework à ``true``. 
+
+** L'affichage du bouclier doit refléter son niveau, avec le paramètre ``shieldLevel`` de la méthode ``DrawShip``. Ce paramètre suit la même logique que celle de l'attribut de la classe (``1.0`` pour un bouclier plein, ``0.0`` pour un bouclier vide). 

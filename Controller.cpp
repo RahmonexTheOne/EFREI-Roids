@@ -16,7 +16,7 @@ Controller::Controller(int fps, int shipSize, int missileSize){
 
 void Controller::LaunchGame() {
 
-    bool gameRunning = true;
+    //bool gameRunning = true;
     while(true){
         model->ChooseAction(framework->GetInput());
         model->Update(framework);

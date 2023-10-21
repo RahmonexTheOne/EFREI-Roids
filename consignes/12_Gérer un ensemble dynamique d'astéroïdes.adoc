@@ -1,0 +1,29 @@
+:hardbreaks:
+= 12 Gérer un ensemble dynamique d'astéroïdes
+
+Cette fonctionnalité permet d'avoir un ensemble d'astéroïdes présents en même temps. Cet ensemble doit pouvoir être augmenté (nouvel astéroïde créé en cas d'explosion d'un astéroïde par un missile) et diminué (destruction totale d'un astéroïde par un missile) au cours du jeu. 
+
+ 
+
+Modifiez le Modèle pour remplacer l'astéroïde par un ensemble d'astéroïdes dans un vector de la classe std. Ces astéroïdes auront tous une position et une orientation aléatoires. Une fois encore, il faudra considérer un vecteur de pointeurs, pas directement un vecteur d'objets. Ça nous facilitera grandement la vie dans quelques instants. 
+
+ 
+
+Modifiez la méthode renvoyant tous les objets volants pour qu'elle recopie le contenu de ce vecteur dans celui qu'elle renvoie. Parmi toutes les méthodes de recopie, la plus simple pour nous sera la suivante :
+
+[source,C++]
+----
+vector<Asteroid *> asteroids; 
+
+vector<FlyingObject *> v(asteroids.begin(), asteroids.end()); 
+----
+
+Ce code recopie l'ensemble des éléments de asteroids vers v sans avoir de problématique de transtypage. On n'aurait pas pu faire comme ça si on avait considéré des vector<Asteroid> au lieu de vector<Asteroid *>. 
+
+ 
+
+Modifiez le Contrôleur pour que la détection des collisions tienne compte de tous les astéroïdes (à la fois pour le vaisseau et pour le missile). Veillez à correctement réserver et libérer la mémoire correspondante. 
+
+ 
+
+Normalement, on n'a même pas besoin de modifier la Vue, elle fonctionne tel quel. Vérifiez que c'est bien le cas. 

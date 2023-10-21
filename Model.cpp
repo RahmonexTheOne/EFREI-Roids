@@ -25,12 +25,12 @@ Model::Model(int screenWidth, int screenHeight) {
     //----------------------------------
 
     //----------------Create Missile :
-    this->missileTest = new Missile(screenWidth/2, screenHeight/2,10, 10, 0);
+    //this->missile = new Missile(screenWidth/2, screenHeight/2,10, 10, 0);
     //-------------------------------
 
     //Adding them to the flyingObjects list
     flyingObjects.push_back(spaceship);
-    flyingObjects.push_back(missileTest);
+    //flyingObjects.push_back(missile);
 
 
 }
@@ -92,7 +92,7 @@ void Model::Update(Framework* framework) {
 
 
 
-//-----------------Actions :
+//------------------------------------------------------------------------------Actions :
 void Model::ChooseAction(int action) {
     switch (action) {
         case SDLK_UP:
@@ -106,6 +106,9 @@ void Model::ChooseAction(int action) {
             break;
         case SDLK_LEFT:
             Model::RotateLeft();
+            break;
+        case SDLK_SPACE:
+            Model::ShootMissile();
             break;
         case SDLK_ESCAPE:
             SDL_Quit();
@@ -124,20 +127,25 @@ void Model::SpeedDown() {
 }
 
 void Model::RotateRight() {
-    spaceship->Rotate(15);
+    spaceship->Rotate(30);
 }
 
 void Model::RotateLeft() {
-    spaceship->Rotate(-15);
+    spaceship->Rotate(-30);
 }
 
-//------------------------------------------
+void Model::ShootMissile() {
+    this->missile = new Missile(spaceship->GetX(), spaceship->GetY(),10, 30, spaceship->GetAngle());
+    flyingObjects.push_back(missile);
+}
+
+//--------------------------------------------------------------------------
 
 
 
 
 
-//---------------------Getters:
+//------------------------------------------------------------------------------------------------------Getters:
 std::vector<FlyingObject *> Model::GetFlyingObjects() {
     return flyingObjects;
 }
@@ -167,7 +175,12 @@ std::vector<FlyingObject*> Model::GetFlyingObjectsInGame(std::vector<FlyingObjec
 
     return flyingObjects;
 }
+//----------------------------------------------------------------------------------------------------------
 
+
+
+
+//------------------------------------------------------------------------------Asteroids Inititialization
 void Model::InitializeAsteroids(double screenWidth, double screenHeight) {
     //---Espace de creation :
     std::random_device generator;
@@ -220,5 +233,7 @@ void Model::InitializeAsteroids(double screenWidth, double screenHeight) {
     flyingObjects.push_back(asteroidGenerated);
     std::cout<<"Generated an asteroid with x and y values " << xToUse << "," << yToUse << std::endl;
 }
+
+
 
 //-------------------------------
