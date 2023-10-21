@@ -33,6 +33,7 @@ private :
     //List of Flying Objects
     std::vector<FlyingObject *> flyingObjects;
 
+    bool missileNotOnScreen;
     //Flying Objects
     Spaceship* spaceship;
     Missile* missile;

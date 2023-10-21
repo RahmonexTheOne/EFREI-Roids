@@ -11,26 +11,23 @@ using namespace std;
 //-------------------------------------------------------------------Constructors :
 Model::Model(int screenWidth, int screenHeight) {
 
-    //----------------Create Missile :
+    //----------------Create Spaceship :
     this->spaceship = new Spaceship(screenWidth/2,screenHeight/2,60,0);
     //-------------------------------
 
-    //-----------------Create Asteroid :
 
+    //-----------------Create Asteroid :
     this->nbAsteroids = 5;
     for(int i = 0; i <nbAsteroids; i++){
         InitializeAsteroids(screenWidth,screenHeight);
     }
 
+
     //----------------------------------
-
-    //----------------Create Missile :
-    //this->missile = new Missile(screenWidth/2, screenHeight/2,10, 10, 0);
-    //-------------------------------
-
     //Adding them to the flyingObjects list
     flyingObjects.push_back(spaceship);
-    //flyingObjects.push_back(missile);
+
+    this->missileNotOnScreen=false;
 
 
 }
@@ -52,6 +49,9 @@ void Model::Update(Framework* framework) {
             if (object->GetTypeName()=="Missile"){
                 Missile* missile = dynamic_cast<Missile*>(object); // Cast to Missile
                 missile->Move(framework->GetScreenWidth(), framework->GetScreenHeight());
+                if (missile->NotOnScreen(framework->GetScreenWidth(), framework->GetScreenHeight())){
+                    this->missileNotOnScreen= true;
+                }
             }
             else if(object->GetTypeName()=="Asteroid"){
                 Asteroid* asteroid = dynamic_cast<Asteroid*>(object); // Cast to Asteroid
@@ -78,6 +78,9 @@ void Model::Update(Framework* framework) {
                         // Remove otherObject from the vector
                         flyingObjects.erase(flyingObjects.begin() + j);
                         delete otherObject;
+                        // Delete the missile object
+                        flyingObjects.erase(flyingObjects.begin() + i);
+                        delete object;
                     }
                 }
             }
@@ -135,8 +138,19 @@ void Model::RotateLeft() {
 }
 
 void Model::ShootMissile() {
-    this->missile = new Missile(spaceship->GetX(), spaceship->GetY(),10, 30, spaceship->GetAngle());
-    flyingObjects.push_back(missile);
+    bool noMissilesOnScreen = true;
+    for (const FlyingObject* object : flyingObjects) {
+        if (object != nullptr && object->GetTypeName() == "Missile") {
+            noMissilesOnScreen = false;
+            break;
+        }
+    }
+
+    if (noMissilesOnScreen) {
+        this->missile = new Missile(spaceship->GetX(), spaceship->GetY(), 10, 30, spaceship->GetAngle());
+        flyingObjects.push_back(missile);
+    }
+
 }
 
 //--------------------------------------------------------------------------
@@ -164,8 +178,8 @@ std::vector<FlyingObject*> Model::GetFlyingObjectsInGame(std::vector<FlyingObjec
 
             // Check if the missile is not on the screen
             if (missile->NotOnScreen(framework->GetScreenWidth(), framework->GetScreenHeight())) {
+                it = flyingObjects.erase(it);// Remove the missile from flyingObjects
                 delete missile;
-                it = flyingObjects.erase(it); // Remove the missile from flyingObjects
                 continue;
             }
         }
