@@ -22,13 +22,14 @@ public :
     // Getters
     double GetAngle();
     double GetSpeed();
-    double GetWarning();
+    bool GetWarning();
     double GetShieldLevel();
     std::string GetTypeName() const override;
 
     void SetAngle(double angle);
     void SetSpeed(double speed);
     void SetShieldLevel(double shieldLevel);
+    void SetWarning(bool warning);
 
     ///////////////////////
     // Accélère le vaisseau
@@ -49,15 +50,15 @@ public :
     void Rotate(double angle);
 
     ////////////////////////////////////////
-// Indique si le vaisseau est invincible
-// -------
-// Renvoie:  true si le vaisseau est dans une période d'invincibilité, false sinon
+    // Indique si le vaisseau est invincible
+    // -------
+    // Renvoie:  true si le vaisseau est dans une période d'invincibilité, false sinon
     bool GetInvincible();
 
-///////////////////////////////////////
-// Place le vaisseau en mode invincible
-// -------
-// * duration : durée pendant laquelle le vaisseau est invincible
+    ///////////////////////////////////////
+    // Place le vaisseau en mode invincible
+    // -------
+    // * duration : durée pendant laquelle le vaisseau est invincible
     void SetInvincibleFor(double duration);
 
     void Move(double screenWidth, double screenHeight);

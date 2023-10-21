@@ -92,8 +92,8 @@ std::string Spaceship::GetTypeName() const {
     return "Spaceship";
 }
 
-double Spaceship::GetWarning() {
-    return this->warning;
+bool Spaceship::GetWarning() {
+    return std::chrono::system_clock::now() < invincibilityEndTime;
 }
 
 double Spaceship::GetShieldLevel() {
@@ -117,6 +117,10 @@ void Spaceship::SetSpeed(double speed) {
 
 void Spaceship::SetShieldLevel(double shieldLevel) {
     this->shieldLevel = shieldLevel;
+}
+
+void Spaceship::SetWarning(bool warning) {
+    this->warning = warning;
 }
 
 

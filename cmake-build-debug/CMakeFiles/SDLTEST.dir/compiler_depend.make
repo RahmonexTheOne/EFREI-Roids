@@ -328,6 +328,15 @@ CMakeFiles/SDLTEST.dir/Controller.cpp.obj: C:/Users/rahmo/Documents/Git/EFREI-Ro
   C:/Users/rahmo/Documents/Git/EFREI-Roids/Model.hpp \
   C:/Users/rahmo/Documents/Git/EFREI-Roids/FlyingObject.hpp \
   C:/Users/rahmo/Documents/Git/EFREI-Roids/Spaceship.hpp \
+  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/chrono \
+  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/chrono.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ratio \
+  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdint \
+  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdint.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/x86_64-w64-mingw32/include/stdint.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/limits \
+  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ctime \
+  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/parse_numbers.h \
   C:/Users/rahmo/Documents/Git/EFREI-Roids/Asteroid.hpp \
   C:/Users/rahmo/Documents/Git/EFREI-Roids/Missile.hpp \
   C:/Users/rahmo/Documents/Git/EFREI-Roids/framework.hpp \
@@ -344,8 +353,6 @@ CMakeFiles/SDLTEST.dir/Controller.cpp.obj: C:/Users/rahmo/Documents/Git/EFREI-Ro
   C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdarg.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/x86_64-w64-mingw32/include/stdarg.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/x86_64-w64-mingw32/include/_mingw_stdarg.h \
-  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdint.h \
-  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/x86_64-w64-mingw32/include/stdint.h \
   C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL_assert.h \
   C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL_atomic.h \
   C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL_audio.h \
@@ -1019,6 +1026,11 @@ CMakeFiles/SDLTEST.dir/Model.cpp.obj: C:/Users/rahmo/Documents/Git/EFREI-Roids/M
   C:/Users/rahmo/Documents/Git/EFREI-Roids/Model.hpp \
   C:/Users/rahmo/Documents/Git/EFREI-Roids/FlyingObject.hpp \
   C:/Users/rahmo/Documents/Git/EFREI-Roids/Spaceship.hpp \
+  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/chrono \
+  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/chrono.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ratio \
+  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ctime \
+  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/parse_numbers.h \
   C:/Users/rahmo/Documents/Git/EFREI-Roids/Asteroid.hpp \
   C:/Users/rahmo/Documents/Git/EFREI-Roids/Missile.hpp \
   C:/Users/rahmo/Documents/Git/EFREI-Roids/framework.hpp \
@@ -1490,6 +1502,15 @@ CMakeFiles/SDLTEST.dir/View.cpp.obj: C:/Users/rahmo/Documents/Git/EFREI-Roids/Vi
   C:/Users/rahmo/Documents/Git/EFREI-Roids/FlyingObject.hpp \
   C:/Users/rahmo/Documents/Git/EFREI-Roids/Model.hpp \
   C:/Users/rahmo/Documents/Git/EFREI-Roids/Spaceship.hpp \
+  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/chrono \
+  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/chrono.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ratio \
+  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdint \
+  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdint.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/x86_64-w64-mingw32/include/stdint.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/limits \
+  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ctime \
+  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/parse_numbers.h \
   C:/Users/rahmo/Documents/Git/EFREI-Roids/Asteroid.hpp \
   C:/Users/rahmo/Documents/Git/EFREI-Roids/Missile.hpp \
   C:/Users/rahmo/Documents/Git/EFREI-Roids/framework.hpp \
@@ -1506,8 +1527,6 @@ CMakeFiles/SDLTEST.dir/View.cpp.obj: C:/Users/rahmo/Documents/Git/EFREI-Roids/Vi
   C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdarg.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/x86_64-w64-mingw32/include/stdarg.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/x86_64-w64-mingw32/include/_mingw_stdarg.h \
-  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdint.h \
-  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/x86_64-w64-mingw32/include/stdint.h \
   C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL_assert.h \
   C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL_atomic.h \
   C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL_audio.h \
@@ -2106,6 +2125,15 @@ CMakeFiles/SDLTEST.dir/main.cpp.obj: C:/Users/rahmo/Documents/Git/EFREI-Roids/ma
   C:/Users/rahmo/Documents/Git/EFREI-Roids/Model.hpp \
   C:/Users/rahmo/Documents/Git/EFREI-Roids/FlyingObject.hpp \
   C:/Users/rahmo/Documents/Git/EFREI-Roids/Spaceship.hpp \
+  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/chrono \
+  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/chrono.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ratio \
+  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdint \
+  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdint.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/x86_64-w64-mingw32/include/stdint.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/limits \
+  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ctime \
+  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/parse_numbers.h \
   C:/Users/rahmo/Documents/Git/EFREI-Roids/Asteroid.hpp \
   C:/Users/rahmo/Documents/Git/EFREI-Roids/Missile.hpp \
   C:/Users/rahmo/Documents/Git/EFREI-Roids/framework.hpp \
@@ -2122,8 +2150,6 @@ CMakeFiles/SDLTEST.dir/main.cpp.obj: C:/Users/rahmo/Documents/Git/EFREI-Roids/ma
   C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdarg.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/x86_64-w64-mingw32/include/stdarg.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/x86_64-w64-mingw32/include/_mingw_stdarg.h \
-  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdint.h \
-  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/x86_64-w64-mingw32/include/stdint.h \
   C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL_assert.h \
   C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL_atomic.h \
   C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL_audio.h \
@@ -2742,6 +2768,30 @@ C:/Users/rahmo/Documents/Git/EFREI-Roids/Controller.hpp:
 
 C:/Users/rahmo/Documents/Git/EFREI-Roids/Model.hpp:
 
+C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/chrono:
+
+C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL_messagebox.h:
+
+C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/chrono.h:
+
+C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL_shape.h:
+
+C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdint:
+
+C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdint.h:
+
+C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/fma4intrin.h:
+
+C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/x86_64-w64-mingw32/include/stdint.h:
+
+C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL_log.h:
+
+C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/tsxldtrkintrin.h:
+
+C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ctime:
+
+C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/parse_numbers.h:
+
 C:/Users/rahmo/Documents/Git/EFREI-Roids/Missile.hpp:
 
 C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL.h:
@@ -2763,12 +2813,6 @@ C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/x86_64-w64-mingw32/include
 C:/Users/rahmo/Documents/Git/EFREI-Roids/Model.cpp:
 
 C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/x86_64-w64-mingw32/include/_mingw_stdarg.h:
-
-C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdint.h:
-
-C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/fma4intrin.h:
-
-C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/x86_64-w64-mingw32/include/stdint.h:
 
 C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL_atomic.h:
 
@@ -2839,12 +2883,6 @@ C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32
 C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL_surface.h:
 
 C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/tbmintrin.h:
-
-C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ctime:
-
-C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL_log.h:
-
-C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/tsxldtrkintrin.h:
 
 C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/uintrintrin.h:
 
@@ -2972,15 +3010,7 @@ C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL_hidapi.h:
 
 C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL_loadso.h:
 
-C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/chrono.h:
-
-C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL_messagebox.h:
-
 C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL_metal.h:
-
-C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdint:
-
-C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL_shape.h:
 
 C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL_timer.h:
 
@@ -3011,10 +3041,6 @@ C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32
 C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue_numeric_defs.h:
 
 C:/Users/rahmo/Documents/Git/EFREI-Roids/Spaceship.cpp:
-
-C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/chrono:
-
-C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/parse_numbers.h:
 
 C:/Users/rahmo/Documents/Git/EFREI-Roids/View.cpp:
 
