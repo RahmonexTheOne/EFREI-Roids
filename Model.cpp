@@ -87,9 +87,21 @@ int Model::Update(Framework* framework) {
                 else if (otherObject != nullptr && otherObject->GetTypeName() == "Spaceship") {
                     bool collisionWithSpaceship = FlyingObject::Collide(object, otherObject);
                     if (collisionWithSpaceship) {
-                        //Reduce shield of spacehip
-                        return -1;
-
+                        if (!spaceship->GetInvincible()) {
+                            // Check if shield is zero and handle destruction if needed
+                            if(spaceship->GetShieldLevel() <= 0){
+                                //Exit Game
+                                return -1;
+                            }
+                            else {
+                                // Reduce the shield of the spaceship
+                                spaceship->SetShieldLevel(spaceship->GetShieldLevel()-0.25);
+                                spaceship->SetInvincibleFor(3.0);
+                            }
+                        }
+                        else {
+                            // Spaceship Invincible
+                        }
                     }
                 }
             }

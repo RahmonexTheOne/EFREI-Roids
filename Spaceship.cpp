@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+#include <chrono>
 #include "Spaceship.hpp"
 
 
@@ -21,7 +22,7 @@ void Spaceship::Rotate(double rAngle) {
 }
 
 void Spaceship::SpeedUp(double accelerationFactor) {
-    //30 speed limit
+    //20 speed limit
     if((Spaceship::GetSpeed()+accelerationFactor)>20){
 
     }
@@ -67,9 +68,15 @@ void Spaceship::Move(double screenWidth, double screenHeight) {
     }
 }
 
-
-
 //-----------------------------------------------------------
+
+void Spaceship::SetInvincibleFor(double duration) {
+    invincibilityEndTime = std::chrono::system_clock::now() + std::chrono::seconds(static_cast<long>(duration));
+
+}
+
+
+
 
 
 //Getters :
@@ -85,6 +92,18 @@ std::string Spaceship::GetTypeName() const {
     return "Spaceship";
 }
 
+double Spaceship::GetWarning() {
+    return this->warning;
+}
+
+double Spaceship::GetShieldLevel() {
+    return this->shieldLevel;
+}
+
+bool Spaceship::GetInvincible() {
+    return std::chrono::system_clock::now() < invincibilityEndTime;
+}
+
 
 
 //Setters :
@@ -96,13 +115,11 @@ void Spaceship::SetSpeed(double speed) {
     this->speed = speed;
 }
 
-double Spaceship::GetWarning() {
-    return this->warning;
+void Spaceship::SetShieldLevel(double shieldLevel) {
+    this->shieldLevel = shieldLevel;
 }
 
-double Spaceship::GetShieldLevel() {
-    return this->shieldLevel;
-}
+
 
 //---------------------------------------------- Destructors :
 

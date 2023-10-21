@@ -1,7 +1,7 @@
 #ifndef SPACESHIP_HPP
 #define SPACESHIP_HPP
 
-
+#include <chrono>
 #include "FlyingObject.hpp"
 
 class Spaceship : public FlyingObject {
@@ -28,6 +28,7 @@ public :
 
     void SetAngle(double angle);
     void SetSpeed(double speed);
+    void SetShieldLevel(double shieldLevel);
 
     ///////////////////////
     // Accélère le vaisseau
@@ -47,13 +48,28 @@ public :
     // * angle : l'angle de rotation, en degrés.
     void Rotate(double angle);
 
+    ////////////////////////////////////////
+// Indique si le vaisseau est invincible
+// -------
+// Renvoie:  true si le vaisseau est dans une période d'invincibilité, false sinon
+    bool GetInvincible();
+
+///////////////////////////////////////
+// Place le vaisseau en mode invincible
+// -------
+// * duration : durée pendant laquelle le vaisseau est invincible
+    void SetInvincibleFor(double duration);
+
     void Move(double screenWidth, double screenHeight);
 
 private :
     double angle;
     double speed;
     bool warning;
-    float shieldLevel;
+    double shieldLevel;
+    std::chrono::time_point<std::chrono::system_clock> invincibilityEndTime;
+
+
 
 
 };
