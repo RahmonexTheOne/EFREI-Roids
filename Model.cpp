@@ -39,7 +39,7 @@ Model::Model(int screenWidth, int screenHeight) {
 
 //-----------------------------------------------------------------Update :
 
-void Model::Update(Framework* framework) {
+int Model::Update(Framework* framework) {
 
     //Update the list of Objects :
     Model::GetFlyingObjectsInGame(flyingObjects, framework);
@@ -65,27 +65,40 @@ void Model::Update(Framework* framework) {
 
     }
 
-    std::vector<FlyingObject*> objectsToRemove;
+
     // Test collisions between all missiles and all asteroids
     for (int i = 0; i < flyingObjects.size(); ++i) {
         FlyingObject* object = flyingObjects[i];
-        if (object != nullptr && object->GetTypeName() == "Missile") {
+        if (object != nullptr && object->GetTypeName() == "Asteroid") {
             for (int j = 0; j < flyingObjects.size(); ++j) {
                 FlyingObject* otherObject = flyingObjects[j];
-                if (otherObject != nullptr && otherObject->GetTypeName() == "Asteroid") {
-                    bool collision = FlyingObject::Collide(object, otherObject);
-                    if (collision) {
-                        // Remove otherObject from the vector
+                if (otherObject != nullptr && otherObject->GetTypeName() == "Missile") {
+                    bool collisionWithMissile = FlyingObject::Collide(object, otherObject);
+                    if (collisionWithMissile) {
+                        // Remove Asteroid from the vector
                         flyingObjects.erase(flyingObjects.begin() + j);
                         delete otherObject;
+                        nbAsteroids--;
                         // Delete the missile object
                         flyingObjects.erase(flyingObjects.begin() + i);
                         delete object;
                     }
                 }
+                else if (otherObject != nullptr && otherObject->GetTypeName() == "Spaceship") {
+                    bool collisionWithSpaceship = FlyingObject::Collide(object, otherObject);
+                    if (collisionWithSpaceship) {
+                        //Reduce shield of spacehip
+                        return -1;
+
+                    }
+                }
             }
         }
     }
+    return 0;
+
+    //Test if there are still Asteroids in the Level
+
 
 }
 //---------------------------------------------------------------------------------------

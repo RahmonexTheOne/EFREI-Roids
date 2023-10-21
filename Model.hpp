@@ -14,7 +14,7 @@ class Model {
 public :
 
     Model(int screenWidth, int screenHeight);
-    void Update(Framework* framework);
+    int Update(Framework* framework);
     //------------Actions :
     void ChooseAction(int action);
     void SpeedUp();
