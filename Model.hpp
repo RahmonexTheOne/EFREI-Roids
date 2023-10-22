@@ -13,7 +13,7 @@ class Model {
 
 public :
 
-    Model(int screenWidth, int screenHeight);
+    Model(Framework* framework);
     int Update(Framework* framework);
     //------------Actions :
     void ChooseAction(int action);
@@ -22,7 +22,9 @@ public :
     void RotateRight();
     void RotateLeft();
     void ShootMissile();
-    void InitializeAsteroids(double screenWidth, double sreenHeight);
+    void InitializeAsteroids(Framework* framework);
+    SDL_Texture* GetRandomAsteroidTexture(Framework* framework);
+
     //----------Getters :
     std::vector<FlyingObject *> GetFlyingObjects();
     std::vector<FlyingObject *> GetFlyingObjectsInGame(std::vector<FlyingObject*>& allFlyingObjects, Framework* framework);
@@ -46,4 +48,4 @@ private :
 
 
 
-#endif MODEL_HPP
+#endif

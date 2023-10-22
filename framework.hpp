@@ -77,13 +77,15 @@ class Framework {
         // * warning : indique si le vaisseau est en état d'alerte (apparait en rouge)
         void DrawShip(int x, int y, float angle, float shieldLevel, bool warning);
 
+        SDL_Texture* GetRandomAsteroidTexture();
+
         /////////////////////////////////
         // Méthode affichant un astéroïde
         // Le sprite est dans "asteroid.bmp"
         // --------
         // * x, y : coordonnées du centre du vaisseau, en pixels
         // * size : taille du sprite, en pixels
-        void DrawAsteroid(int x, int y, int size);
+        void DrawAsteroid(int x, int y, int size,SDL_Texture* textureAsteroidChoosen);
 
         ///////////////////////////////
         // Méthode affichant un missile
@@ -92,7 +94,15 @@ class Framework {
         // * x, y : coordonnées du centre du missile, en pixels
         void DrawMissile(int x, int y);
 
-    private:
+    ///////////////////////////////////
+    // Création d'une texture de sprite
+    // -------
+    // * imgPath : chemin vers l'image (format BMP avec alpha)
+    // -------
+    // Renvoie : la texture contenant l'image chargée
+    SDL_Texture * GetTexture(string imgName);
+
+private:
         //////////
         // Fenêtre
         SDL_Window *   window;
@@ -140,13 +150,6 @@ class Framework {
         // * alpha : niveau de transparence, entre 0.0 (transparent) et  1.0 (opaque)
         void DrawSpriteAlpha(SDL_Texture * texture, int x, int y, int w, int h, float angle, float alpha);
 
-        ///////////////////////////////////
-        // Création d'une texture de sprite
-        // -------
-        // * imgPath : chemin vers l'image (format BMP avec alpha)
-        // -------
-        // Renvoie : la texture contenant l'image chargée
-        SDL_Texture * GetTexture(string imgName);
 };
 
 #endif

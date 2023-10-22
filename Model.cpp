@@ -6,20 +6,21 @@
 #include "Asteroid.hpp"
 #include "Missile.hpp"
 
+
 using namespace std;
 
 //-------------------------------------------------------------------Constructors :
-Model::Model(int screenWidth, int screenHeight) {
+Model::Model(Framework* framework) {
 
     //----------------Create Spaceship :
-    this->spaceship = new Spaceship(screenWidth/2,screenHeight/2,60,0);
+    this->spaceship = new Spaceship(framework->GetScreenWidth()/2,framework->GetScreenHeight()/2,60,0);
     //-------------------------------
 
 
     //-----------------Create Asteroid :
     this->nbAsteroids = 5;
     for(int i = 0; i <nbAsteroids; i++){
-        InitializeAsteroids(screenWidth,screenHeight);
+        InitializeAsteroids(framework);
     }
     flyingObjects.insert(flyingObjects.end(), asteroids.begin(), asteroids.end());
     //vector<FlyingObject *> flyingObjects(asteroids.begin(), asteroids.end()); //add that asteroids list to flying object list
@@ -232,49 +233,72 @@ std::vector<FlyingObject*> Model::GetFlyingObjectsInGame(std::vector<FlyingObjec
 //----------------------------------------------------------------------------------------------------------
 
 
+//Generate a random image for the asteroid :
+SDL_Texture* Model::GetRandomAsteroidTexture(Framework* framework) {
+    // Define an array or vector with paths to asteroid images.
+    std::vector<std::string> asteroidImages = {
+            "asteroid.bmp",
+            "asteroid1.bmp",
+            "asteroid2.bmp",
+            "asteroid3.bmp"
+    };
+
+    // Use a random number generator to select a random index.
+    std::random_device rd;
+    std::mt19937 gen(rd());
+    std::uniform_int_distribution<int> distribution(0, asteroidImages.size() - 1);
+    int randomIndex = distribution(gen);
+
+    // Get the randomly selected image path.
+    std::string randomAsteroidImagePath = asteroidImages[randomIndex];
+
+    // Load the randomly selected image.
+    return framework->GetTexture(randomAsteroidImagePath);
+}
 
 
 //------------------------------------------------------------------------------Asteroids Inititialization
-void Model::InitializeAsteroids(double screenWidth, double screenHeight) {
+void Model::InitializeAsteroids(Framework* framework) {
     //---Espace de creation :
     std::random_device generator;
     std::uniform_int_distribution<int> spaceDistribution(0, 7);
     int spaceToUse = spaceDistribution(generator);
-    std::uniform_real_distribution<double> xDistribution(0.0, screenWidth);
-    std::uniform_real_distribution<double> yDistribution(0.0, screenHeight);
+    std::uniform_real_distribution<double> xDistribution(0.0, framework->GetScreenWidth());
+    std::uniform_real_distribution<double> yDistribution(0.0, framework->GetScreenHeight());
+
 
     //---Assignement des espaces :
     if(spaceToUse == 0){
-        std::uniform_real_distribution<double> xDistribution(0.0,screenWidth/3);
-        std::uniform_real_distribution<double> yDistribution(0.0,screenHeight/3);
+        std::uniform_real_distribution<double> xDistribution(0.0,framework->GetScreenWidth()/3);
+        std::uniform_real_distribution<double> yDistribution(0.0,framework->GetScreenHeight()/3);
     }
     else if(spaceToUse == 1){
-        std::uniform_real_distribution<double> xDistribution(screenWidth/3,2*screenWidth/3);
-        std::uniform_real_distribution<double> yDistribution(0.0,screenHeight/3);
+        std::uniform_real_distribution<double> xDistribution(framework->GetScreenWidth()/3,2*framework->GetScreenWidth()/3);
+        std::uniform_real_distribution<double> yDistribution(0.0,framework->GetScreenHeight()/3);
     }
     else if(spaceToUse == 2){
-        std::uniform_real_distribution<double> xDistribution(2*screenWidth/3,3*screenWidth/3);
-        std::uniform_real_distribution<double> yDistribution(0.0,screenHeight/3);
+        std::uniform_real_distribution<double> xDistribution(2*framework->GetScreenWidth()/3,3*framework->GetScreenWidth()/3);
+        std::uniform_real_distribution<double> yDistribution(0.0,framework->GetScreenHeight()/3);
     }
     else if(spaceToUse == 3){
-        std::uniform_real_distribution<double> xDistribution(0.0,screenWidth/3);
-        std::uniform_real_distribution<double> yDistribution(screenHeight/3,2*screenHeight/3);
+        std::uniform_real_distribution<double> xDistribution(0.0,framework->GetScreenWidth()/3);
+        std::uniform_real_distribution<double> yDistribution(framework->GetScreenHeight()/3,2*framework->GetScreenHeight()/3);
     }
     else if(spaceToUse == 4){
-        std::uniform_real_distribution<double> xDistribution(2*screenWidth/3,3*screenWidth/3);
-        std::uniform_real_distribution<double> yDistribution(screenHeight/3,2*screenHeight/3);
+        std::uniform_real_distribution<double> xDistribution(2*framework->GetScreenWidth()/3,3*framework->GetScreenWidth()/3);
+        std::uniform_real_distribution<double> yDistribution(framework->GetScreenHeight()/3,2*framework->GetScreenHeight()/3);
     }
     else if(spaceToUse == 5){
-        std::uniform_real_distribution<double> xDistribution(0.0,screenWidth/3);
-        std::uniform_real_distribution<double> yDistribution(2*screenHeight/3,3*screenHeight/3);
+        std::uniform_real_distribution<double> xDistribution(0.0,framework->GetScreenWidth()/3);
+        std::uniform_real_distribution<double> yDistribution(2*framework->GetScreenHeight()/3,3*framework->GetScreenHeight()/3);
     }
     else if(spaceToUse == 6){
-        std::uniform_real_distribution<double> xDistribution(screenWidth/3,2*screenWidth/3);
-        std::uniform_real_distribution<double> yDistribution(2*screenHeight/3,3*screenHeight/3);
+        std::uniform_real_distribution<double> xDistribution(framework->GetScreenWidth()/3,2*framework->GetScreenWidth()/3);
+        std::uniform_real_distribution<double> yDistribution(2*framework->GetScreenHeight()/3,3*framework->GetScreenHeight()/3);
     }
     else if(spaceToUse == 7){
-        std::uniform_real_distribution<double> xDistribution(2*screenWidth/3,3*screenWidth/3);
-        std::uniform_real_distribution<double> yDistribution(2*screenHeight/3,3*screenHeight/3);
+        std::uniform_real_distribution<double> xDistribution(2*framework->GetScreenWidth()/3,3*framework->GetScreenWidth()/3);
+        std::uniform_real_distribution<double> yDistribution(2*framework->GetScreenHeight()/3,3*framework->GetScreenHeight()/3);
     }
 
     double xToUse = xDistribution(generator);
@@ -283,7 +307,7 @@ void Model::InitializeAsteroids(double screenWidth, double screenHeight) {
     std::uniform_int_distribution<int> angleValues(-180, 180);
     int angle = angleValues(generator);
 
-    Asteroid* asteroidGenerated = new Asteroid(xToUse,yToUse,100, 10, angle,2);
+    Asteroid* asteroidGenerated = new Asteroid(xToUse,yToUse,100, 10, angle,2, GetRandomAsteroidTexture(framework));
     asteroids.push_back(asteroidGenerated);//add the asteroids generated to list asteroids
     //flyingObjects.push_back(asteroidGenerated);
 }

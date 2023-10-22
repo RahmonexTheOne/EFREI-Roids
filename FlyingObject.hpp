@@ -68,4 +68,4 @@ private :
 
 };
 
-#endif FLYINGOBJECT_HPP
+#endif

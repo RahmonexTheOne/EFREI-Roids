@@ -9,7 +9,7 @@ Controller::Controller(int fps, int shipSize, int missileSize){
 
     this->view = new View(framework);
     this->framework = new Framework(fps,shipSize,missileSize);
-    this->model = new Model(framework->GetScreenWidth(),framework->GetScreenHeight());
+    this->model = new Model(framework);
 
 }
 

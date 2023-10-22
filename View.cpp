@@ -1,4 +1,5 @@
 #include <iostream>
+#include <random>
 #include "View.hpp"
 
 
@@ -11,6 +12,9 @@ View::View(Framework* framework) {
 
 
 
+
+
+
 void View::Refresh(std::vector<FlyingObject *> flyingObjects,Framework* framework) {
 
     //----------------Test the list of FlyingObjects:
@@ -18,7 +22,8 @@ void View::Refresh(std::vector<FlyingObject *> flyingObjects,Framework* framewor
         if(object!=nullptr){
             //For an Asteroid :
             if(object->GetTypeName() == "Asteroid"){
-                framework->DrawAsteroid(object->GetX(),object->GetY(),object->GetSize());
+                Asteroid* asteroid = dynamic_cast<Asteroid*>(object); // Cast to Asteroid
+                framework->DrawAsteroid(asteroid->GetX(),asteroid->GetY(),asteroid->GetSize(),asteroid->GetTexture());
                 std::cout << flyingObjects.size() << std::endl;
             }
 

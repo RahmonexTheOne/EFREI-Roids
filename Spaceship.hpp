@@ -76,4 +76,4 @@ private :
 };
 
 
-#endif SPACESHIP_HPP
+#endif

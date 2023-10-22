@@ -4,8 +4,10 @@
 
 #include "framework.hpp"
 #include <iostream>
+#include <vector>
+#include <random>
 
-using namespace std;
+                using namespace std;
 
 // pour construire les chemins de fichiers
 const string pathSep =
@@ -114,9 +116,13 @@ void Framework::Update() {
 }
 
 
+
+
                         /////////////////////////////////////////////
                         // MÉTHODES D'AFFICHAGE DES SPRITES DU JEU //
                         /////////////////////////////////////////////
+
+
 
 
 //////////////////////////////////////////
@@ -147,8 +153,8 @@ void Framework::DrawShip(int x, int y, float angle, float shieldLevel, bool warn
 // --------
 // * x, y : coordonnées du centre du vaisseau, en pixels
 // * size : taille du sprite, en pixels
-void Framework::DrawAsteroid(int x, int y, int size) {
-    DrawSprite(textureAsteroid, x, y, size, size, 0);
+void Framework::DrawAsteroid(int x, int y, int size, SDL_Texture* textureAsteroidChoosen) {
+    DrawSprite(textureAsteroidChoosen, x, y, size, size, 0);
 }
 
 /////////////////////////
@@ -159,6 +165,9 @@ void Framework::DrawAsteroid(int x, int y, int size) {
 void Framework::DrawMissile(int x, int y) {
     DrawSprite(textureMissile, x, y, missileSize, missileSize, 0.0);
 }
+
+
+
 
 
                     //////////////////////
@@ -212,7 +221,7 @@ void Framework::Init(int width, int height, int fps, int shipSize, int missileSi
     textureShip        = GetTexture("spaceship.bmp");
     textureShipWarning = GetTexture("redspaceship.bmp");
     textureShield      = GetTexture("shield.bmp");
-    textureAsteroid    = GetTexture("asteroid.bmp");
+    //textureAsteroid    = GetRandomAsteroidTexture();
     textureMissile     = GetTexture("missile.bmp");
 
     //SDL_RenderSetLogicalSize(renderer, 800, 600);
@@ -280,3 +289,5 @@ void Framework::DrawSpriteAlpha(SDL_Texture * texture, int x, int y, int w, int 
     if (SDL_RenderCopyEx(renderer, texture, NULL, &dest, angle, NULL, flip))
         cerr << "DrawSpriteAlpha -> SDL_RenderCopyEx failed: "  << SDL_GetError();
 }
+
+
