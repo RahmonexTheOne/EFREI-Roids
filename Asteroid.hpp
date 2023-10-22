@@ -14,13 +14,14 @@ public :
     // * x, y : position dans l'écran
     // * size : diamètre de l'objet
     // * xSpeed, ySpeed : vecteur de vitesse de l'objet
-    Asteroid(double x, double y, double size, double speed, double angle);
+    Asteroid(double x, double y, double size, double speed, double angle, int nbExplosions);
 
     //////////
     //---------------------Getters :
     double GetSpeed();
     double GetAngle();
     std::string GetTypeName() const override;
+    double GetNbExplosionsLeft();
 
     //////////
     //---------------------Setters :
@@ -38,9 +39,23 @@ public :
     void Move(double screenWidth, double screenHeight);
 
 
+    ///////////////////////////////////////
+    // Applique une explosion à l'astéroïde
+    // Si l'astéroïde a encore des explosions autorisées, sa taille est diminuée,
+    // et un nouvel astéroïde est créé
+    // -------
+    // * xSpeed, ySpeed : vecteur de vitesse du nouvel astéroïde si créé
+    // -------
+    // Renvoie :
+    // * Si l'astéroïde a encore des explosions autorisées: Le nouvel astéroïde avec la même position et le vecteur de vitesse passé en paramètre
+    // * Sinon : nullptr
+    Asteroid * Explode(double speed, double angle);
+
+
 private :
     double speed;
     double angle;
+    int nbExplosionsLeft;
 
 };
 

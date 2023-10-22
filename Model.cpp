@@ -77,11 +77,21 @@ int Model::Update(Framework* framework) {
                 if (otherObject != nullptr && otherObject->GetTypeName() == "Missile") {
                     bool collisionWithMissile = FlyingObject::Collide(object, otherObject);
                     if (collisionWithMissile) {
-                        // Remove Asteroid from the vector
+                        //Dynamic cast to access the specific functions
+                        Asteroid* asteroidToExplode = dynamic_cast<Asteroid*>(object); // Cast to Asteroid
+                        Missile* missile = dynamic_cast<Missile*>(otherObject); // Cast to Missile
+                        //To avoid nullptr in the list
+                        if(asteroidToExplode->GetNbExplosionsLeft()>=2){
+                            //Add the two other asteroids
+                            flyingObjects.push_back(asteroidToExplode->Explode(asteroidToExplode->GetSpeed(),missile->GetAngle()+30));
+                            flyingObjects.push_back(asteroidToExplode->Explode(asteroidToExplode->GetSpeed(),missile->GetAngle()-30));
+                        }
+
+                        // Remove Missile from the vector
                         flyingObjects.erase(flyingObjects.begin() + j);
                         delete otherObject;
                         nbAsteroids--;
-                        // Delete the missile object
+                        // Delete the asteroid object
                         flyingObjects.erase(flyingObjects.begin() + i);
                         delete object;
                     }
@@ -273,7 +283,7 @@ void Model::InitializeAsteroids(double screenWidth, double screenHeight) {
     std::uniform_int_distribution<int> angleValues(-180, 180);
     int angle = angleValues(generator);
 
-    Asteroid* asteroidGenerated = new Asteroid(xToUse,yToUse,100, 10, angle);
+    Asteroid* asteroidGenerated = new Asteroid(xToUse,yToUse,100, 10, angle,2);
     asteroids.push_back(asteroidGenerated);//add the asteroids generated to list asteroids
     //flyingObjects.push_back(asteroidGenerated);
 }
