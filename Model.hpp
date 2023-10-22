@@ -32,6 +32,7 @@ public :
 private :
     //List of Flying Objects
     std::vector<FlyingObject *> flyingObjects;
+    std::vector<Asteroid *> asteroids;
 
     bool missileNotOnScreen;
     //Flying Objects

@@ -5,10 +5,11 @@
 using namespace std;
 
 //------------------Constructors :
-
 View::View(Framework* framework) {
 
 }
+
+
 
 void View::Refresh(std::vector<FlyingObject *> flyingObjects,Framework* framework) {
 

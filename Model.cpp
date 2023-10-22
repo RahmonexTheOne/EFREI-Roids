@@ -21,6 +21,8 @@ Model::Model(int screenWidth, int screenHeight) {
     for(int i = 0; i <nbAsteroids; i++){
         InitializeAsteroids(screenWidth,screenHeight);
     }
+    flyingObjects.insert(flyingObjects.end(), asteroids.begin(), asteroids.end());
+    //vector<FlyingObject *> flyingObjects(asteroids.begin(), asteroids.end()); //add that asteroids list to flying object list
 
 
     //----------------------------------
@@ -186,7 +188,10 @@ void Model::ShootMissile() {
 
 //------------------------------------------------------------------------------------------------------Getters:
 std::vector<FlyingObject *> Model::GetFlyingObjects() {
-    return flyingObjects;
+    std::vector<FlyingObject*> allFlyingObjects(flyingObjects.begin(), flyingObjects.end());
+    //Add the list of vectors of asteroids
+    //allFlyingObjects.insert(allFlyingObjects.end(), asteroids.begin(), asteroids.end());
+    return allFlyingObjects;
 }
 
 
@@ -269,8 +274,8 @@ void Model::InitializeAsteroids(double screenWidth, double screenHeight) {
     int angle = angleValues(generator);
 
     Asteroid* asteroidGenerated = new Asteroid(xToUse,yToUse,100, 10, angle);
-    flyingObjects.push_back(asteroidGenerated);
-    std::cout<<"Generated an asteroid with x and y values " << xToUse << "," << yToUse << std::endl;
+    asteroids.push_back(asteroidGenerated);//add the asteroids generated to list asteroids
+    //flyingObjects.push_back(asteroidGenerated);
 }
 
 
