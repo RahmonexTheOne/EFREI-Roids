@@ -290,4 +290,8 @@ void Framework::DrawSpriteAlpha(SDL_Texture * texture, int x, int y, int w, int 
         cerr << "DrawSpriteAlpha -> SDL_RenderCopyEx failed: "  << SDL_GetError();
 }
 
+SDL_Renderer* Framework::GetRenderer() {
+    return renderer;
+}
+
 

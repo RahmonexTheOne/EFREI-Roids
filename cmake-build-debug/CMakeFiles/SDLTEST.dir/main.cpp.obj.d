@@ -322,4 +322,6 @@ CMakeFiles/SDLTEST.dir/main.cpp.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_bvector.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/vector.tcc \
  C:\Users\rahmo\Documents\Git\EFREI-Roids\View.hpp \
- C:\Users\rahmo\Documents\Git\EFREI-Roids\Framework.hpp
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\Framework.hpp \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\Menu.hpp \
+ C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL.h

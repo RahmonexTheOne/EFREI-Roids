@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/SDLTEST.dir/Controller.cpp.obj.d"
   "CMakeFiles/SDLTEST.dir/FlyingObject.cpp.obj"
   "CMakeFiles/SDLTEST.dir/FlyingObject.cpp.obj.d"
+  "CMakeFiles/SDLTEST.dir/Menu.cpp.obj"
+  "CMakeFiles/SDLTEST.dir/Menu.cpp.obj.d"
   "CMakeFiles/SDLTEST.dir/Missile.cpp.obj"
   "CMakeFiles/SDLTEST.dir/Missile.cpp.obj.d"
   "CMakeFiles/SDLTEST.dir/Model.cpp.obj"

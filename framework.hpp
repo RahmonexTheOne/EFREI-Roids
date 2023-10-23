@@ -94,15 +94,16 @@ class Framework {
         // * x, y : coordonnées du centre du missile, en pixels
         void DrawMissile(int x, int y);
 
-    ///////////////////////////////////
-    // Création d'une texture de sprite
-    // -------
-    // * imgPath : chemin vers l'image (format BMP avec alpha)
-    // -------
-    // Renvoie : la texture contenant l'image chargée
-    SDL_Texture * GetTexture(string imgName);
+        ///////////////////////////////////
+        // Création d'une texture de sprite
+        // -------
+        // * imgPath : chemin vers l'image (format BMP avec alpha)
+        // -------
+        // Renvoie : la texture contenant l'image chargée
+        SDL_Texture * GetTexture(string imgName);
+        SDL_Renderer* GetRenderer();
 
-private:
+    private:
         //////////
         // Fenêtre
         SDL_Window *   window;

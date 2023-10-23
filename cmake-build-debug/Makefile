@@ -200,6 +200,30 @@ FlyingObject.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLTEST.dir\build.make CMakeFiles/SDLTEST.dir/FlyingObject.cpp.s
 .PHONY : FlyingObject.cpp.s
 
+Menu.obj: Menu.cpp.obj
+.PHONY : Menu.obj
+
+# target to build an object file
+Menu.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLTEST.dir\build.make CMakeFiles/SDLTEST.dir/Menu.cpp.obj
+.PHONY : Menu.cpp.obj
+
+Menu.i: Menu.cpp.i
+.PHONY : Menu.i
+
+# target to preprocess a source file
+Menu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLTEST.dir\build.make CMakeFiles/SDLTEST.dir/Menu.cpp.i
+.PHONY : Menu.cpp.i
+
+Menu.s: Menu.cpp.s
+.PHONY : Menu.s
+
+# target to generate assembly for a file
+Menu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLTEST.dir\build.make CMakeFiles/SDLTEST.dir/Menu.cpp.s
+.PHONY : Menu.cpp.s
+
 Missile.obj: Missile.cpp.obj
 .PHONY : Missile.obj
 
@@ -362,6 +386,9 @@ help:
 	@echo ... FlyingObject.obj
 	@echo ... FlyingObject.i
 	@echo ... FlyingObject.s
+	@echo ... Menu.obj
+	@echo ... Menu.i
+	@echo ... Menu.s
 	@echo ... Missile.obj
 	@echo ... Missile.i
 	@echo ... Missile.s

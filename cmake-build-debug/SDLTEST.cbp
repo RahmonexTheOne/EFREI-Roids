@@ -104,6 +104,12 @@
 		<Unit filename="C:/Users/rahmo/Documents/Git/EFREI-Roids/FlyingObject.hpp">
 			<Option target="SDLTEST"/>
 		</Unit>
+		<Unit filename="C:/Users/rahmo/Documents/Git/EFREI-Roids/Menu.cpp">
+			<Option target="SDLTEST"/>
+		</Unit>
+		<Unit filename="C:/Users/rahmo/Documents/Git/EFREI-Roids/Menu.hpp">
+			<Option target="SDLTEST"/>
+		</Unit>
 		<Unit filename="C:/Users/rahmo/Documents/Git/EFREI-Roids/Missile.cpp">
 			<Option target="SDLTEST"/>
 		</Unit>

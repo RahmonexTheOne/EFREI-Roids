@@ -6,6 +6,7 @@
 #include "Model.hpp"
 #include "View.hpp"
 #include "Framework.hpp"
+#include "Menu.hpp"
 
 
 class Controller {
@@ -28,6 +29,7 @@ private :
     Model* model;
     Framework* framework;
     View* view;
+    Menu* menu;
 
 };
 

@@ -30,6 +30,8 @@ set(
     Model.hpp
     View.hpp
     Controller.hpp
+        Menu.cpp
+        Menu.hpp
 )
 
 find_package(SDL2 REQUIRED)
