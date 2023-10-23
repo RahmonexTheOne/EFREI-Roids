@@ -1,0 +1,1 @@
+  -L"C:/Users/rahmo/Documents/Git/EFREI-Roids/lib"  "C:/Users/rahmo/Documents/Git/EFREI-Roids/lib/libSDL2main.a" "C:/Users/rahmo/Documents/Git/EFREI-Roids/lib/libSDL2.dll.a" "C:/Users/rahmo/Documents/Git/EFREI-Roids/lib/SDL2_image.lib" -mwindows -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

@@ -116,24 +116,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named SDLTEST
+# Target rules for targets named EFREI-ROIDS
 
 # Build rule for target.
-SDLTEST: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 SDLTEST
-.PHONY : SDLTEST
+EFREI-ROIDS: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 EFREI-ROIDS
+.PHONY : EFREI-ROIDS
 
 # fast build rule for target.
-SDLTEST/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLTEST.dir\build.make CMakeFiles/SDLTEST.dir/build
-.PHONY : SDLTEST/fast
+EFREI-ROIDS/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/build
+.PHONY : EFREI-ROIDS/fast
 
 Asteroid.obj: Asteroid.cpp.obj
 .PHONY : Asteroid.obj
 
 # target to build an object file
 Asteroid.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLTEST.dir\build.make CMakeFiles/SDLTEST.dir/Asteroid.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/Asteroid.cpp.obj
 .PHONY : Asteroid.cpp.obj
 
 Asteroid.i: Asteroid.cpp.i
@@ -141,7 +141,7 @@ Asteroid.i: Asteroid.cpp.i
 
 # target to preprocess a source file
 Asteroid.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLTEST.dir\build.make CMakeFiles/SDLTEST.dir/Asteroid.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/Asteroid.cpp.i
 .PHONY : Asteroid.cpp.i
 
 Asteroid.s: Asteroid.cpp.s
@@ -149,7 +149,7 @@ Asteroid.s: Asteroid.cpp.s
 
 # target to generate assembly for a file
 Asteroid.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLTEST.dir\build.make CMakeFiles/SDLTEST.dir/Asteroid.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/Asteroid.cpp.s
 .PHONY : Asteroid.cpp.s
 
 Controller.obj: Controller.cpp.obj
@@ -157,7 +157,7 @@ Controller.obj: Controller.cpp.obj
 
 # target to build an object file
 Controller.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLTEST.dir\build.make CMakeFiles/SDLTEST.dir/Controller.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/Controller.cpp.obj
 .PHONY : Controller.cpp.obj
 
 Controller.i: Controller.cpp.i
@@ -165,7 +165,7 @@ Controller.i: Controller.cpp.i
 
 # target to preprocess a source file
 Controller.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLTEST.dir\build.make CMakeFiles/SDLTEST.dir/Controller.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/Controller.cpp.i
 .PHONY : Controller.cpp.i
 
 Controller.s: Controller.cpp.s
@@ -173,7 +173,7 @@ Controller.s: Controller.cpp.s
 
 # target to generate assembly for a file
 Controller.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLTEST.dir\build.make CMakeFiles/SDLTEST.dir/Controller.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/Controller.cpp.s
 .PHONY : Controller.cpp.s
 
 FlyingObject.obj: FlyingObject.cpp.obj
@@ -181,7 +181,7 @@ FlyingObject.obj: FlyingObject.cpp.obj
 
 # target to build an object file
 FlyingObject.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLTEST.dir\build.make CMakeFiles/SDLTEST.dir/FlyingObject.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/FlyingObject.cpp.obj
 .PHONY : FlyingObject.cpp.obj
 
 FlyingObject.i: FlyingObject.cpp.i
@@ -189,7 +189,7 @@ FlyingObject.i: FlyingObject.cpp.i
 
 # target to preprocess a source file
 FlyingObject.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLTEST.dir\build.make CMakeFiles/SDLTEST.dir/FlyingObject.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/FlyingObject.cpp.i
 .PHONY : FlyingObject.cpp.i
 
 FlyingObject.s: FlyingObject.cpp.s
@@ -197,7 +197,7 @@ FlyingObject.s: FlyingObject.cpp.s
 
 # target to generate assembly for a file
 FlyingObject.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLTEST.dir\build.make CMakeFiles/SDLTEST.dir/FlyingObject.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/FlyingObject.cpp.s
 .PHONY : FlyingObject.cpp.s
 
 Menu.obj: Menu.cpp.obj
@@ -205,7 +205,7 @@ Menu.obj: Menu.cpp.obj
 
 # target to build an object file
 Menu.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLTEST.dir\build.make CMakeFiles/SDLTEST.dir/Menu.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/Menu.cpp.obj
 .PHONY : Menu.cpp.obj
 
 Menu.i: Menu.cpp.i
@@ -213,7 +213,7 @@ Menu.i: Menu.cpp.i
 
 # target to preprocess a source file
 Menu.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLTEST.dir\build.make CMakeFiles/SDLTEST.dir/Menu.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/Menu.cpp.i
 .PHONY : Menu.cpp.i
 
 Menu.s: Menu.cpp.s
@@ -221,7 +221,7 @@ Menu.s: Menu.cpp.s
 
 # target to generate assembly for a file
 Menu.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLTEST.dir\build.make CMakeFiles/SDLTEST.dir/Menu.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/Menu.cpp.s
 .PHONY : Menu.cpp.s
 
 Missile.obj: Missile.cpp.obj
@@ -229,7 +229,7 @@ Missile.obj: Missile.cpp.obj
 
 # target to build an object file
 Missile.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLTEST.dir\build.make CMakeFiles/SDLTEST.dir/Missile.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/Missile.cpp.obj
 .PHONY : Missile.cpp.obj
 
 Missile.i: Missile.cpp.i
@@ -237,7 +237,7 @@ Missile.i: Missile.cpp.i
 
 # target to preprocess a source file
 Missile.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLTEST.dir\build.make CMakeFiles/SDLTEST.dir/Missile.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/Missile.cpp.i
 .PHONY : Missile.cpp.i
 
 Missile.s: Missile.cpp.s
@@ -245,7 +245,7 @@ Missile.s: Missile.cpp.s
 
 # target to generate assembly for a file
 Missile.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLTEST.dir\build.make CMakeFiles/SDLTEST.dir/Missile.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/Missile.cpp.s
 .PHONY : Missile.cpp.s
 
 Model.obj: Model.cpp.obj
@@ -253,7 +253,7 @@ Model.obj: Model.cpp.obj
 
 # target to build an object file
 Model.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLTEST.dir\build.make CMakeFiles/SDLTEST.dir/Model.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/Model.cpp.obj
 .PHONY : Model.cpp.obj
 
 Model.i: Model.cpp.i
@@ -261,7 +261,7 @@ Model.i: Model.cpp.i
 
 # target to preprocess a source file
 Model.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLTEST.dir\build.make CMakeFiles/SDLTEST.dir/Model.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/Model.cpp.i
 .PHONY : Model.cpp.i
 
 Model.s: Model.cpp.s
@@ -269,7 +269,7 @@ Model.s: Model.cpp.s
 
 # target to generate assembly for a file
 Model.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLTEST.dir\build.make CMakeFiles/SDLTEST.dir/Model.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/Model.cpp.s
 .PHONY : Model.cpp.s
 
 Spaceship.obj: Spaceship.cpp.obj
@@ -277,7 +277,7 @@ Spaceship.obj: Spaceship.cpp.obj
 
 # target to build an object file
 Spaceship.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLTEST.dir\build.make CMakeFiles/SDLTEST.dir/Spaceship.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/Spaceship.cpp.obj
 .PHONY : Spaceship.cpp.obj
 
 Spaceship.i: Spaceship.cpp.i
@@ -285,7 +285,7 @@ Spaceship.i: Spaceship.cpp.i
 
 # target to preprocess a source file
 Spaceship.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLTEST.dir\build.make CMakeFiles/SDLTEST.dir/Spaceship.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/Spaceship.cpp.i
 .PHONY : Spaceship.cpp.i
 
 Spaceship.s: Spaceship.cpp.s
@@ -293,7 +293,7 @@ Spaceship.s: Spaceship.cpp.s
 
 # target to generate assembly for a file
 Spaceship.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLTEST.dir\build.make CMakeFiles/SDLTEST.dir/Spaceship.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/Spaceship.cpp.s
 .PHONY : Spaceship.cpp.s
 
 View.obj: View.cpp.obj
@@ -301,7 +301,7 @@ View.obj: View.cpp.obj
 
 # target to build an object file
 View.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLTEST.dir\build.make CMakeFiles/SDLTEST.dir/View.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/View.cpp.obj
 .PHONY : View.cpp.obj
 
 View.i: View.cpp.i
@@ -309,7 +309,7 @@ View.i: View.cpp.i
 
 # target to preprocess a source file
 View.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLTEST.dir\build.make CMakeFiles/SDLTEST.dir/View.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/View.cpp.i
 .PHONY : View.cpp.i
 
 View.s: View.cpp.s
@@ -317,7 +317,7 @@ View.s: View.cpp.s
 
 # target to generate assembly for a file
 View.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLTEST.dir\build.make CMakeFiles/SDLTEST.dir/View.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/View.cpp.s
 .PHONY : View.cpp.s
 
 framework.obj: framework.cpp.obj
@@ -325,7 +325,7 @@ framework.obj: framework.cpp.obj
 
 # target to build an object file
 framework.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLTEST.dir\build.make CMakeFiles/SDLTEST.dir/framework.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/framework.cpp.obj
 .PHONY : framework.cpp.obj
 
 framework.i: framework.cpp.i
@@ -333,7 +333,7 @@ framework.i: framework.cpp.i
 
 # target to preprocess a source file
 framework.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLTEST.dir\build.make CMakeFiles/SDLTEST.dir/framework.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/framework.cpp.i
 .PHONY : framework.cpp.i
 
 framework.s: framework.cpp.s
@@ -341,7 +341,7 @@ framework.s: framework.cpp.s
 
 # target to generate assembly for a file
 framework.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLTEST.dir\build.make CMakeFiles/SDLTEST.dir/framework.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/framework.cpp.s
 .PHONY : framework.cpp.s
 
 main.obj: main.cpp.obj
@@ -349,7 +349,7 @@ main.obj: main.cpp.obj
 
 # target to build an object file
 main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLTEST.dir\build.make CMakeFiles/SDLTEST.dir/main.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -357,7 +357,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLTEST.dir\build.make CMakeFiles/SDLTEST.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -365,7 +365,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLTEST.dir\build.make CMakeFiles/SDLTEST.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -376,7 +376,7 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... SDLTEST
+	@echo ... EFREI-ROIDS
 	@echo ... Asteroid.obj
 	@echo ... Asteroid.i
 	@echo ... Asteroid.s

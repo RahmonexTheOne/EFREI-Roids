@@ -6,6 +6,7 @@ set_package_properties(SDL2 PROPERTIES
     DESCRIPTION "low level access to audio, keyboard, mouse, joystick, and graphics hardware"
 )
 
+
 # Copied from `configure_package_config_file`
 macro(set_and_check _var _file)
     set(${_var} "${_file}")

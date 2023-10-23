@@ -6,6 +6,8 @@
 #include <iostream>
 #include <vector>
 #include <random>
+#include <SDL2_image/SDL_image.h> //for the gif
+#include "include/SDL2/SDL.h"
 
                 using namespace std;
 
@@ -257,7 +259,46 @@ if (!texture) {
 return texture;
 }
 
-//////////////////////
+SDL_Texture* Framework::GetGifTexture(std::string gifName) {
+    std::string gifPath = "images" + pathSep + gifName;
+    SDL_RWops* gifRWops = SDL_RWFromFile(gifPath.c_str(), "rb");
+
+    if (!gifRWops) {
+        std::cerr << "SDL_RWFromFile failed: " << SDL_GetError() << std::endl;
+        exit(1);
+    }
+
+    // Load the GIF using IMG_LoadGIF_RW
+    SDL_Surface* gifSurface = IMG_LoadGIF_RW(gifRWops);
+
+    if (!gifSurface) {
+        std::cerr << "IMG_LoadGIF_RW failed: " << IMG_GetError() << std::endl;
+        exit(1);
+    }
+
+    // Convert the GIF frames to a texture
+    SDL_Texture* gifTexture = SDL_CreateTextureFromSurface(renderer, gifSurface);
+
+    if (!gifTexture) {
+        std::cerr << "SDL_CreateTextureFromSurface failed: " << SDL_GetError() << std::endl;
+        exit(1);
+    }
+
+    SDL_FreeSurface(gifSurface);
+    SDL_RWclose(gifRWops);
+
+    return gifTexture;
+}
+
+
+
+
+
+
+
+
+
+                //////////////////////
 // Affichage de sprite
 // --------
 // * texture : texture du sprite à recopier à l'écran

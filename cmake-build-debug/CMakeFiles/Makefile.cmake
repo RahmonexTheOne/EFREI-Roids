@@ -38,6 +38,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.26.4/CMakeRCCompiler.cmake"
   "CMakeFiles/3.26.4/CMakeSystem.cmake"
   "C:/Users/rahmo/Documents/Git/EFREI-Roids/sdl2-config.cmake"
+  "C:/Users/rahmo/Documents/Git/EFREI-Roids/sdl2_image-config.cmake"
   )
 
 # The corresponding makefile is:
@@ -53,5 +54,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/SDLTEST.dir/DependInfo.cmake"
+  "CMakeFiles/EFREI-ROIDS.dir/DependInfo.cmake"
   )

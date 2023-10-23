@@ -5,6 +5,7 @@
 + Added a parameter SDL_Texture to asteroid and draw asteroid to make changes in the asteroids so that all of them doesn't look the same
 + Added a getRender in the framework
 + Added a main menu(3 buttons with play that redirects to the game)
++ Added an animated background for the main menu-> create a similar function to get texture but for gif files (downloaded SDL_Image.h)
 ### TO-Dos
 + NbAsteroids varies with the level
 + Level written in a text for example : Lvl1 5,10,2 where we can define size of asteroids number of asteroids and their speed as parameters separated with commas

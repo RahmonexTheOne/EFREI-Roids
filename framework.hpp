@@ -102,6 +102,7 @@ class Framework {
         // Renvoie : la texture contenant l'image chargée
         SDL_Texture * GetTexture(string imgName);
         SDL_Renderer* GetRenderer();
+        SDL_Texture* GetGifTexture(string gifName);
 
     private:
         //////////

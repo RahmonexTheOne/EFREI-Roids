@@ -165,7 +165,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=SDLTEST
+CMAKE_PROJECT_NAME:STATIC=EFREI-ROIDS
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION:STATIC=0.1.0
@@ -263,6 +263,21 @@ CMAKE_STRIP:FILEPATH=C:/Program Files/JetBrains/CLion 2023.2.2/bin/mingw/bin/str
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
+EFREI-ROIDS_BINARY_DIR:STATIC=C:/Users/rahmo/Documents/Git/EFREI-Roids/cmake-build-debug
+
+//Value Computed by CMake
+EFREI-ROIDS_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+EFREI-ROIDS_SOURCE_DIR:STATIC=C:/Users/rahmo/Documents/Git/EFREI-Roids
+
+//The directory containing a CMake configuration file for SDL2_IMAGE.
+SDL2_IMAGE_DIR:PATH=SDL2_IMAGE_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for SDL2_image.
+SDL2_image_DIR:PATH=SDL2_image_DIR-NOTFOUND
+
+//Value Computed by CMake
 SDLTEST_BINARY_DIR:STATIC=C:/Users/rahmo/Documents/Git/EFREI-Roids/cmake-build-debug
 
 //Value Computed by CMake
@@ -270,6 +285,12 @@ SDLTEST_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 SDLTEST_SOURCE_DIR:STATIC=C:/Users/rahmo/Documents/Git/EFREI-Roids
+
+//Path to a file.
+SDL_IMAGE_INCLUDE_DIR:PATH=SDL_IMAGE_INCLUDE_DIR-NOTFOUND
+
+//Path to a library.
+SDL_IMAGE_LIBRARY:FILEPATH=SDL_IMAGE_LIBRARY-NOTFOUND
 
 
 ########################

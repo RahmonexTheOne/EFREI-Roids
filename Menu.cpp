@@ -8,9 +8,9 @@ Menu::Menu(Framework* framework) {
     LoadTextures();
 
     // Define button positions and sizes
-    playButtonRect = {100, 200, 250, 87};
-    settingsButtonRect = {100, 300, 250, 87};
-    quitButtonRect = {100, 400, 250, 87};
+    playButtonRect = {100, 600, 250, 87};
+    settingsButtonRect = {100, 700, 250, 87};
+    quitButtonRect = {100, 800, 250, 87};
 }
 
 Menu::~Menu() {
@@ -18,13 +18,20 @@ Menu::~Menu() {
     SDL_DestroyTexture(playButtonTexture);
     SDL_DestroyTexture(settingsButtonTexture);
     SDL_DestroyTexture(quitButtonTexture);
+    //Destroy the background
+    SDL_DestroyTexture(backgroundTexture);
 }
+
 
 void Menu::LoadTextures() {
     //Load button images
     playButtonTexture = framework->GetTexture("playButton.bmp");
     settingsButtonTexture = framework->GetTexture("settingsButton.bmp");
     quitButtonTexture = framework->GetTexture("quitButton.bmp");
+
+    //Load background 
+    backgroundTexture = framework->GetTexture("homescreen.bmp");
+
 }
 
 int Menu::ShowMenu() {
@@ -62,15 +69,18 @@ int Menu::ShowMenu() {
 }
 
 void Menu::RenderMenu() {
-    // Clear the screen
+    //Clear the screen
     SDL_SetRenderDrawColor(renderer, 0, 0, 0, 0);
     SDL_RenderClear(renderer);
 
-    // Render buttons
+    //Render the background GIF
+    SDL_RenderCopy(renderer, backgroundTexture, NULL, NULL);
+
+    //Render buttons
     SDL_RenderCopy(renderer, playButtonTexture, NULL, &playButtonRect);
     SDL_RenderCopy(renderer, settingsButtonTexture, NULL, &settingsButtonRect);
     SDL_RenderCopy(renderer, quitButtonTexture, NULL, &quitButtonRect);
 
-    // Update the screen
+    //Update the screen
     SDL_RenderPresent(renderer);
 }

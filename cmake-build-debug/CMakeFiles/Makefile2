@@ -62,7 +62,7 @@ CMAKE_BINARY_DIR = C:\Users\rahmo\Documents\Git\EFREI-Roids\cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/SDLTEST.dir/all
+all: CMakeFiles/EFREI-ROIDS.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -70,34 +70,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/SDLTEST.dir/clean
+clean: CMakeFiles/EFREI-ROIDS.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/SDLTEST.dir
+# Target rules for target CMakeFiles/EFREI-ROIDS.dir
 
 # All Build rule for target.
-CMakeFiles/SDLTEST.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLTEST.dir\build.make CMakeFiles/SDLTEST.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLTEST.dir\build.make CMakeFiles/SDLTEST.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\rahmo\Documents\Git\EFREI-Roids\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Built target SDLTEST"
-.PHONY : CMakeFiles/SDLTEST.dir/all
+CMakeFiles/EFREI-ROIDS.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\rahmo\Documents\Git\EFREI-Roids\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Built target EFREI-ROIDS"
+.PHONY : CMakeFiles/EFREI-ROIDS.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/SDLTEST.dir/rule: cmake_check_build_system
+CMakeFiles/EFREI-ROIDS.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rahmo\Documents\Git\EFREI-Roids\cmake-build-debug\CMakeFiles 11
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/SDLTEST.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/EFREI-ROIDS.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rahmo\Documents\Git\EFREI-Roids\cmake-build-debug\CMakeFiles 0
-.PHONY : CMakeFiles/SDLTEST.dir/rule
+.PHONY : CMakeFiles/EFREI-ROIDS.dir/rule
 
 # Convenience name for target.
-SDLTEST: CMakeFiles/SDLTEST.dir/rule
-.PHONY : SDLTEST
+EFREI-ROIDS: CMakeFiles/EFREI-ROIDS.dir/rule
+.PHONY : EFREI-ROIDS
 
 # clean rule for target.
-CMakeFiles/SDLTEST.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\SDLTEST.dir\build.make CMakeFiles/SDLTEST.dir/clean
-.PHONY : CMakeFiles/SDLTEST.dir/clean
+CMakeFiles/EFREI-ROIDS.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/clean
+.PHONY : CMakeFiles/EFREI-ROIDS.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

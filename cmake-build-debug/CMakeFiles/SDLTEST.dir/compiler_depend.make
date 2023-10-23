@@ -2484,7 +2484,12 @@ CMakeFiles/SDLTEST.dir/framework.cpp.obj: C:/Users/rahmo/Documents/Git/EFREI-Roi
   C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/numeric \
   C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_numeric.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue_numeric_defs.h \
-  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/execution_defs.h
+  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/execution_defs.h \
+  C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL_image.h \
+  C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL.h \
+  C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL_version.h \
+  C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/begin_code.h \
+  C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/close_code.h
 
 CMakeFiles/SDLTEST.dir/main.cpp.obj: C:/Users/rahmo/Documents/Git/EFREI-Roids/main.cpp \
   C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
@@ -2979,6 +2984,8 @@ C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32
 C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/tmmintrin.h:
 
 C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/typeinfo:
+
+C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL_image.h:
 
 C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hash_bytes.h:
 

@@ -2,7 +2,7 @@
 #define MENU_HPP
 
 #include <SDL.h>
-//#include <SDL_image.h>
+#include <vector>
 #include "framework.hpp"
 
 class Menu {
@@ -17,6 +17,7 @@ private:
     SDL_Texture* playButtonTexture;
     SDL_Texture* settingsButtonTexture;
     SDL_Texture* quitButtonTexture;
+    SDL_Texture* backgroundTexture;
 
     SDL_Rect playButtonRect;
     SDL_Rect settingsButtonRect;
