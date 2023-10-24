@@ -16,12 +16,14 @@ public:
     View(Framework* framework);
 
     void Refresh(std::vector<FlyingObject *>, Framework* framework);
-    void RenderTopBar(Framework* framework);
+    void RenderTopBar(Framework* framework, Spaceship* spaceship);
 
+    void RenderText(Framework* framework, const std::string& text, int x, int y);
 
 
 private :
-
+    Uint32 startTime;
+    Uint32 elapsedTime;
 
 
 };

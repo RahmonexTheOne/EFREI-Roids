@@ -271,14 +271,26 @@ EFREI-ROIDS_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 EFREI-ROIDS_SOURCE_DIR:STATIC=C:/Users/rahmo/Documents/Git/EFREI-Roids
 
+//The directory containing a CMake configuration file for SDL2.
+SDL2_DIR:PATH=SDL2_DIR-NOTFOUND
+
 //The directory containing a CMake configuration file for SDL2_IMAGE.
 SDL2_IMAGE_DIR:PATH=SDL2_IMAGE_DIR-NOTFOUND
+
+//Path to a file.
+SDL2_TTF_INCLUDE_DIRS:PATH=SDL2_TTF_INCLUDE_DIRS-NOTFOUND
+
+//Path to a library.
+SDL2_TTF_LIBRARY:FILEPATH=SDL2_TTF_LIBRARY-NOTFOUND
 
 //The directory containing a CMake configuration file for SDL2_image.
 SDL2_image_DIR:PATH=SDL2_image_DIR-NOTFOUND
 
 //The directory containing a CMake configuration file for SDL2_mixer.
 SDL2_mixer_DIR:PATH=SDL2_mixer_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for SDL2_ttf.
+SDL2_ttf_DIR:PATH=SDL2_ttf_DIR-NOTFOUND
 
 //Value Computed by CMake
 SDLTEST_BINARY_DIR:STATIC=C:/Users/rahmo/Documents/Git/EFREI-Roids/cmake-build-debug

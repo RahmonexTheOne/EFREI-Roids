@@ -98,12 +98,13 @@ CMakeFiles/EFREI-ROIDS.dir/framework.cpp.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator_args.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tuple \
- C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL_mixer.h \
- C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL_stdinc.h \
- C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL_config.h \
- C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL_platform.h \
- C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/begin_code.h \
- C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/close_code.h \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL.h \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_main.h \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_stdinc.h \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_config.h \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_platform.h \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/begin_code.h \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/close_code.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/x86_64-w64-mingw32/include/winsdkver.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/x86_64-w64-mingw32/include/winapifamily.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/x86_64-w64-mingw32/include/sdkddkver.h \
@@ -112,25 +113,17 @@ CMakeFiles/EFREI-ROIDS.dir/framework.cpp.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/x86_64-w64-mingw32/include/_mingw_stdarg.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdint.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/x86_64-w64-mingw32/include/stdint.h \
- C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL_rwops.h \
- C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL_error.h \
- C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL_audio.h \
- C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL_endian.h \
- C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL_mutex.h \
- C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL_thread.h \
- C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL_atomic.h \
- C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/x86_64-w64-mingw32/include/process.h \
- C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/x86_64-w64-mingw32/include/corecrt_startup.h \
- C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/x86_64-w64-mingw32/include/sys/types.h \
- C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL_version.h \
- C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL.h \
- C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_main.h \
- C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_stdinc.h \
- C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/begin_code.h \
- C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/close_code.h \
  C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_assert.h \
  C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_atomic.h \
  C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_audio.h \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_error.h \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_endian.h \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_mutex.h \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_thread.h \
+ C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/x86_64-w64-mingw32/include/process.h \
+ C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/x86_64-w64-mingw32/include/corecrt_startup.h \
+ C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/x86_64-w64-mingw32/include/sys/types.h \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_rwops.h \
  C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_clipboard.h \
  C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_cpuinfo.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/x86_64-w64-mingw32/include/intrin.h \
@@ -235,13 +228,10 @@ CMakeFiles/EFREI-ROIDS.dir/framework.cpp.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/ammintrin.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/xopintrin.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/cpuid.h \
- C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_endian.h \
- C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_error.h \
  C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_events.h \
  C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_video.h \
  C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_pixels.h \
  C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_rect.h \
- C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_rwops.h \
  C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_surface.h \
  C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_blendmode.h \
  C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_keyboard.h \
@@ -250,7 +240,6 @@ CMakeFiles/EFREI-ROIDS.dir/framework.cpp.obj: \
  C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_mouse.h \
  C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_joystick.h \
  C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_guid.h \
- C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_mutex.h \
  C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_gamecontroller.h \
  C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_sensor.h \
  C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_quit.h \
@@ -268,7 +257,6 @@ CMakeFiles/EFREI-ROIDS.dir/framework.cpp.obj: \
  C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_render.h \
  C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_shape.h \
  C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_system.h \
- C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_thread.h \
  C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_timer.h \
  C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_version.h \
  C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL_locale.h \
@@ -346,6 +334,4 @@ CMakeFiles/EFREI-ROIDS.dir/framework.cpp.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_numeric.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue_numeric_defs.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/execution_defs.h \
- C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL_image.h \
- C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL.h \
  C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL.h

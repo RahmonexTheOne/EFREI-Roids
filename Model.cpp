@@ -257,6 +257,9 @@ SDL_Texture* Model::GetRandomAsteroidTexture(Framework* framework) {
 }
 
 
+
+
+
 //------------------------------------------------------------------------------Asteroids Inititialization
 void Model::InitializeAsteroids(Framework* framework) {
     //---Espace de creation :

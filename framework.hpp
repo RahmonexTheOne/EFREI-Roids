@@ -7,7 +7,6 @@
 #define FRAMEWORK_HPP_
 
 #include <string>
-#include "SDL2/SDL_mixer.h"
 #include "include/SDL2/SDL.h"
 
 using std::string;
@@ -124,7 +123,6 @@ class Framework {
         int shipSize;
         int missileSize;
 
-        Mix_Music* backgroundMusic;
         //////////////////////////////
         // Initialisation du framweork
         //

@@ -6,9 +6,8 @@
 #include <iostream>
 #include <vector>
 #include <random>
-#include "SDL2/SDL_image.h" //for the gif
-#include "SDL2/SDL_mixer.h"
 #include <SDL.h>
+
 
                 using namespace std;
 
@@ -51,7 +50,6 @@ Framework::Framework(int fps, int shipSize, int missileSize) {
 //////////////
 // Destructeur
 Framework::~Framework() {
-    // Quit SDL_mixer.
     SDL_Quit();
 }
 
@@ -114,6 +112,7 @@ void Framework::Update() {
     SDL_RenderPresent(renderer);
     SDL_SetRenderDrawColor(renderer, 0, 0, 0, 0);
     SDL_RenderClear(renderer);
+
 
     // On réarme le temps d'attente pour le prochain rafraichissement
     lastTimeScreenUpdate = SDL_GetTicks();
@@ -190,7 +189,7 @@ void Framework::DrawMissile(int x, int y) {
 // * missileSize : taille d'affichage du missile, en pixels
 void Framework::Init(int width, int height, int fps, int shipSize, int missileSize) {
     // Initialisation de SDL2
-    if (SDL_Init(SDL_INIT_VIDEO | SDL_INIT_AUDIO)) {
+    if (SDL_Init(SDL_INIT_VIDEO | SDL_INIT_AUDIO )) {
         cerr << "Framework -> SDL_Init failed: " << SDL_GetError();
         exit(1);
     }
@@ -241,6 +240,7 @@ void Framework::Init(int width, int height, int fps, int shipSize, int missileSi
     this->shipSize    = shipSize;
     this->missileSize = missileSize;
 }
+
 
 
 void Framework::PlayBackgroundMusic(const char* musicFile) {

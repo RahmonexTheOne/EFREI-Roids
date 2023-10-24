@@ -13,13 +13,17 @@ Controller::Controller(int fps, int shipSize, int missileSize){
     this->model = new Model(framework);
     this->menu = new Menu(framework);
     this->renderer = framework->GetRenderer();
+    //Load background
+    backgroundTexture = framework->GetTexture("fondjeu.bmp");
 
 }
 
 
 
 void Controller::LaunchGame() {
+
     int menuResult = menu->ShowMenu();
+
     if (menuResult == 0) {
         //bool gameRunning = true;
         while(true){
@@ -36,10 +40,14 @@ void Controller::LaunchGame() {
             else {
                 continue;
             }
+            //Render the background GIF
+            SDL_RenderCopy(renderer, backgroundTexture, NULL, NULL);
+
             //-----------------
 
             view->Refresh(model->GetFlyingObjects(),framework);
         }
+
     }
 
 

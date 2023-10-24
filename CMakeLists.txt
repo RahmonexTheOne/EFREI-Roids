@@ -3,7 +3,10 @@ project(EFREI-ROIDS VERSION 0.1.0 LANGUAGES C CXX)
 
 set (SDL2_DIR ./)
 
+
 file(COPY bin/SDL2.dll DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
+file(COPY include/ DESTINATION ${CMAKE_CURRENT_BINARY_DIR}/include/)
+file(COPY lib/ DESTINATION ${CMAKE_CURRENT_BINARY_DIR}/lib/)
 file(COPY images/ DESTINATION ${CMAKE_CURRENT_BINARY_DIR}/images/)
 file(COPY backgroundMusic.wav DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
 
@@ -36,8 +39,6 @@ set(
 )
 
 find_package(SDL2 REQUIRED)
-include_directories(${SDL2_INCLUDE_DIRS})
-
 
 add_executable(EFREI-ROIDS ${SRCS} ${HEADER})
-target_link_libraries(EFREI-ROIDS ${SDL2_LIBRARIES})
+target_link_libraries(EFREI-ROIDS ${SDL2_LIBRARIES} ${SDL2_TTF_LIBRARIES} )

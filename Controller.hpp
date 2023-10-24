@@ -31,6 +31,8 @@ private :
     View* view;
     Menu* menu;
     SDL_Renderer* renderer;
+    SDL_Texture* backgroundTexture;
+
 
 };
 
