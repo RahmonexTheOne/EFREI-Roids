@@ -6,8 +6,9 @@
 #include <iostream>
 #include <vector>
 #include <random>
-#include <SDL2_image/SDL_image.h> //for the gif
-#include "include/SDL2/SDL.h"
+#include "SDL2/SDL_image.h" //for the gif
+#include "SDL2/SDL_mixer.h"
+#include <SDL.h>
 
                 using namespace std;
 
@@ -50,6 +51,7 @@ Framework::Framework(int fps, int shipSize, int missileSize) {
 //////////////
 // Destructeur
 Framework::~Framework() {
+    // Quit SDL_mixer.
     SDL_Quit();
 }
 
@@ -188,8 +190,8 @@ void Framework::DrawMissile(int x, int y) {
 // * missileSize : taille d'affichage du missile, en pixels
 void Framework::Init(int width, int height, int fps, int shipSize, int missileSize) {
     // Initialisation de SDL2
-    if (SDL_Init(SDL_INIT_VIDEO)) {
-        cerr << "Framework -> SDL_Init failed: "  << SDL_GetError();
+    if (SDL_Init(SDL_INIT_VIDEO | SDL_INIT_AUDIO)) {
+        cerr << "Framework -> SDL_Init failed: " << SDL_GetError();
         exit(1);
     }
 
@@ -199,6 +201,7 @@ void Framework::Init(int width, int height, int fps, int shipSize, int missileSi
         width = DM.w;
         height = DM.h;
     }
+
 
     // Création de la fenêtre plein écran
     window = SDL_CreateWindow("EFREIroid", 0, 0, width, height, SDL_WINDOW_OPENGL);
@@ -219,6 +222,7 @@ void Framework::Init(int width, int height, int fps, int shipSize, int missileSi
         exit(1);
     }
 
+
     // Textures de chacun des sprites du jeu
     textureShip        = GetTexture("spaceship.bmp");
     textureShipWarning = GetTexture("redspaceship.bmp");
@@ -237,6 +241,35 @@ void Framework::Init(int width, int height, int fps, int shipSize, int missileSi
     this->shipSize    = shipSize;
     this->missileSize = missileSize;
 }
+
+
+void Framework::PlayBackgroundMusic(const char* musicFile) {
+    // Load the music
+    SDL_AudioSpec wavSpec;
+    Uint8* wavStart;
+    Uint32 wavLength;
+
+    if (SDL_LoadWAV(musicFile, &wavSpec, &wavStart, &wavLength) == nullptr) {
+        std::cerr << "SDL_LoadWAV failed: " << SDL_GetError() << std::endl;
+        return;
+    }
+
+    // Open the audio device
+    SDL_AudioDeviceID audioDevice = SDL_OpenAudioDevice(nullptr, 0, &wavSpec, nullptr, 0);
+    if (audioDevice == 0) {
+        std::cerr << "SDL_OpenAudioDevice failed: " << SDL_GetError() << std::endl;
+        SDL_FreeWAV(wavStart);
+        return;
+    }
+
+    // Queue the audio
+    SDL_QueueAudio(audioDevice, wavStart, wavLength);
+    SDL_PauseAudioDevice(audioDevice, 0);
+
+    // Clean up the loaded WAV
+    SDL_FreeWAV(wavStart);
+}
+
 
 ///////////////////////////////////
 // Création d'une texture de sprite
@@ -257,37 +290,6 @@ if (!texture) {
 }
 
 return texture;
-}
-
-SDL_Texture* Framework::GetGifTexture(std::string gifName) {
-    std::string gifPath = "images" + pathSep + gifName;
-    SDL_RWops* gifRWops = SDL_RWFromFile(gifPath.c_str(), "rb");
-
-    if (!gifRWops) {
-        std::cerr << "SDL_RWFromFile failed: " << SDL_GetError() << std::endl;
-        exit(1);
-    }
-
-    // Load the GIF using IMG_LoadGIF_RW
-    SDL_Surface* gifSurface = IMG_LoadGIF_RW(gifRWops);
-
-    if (!gifSurface) {
-        std::cerr << "IMG_LoadGIF_RW failed: " << IMG_GetError() << std::endl;
-        exit(1);
-    }
-
-    // Convert the GIF frames to a texture
-    SDL_Texture* gifTexture = SDL_CreateTextureFromSurface(renderer, gifSurface);
-
-    if (!gifTexture) {
-        std::cerr << "SDL_CreateTextureFromSurface failed: " << SDL_GetError() << std::endl;
-        exit(1);
-    }
-
-    SDL_FreeSurface(gifSurface);
-    SDL_RWclose(gifRWops);
-
-    return gifTexture;
 }
 
 

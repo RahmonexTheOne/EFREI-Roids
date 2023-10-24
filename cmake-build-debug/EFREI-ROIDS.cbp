@@ -149,8 +149,5 @@
 		<Unit filename="C:/Users/rahmo/Documents/Git/EFREI-Roids/sdl2-config.cmake">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="C:/Users/rahmo/Documents/Git/EFREI-Roids/sdl2_image-config.cmake">
-			<Option virtualFolder="CMake Files\"/>
-		</Unit>
 	</Project>
 </CodeBlocks_project_file>

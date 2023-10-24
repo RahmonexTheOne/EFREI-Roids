@@ -16,6 +16,8 @@ public:
     View(Framework* framework);
 
     void Refresh(std::vector<FlyingObject *>, Framework* framework);
+    void RenderTopBar(Framework* framework);
+
 
 
 private :

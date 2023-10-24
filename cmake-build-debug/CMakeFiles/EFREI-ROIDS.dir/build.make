@@ -247,7 +247,6 @@ EFREI-ROIDS.exe: CMakeFiles/EFREI-ROIDS.dir/Menu.cpp.obj
 EFREI-ROIDS.exe: CMakeFiles/EFREI-ROIDS.dir/build.make
 EFREI-ROIDS.exe: C:/Users/rahmo/Documents/Git/EFREI-Roids/lib/libSDL2main.a
 EFREI-ROIDS.exe: C:/Users/rahmo/Documents/Git/EFREI-Roids/lib/libSDL2.dll.a
-EFREI-ROIDS.exe: C:/Users/rahmo/Documents/Git/EFREI-Roids/lib/SDL2_image.lib
 EFREI-ROIDS.exe: CMakeFiles/EFREI-ROIDS.dir/linkLibs.rsp
 EFREI-ROIDS.exe: CMakeFiles/EFREI-ROIDS.dir/objects1.rsp
 EFREI-ROIDS.exe: CMakeFiles/EFREI-ROIDS.dir/link.txt

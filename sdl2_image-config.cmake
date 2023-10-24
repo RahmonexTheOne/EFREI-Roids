@@ -1,5 +1,4 @@
-# SDL2_image CMake configuration file:
-# This file is meant to be placed in a cmake subfolder of SDL2_image-devel-2.x.y-VC
+# sdl2_image cmake project-config input for ./configure scripts
 
 include(FeatureSummary)
 set_package_properties(SDL2_image PROPERTIES
@@ -7,67 +6,95 @@ set_package_properties(SDL2_image PROPERTIES
     DESCRIPTION "SDL_image is an image file loading library"
 )
 
-cmake_minimum_required(VERSION 3.0)
-
 set(SDL2_image_FOUND TRUE)
 
-set(SDL2IMAGE_AVIF  FALSE)
-set(SDL2IMAGE_BMP   TRUE)
-set(SDL2IMAGE_GIF   TRUE)
-set(SDL2IMAGE_JPG   TRUE)
-set(SDL2IMAGE_JXL   FALSE)
-set(SDL2IMAGE_LBM   TRUE)
-set(SDL2IMAGE_PCX   TRUE)
-set(SDL2IMAGE_PNG   TRUE)
-set(SDL2IMAGE_PNM   TRUE)
-set(SDL2IMAGE_QOI   TRUE)
-set(SDL2IMAGE_SVG   TRUE)
-set(SDL2IMAGE_TGA   TRUE)
-set(SDL2IMAGE_TIF   FALSE)
-set(SDL2IMAGE_XCF   FALSE)
-set(SDL2IMAGE_XPM   TRUE)
-set(SDL2IMAGE_XV    TRUE)
-set(SDL2IMAGE_WEBP  FALSE)
+set(SDL2IMAGE_AVIF  0)
+set(SDL2IMAGE_BMP   1)
+set(SDL2IMAGE_GIF   1)
+set(SDL2IMAGE_JPG   1)
+set(SDL2IMAGE_JXL   0)
+set(SDL2IMAGE_LBM   1)
+set(SDL2IMAGE_PCX   1)
+set(SDL2IMAGE_PNG   1)
+set(SDL2IMAGE_PNM   1)
+set(SDL2IMAGE_QOI   1)
+set(SDL2IMAGE_SVG   1)
+set(SDL2IMAGE_TGA   1)
+set(SDL2IMAGE_TIF   0)
+set(SDL2IMAGE_XCF   1)
+set(SDL2IMAGE_XPM   1)
+set(SDL2IMAGE_XV    1)
+set(SDL2IMAGE_WEBP  0)
 
-set(SDL2IMAGE_JPG_SAVE FALSE)
-set(SDL2IMAGE_PNG_SAVE FALSE)
+set(SDL2IMAGE_JPG_SAVE 1)
+set(SDL2IMAGE_PNG_SAVE 1)
 
 set(SDL2IMAGE_VENDORED  FALSE)
 
-set(SDL2IMAGE_BACKEND_IMAGEIO   FALSE)
-set(SDL2IMAGE_BACKEND_STB       TRUE)
-set(SDL2IMAGE_BACKEND_WIC       FALSE)
+set(SDL2IMAGE_BACKEND_IMAGEIO   0)
+set(SDL2IMAGE_BACKEND_STB       1)
+set(SDL2IMAGE_BACKEND_WIC       0)
 
-if(CMAKE_SIZEOF_VOID_P STREQUAL "4")
-    set(_sdl_arch_subdir "x86")
-elseif(CMAKE_SIZEOF_VOID_P STREQUAL "8")
-    set(_sdl_arch_subdir "x64")
-else()
-    unset(_sdl_arch_subdir)
-    set(SDL2_image_FOUND FALSE)
-    return()
-endif()
+get_filename_component(CMAKE_CURRENT_LIST_DIR ${CMAKE_CURRENT_LIST_DIR} REALPATH)
+get_filename_component(prefix "${CMAKE_CURRENT_LIST_DIR}" ABSOLUTE)
+set(exec_prefix "${prefix}")
+set(bindir "${exec_prefix}/bin")
+set(includedir "${prefix}/include")
+set(libdir "${exec_prefix}/lib")
+set(_sdl2image_extra_static_libraries " ")
+string(STRIP "${_sdl2image_extra_static_libraries}" _sdl2image_extra_static_libraries)
 
-set(_sdl2image_incdir       "../../../Downloads/SDL2_image-devel-2.6.3-VC/SDL2_image-2.6.3/include")
-set(_sdl2image_library      "${CMAKE_CURRENT_LIST_DIR}/../lib/${_sdl_arch_subdir}/SDL2_image.lib")
-set(_sdl2image_dll          "${CMAKE_CURRENT_LIST_DIR}/../lib/${_sdl_arch_subdir}/SDL2_image.dll")
+set(_sdl2image_bindir   "${bindir}")
+set(_sdl2image_libdir   "${libdir}")
+set(_sdl2image_incdir   "${includedir}/SDL2")
 
-# All targets are created, even when some might not be requested though COMPONENTS.
-# This is done for compatibility with CMake generated SDL2_image-target.cmake files.
+# Convert _sdl2image_extra_static_libraries to list and keep only libraries
+string(REGEX MATCHALL "(-[lm]([-a-zA-Z0-9._]+))|(-Wl,[^ ]*framework[^ ]*)" _sdl2image_extra_static_libraries "${_sdl2image_extra_static_libraries}")
+string(REGEX REPLACE "^-l" "" _sdl2image_extra_static_libraries "${_sdl2image_extra_static_libraries}")
+string(REGEX REPLACE ";-l" ";" _sdl2image_extra_static_libraries "${_sdl2image_extra_static_libraries}")
+
+unset(prefix)
+unset(exec_prefix)
+unset(bindir)
+unset(includedir)
+unset(libdir)
+
+include(CMakeFindDependencyMacro)
 
 if(NOT TARGET SDL2_image::SDL2_image)
     add_library(SDL2_image::SDL2_image SHARED IMPORTED)
     set_target_properties(SDL2_image::SDL2_image
         PROPERTIES
             INTERFACE_INCLUDE_DIRECTORIES "${_sdl2image_incdir}"
-            IMPORTED_IMPLIB "${_sdl2image_library}"
-            IMPORTED_LOCATION "${_sdl2image_dll}"
             COMPATIBLE_INTERFACE_BOOL "SDL2_SHARED"
             INTERFACE_SDL2_SHARED "ON"
     )
+    if(WIN32)
+        set_target_properties(SDL2_image::SDL2_image
+            PROPERTIES
+                IMPORTED_LOCATION "${_sdl2image_bindir}/SDL2_image.dll"
+                IMPORTED_IMPLIB "${_sdl2image_libdir}/${CMAKE_STATIC_LIBRARY_PREFIX}SDL2_image.dll${CMAKE_STATIC_LIBRARY_SUFFIX}"
+        )
+    else()
+        set_target_properties(SDL2_image::SDL2_image
+            PROPERTIES
+                IMPORTED_LOCATION "${_sdl2image_libdir}/${CMAKE_SHARED_LIBRARY_PREFIX}SDL2_image${CMAKE_SHARED_LIBRARY_SUFFIX}"
+        )
+    endif()
 endif()
 
-unset(_sdl_arch_subdir)
+if(NOT TARGET SDL2_image::SDL2_image-static)
+    add_library(SDL2_image::SDL2_image-static STATIC IMPORTED)
+
+    set_target_properties(SDL2_image::SDL2_image-static
+        PROPERTIES
+            INTERFACE_INCLUDE_DIRECTORIES "${_sdl2image_incdir}"
+            IMPORTED_LOCATION "${_sdl2image_libdir}/${CMAKE_STATIC_LIBRARY_PREFIX}SDL2_image${CMAKE_STATIC_LIBRARY_SUFFIX}"
+            INTERFACE_LINK_LIBRARIES "${_sdl2image_extra_static_libraries}"
+    )
+endif()
+
+unset(_sdl2image_extra_static_libraries)
+unset(_sdl2image_bindir)
+unset(_sdl2image_libdir)
 unset(_sdl2image_incdir)
-unset(_sdl2image_library)
-unset(_sdl2image_dll)

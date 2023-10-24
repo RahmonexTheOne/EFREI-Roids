@@ -8,8 +8,27 @@ using namespace std;
 //------------------Constructors :
 View::View(Framework* framework) {
 
+
 }
 
+void View::RenderTopBar(Framework* framework) {
+    // Render the background for the top bar
+    SDL_Rect topBarRect = {0, 0, framework->GetScreenWidth(), 100};
+    SDL_SetRenderDrawColor(framework->GetRenderer(), 0, 14, 120, 255);
+    SDL_RenderFillRect(framework->GetRenderer(), &topBarRect);
+
+    // Render the shield health text
+    /*std::string shieldText = "Shield: " + std::to_string(spaceship.GetShieldHealth());
+    RenderText(shieldText, shieldTextX, topBarTextY);
+
+    // Render the invincibility time text
+    std::string invincibilityText = "Invincibility: " + std::to_string(spaceship.GetInvincibilityTime()) + "s";
+    RenderText(invincibilityText, invincibilityTextX, topBarTextY);
+
+    // Render the elapsed time text
+    std::string elapsedTimeText = "Time: " + std::to_string(elapsedTime) + "s";
+    RenderText(elapsedTimeText, elapsedTimeTextX, topBarTextY);*/
+}
 
 
 
@@ -19,6 +38,7 @@ void View::Refresh(std::vector<FlyingObject *> flyingObjects,Framework* framewor
 
     //----------------Test the list of FlyingObjects:
     for (FlyingObject* object : flyingObjects){
+        RenderTopBar(framework);
         if(object!=nullptr){
             //For an Asteroid :
             if(object->GetTypeName() == "Asteroid"){
@@ -38,6 +58,7 @@ void View::Refresh(std::vector<FlyingObject *> flyingObjects,Framework* framewor
                 framework->DrawShip(spaceship->GetX(),spaceship->GetY(),spaceship->GetAngle(),spaceship->GetShieldLevel(),spaceship->GetWarning());
             }
         }
+
 
 
     }

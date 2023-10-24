@@ -277,6 +277,9 @@ SDL2_IMAGE_DIR:PATH=SDL2_IMAGE_DIR-NOTFOUND
 //The directory containing a CMake configuration file for SDL2_image.
 SDL2_image_DIR:PATH=SDL2_image_DIR-NOTFOUND
 
+//The directory containing a CMake configuration file for SDL2_mixer.
+SDL2_mixer_DIR:PATH=SDL2_mixer_DIR-NOTFOUND
+
 //Value Computed by CMake
 SDLTEST_BINARY_DIR:STATIC=C:/Users/rahmo/Documents/Git/EFREI-Roids/cmake-build-debug
 

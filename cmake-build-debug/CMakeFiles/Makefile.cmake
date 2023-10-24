@@ -38,7 +38,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.26.4/CMakeRCCompiler.cmake"
   "CMakeFiles/3.26.4/CMakeSystem.cmake"
   "C:/Users/rahmo/Documents/Git/EFREI-Roids/sdl2-config.cmake"
-  "C:/Users/rahmo/Documents/Git/EFREI-Roids/sdl2_image-config.cmake"
   )
 
 # The corresponding makefile is:

@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Controller.hpp"
 
+
 using namespace std;
 
 //------------------Constructors :
@@ -11,8 +12,10 @@ Controller::Controller(int fps, int shipSize, int missileSize){
     this->framework = new Framework(fps,shipSize,missileSize);
     this->model = new Model(framework);
     this->menu = new Menu(framework);
+    this->renderer = framework->GetRenderer();
 
 }
+
 
 
 void Controller::LaunchGame() {

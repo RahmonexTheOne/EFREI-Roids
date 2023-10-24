@@ -4,6 +4,7 @@
 Menu::Menu(Framework* framework) {
     this->framework = framework;
     this->renderer = framework->GetRenderer();
+    framework->PlayBackgroundMusic("backgroundMusic.wav");
 
     LoadTextures();
 
@@ -29,7 +30,7 @@ void Menu::LoadTextures() {
     settingsButtonTexture = framework->GetTexture("settingsButton.bmp");
     quitButtonTexture = framework->GetTexture("quitButton.bmp");
 
-    //Load background 
+    //Load background
     backgroundTexture = framework->GetTexture("homescreen.bmp");
 
 }

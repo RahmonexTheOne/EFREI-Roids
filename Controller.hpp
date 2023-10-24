@@ -30,6 +30,7 @@ private :
     Framework* framework;
     View* view;
     Menu* menu;
+    SDL_Renderer* renderer;
 
 };
 

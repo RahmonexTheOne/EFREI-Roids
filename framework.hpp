@@ -7,6 +7,7 @@
 #define FRAMEWORK_HPP_
 
 #include <string>
+#include "SDL2/SDL_mixer.h"
 #include "include/SDL2/SDL.h"
 
 using std::string;
@@ -102,8 +103,7 @@ class Framework {
         // Renvoie : la texture contenant l'image chargée
         SDL_Texture * GetTexture(string imgName);
         SDL_Renderer* GetRenderer();
-        SDL_Texture* GetGifTexture(string gifName);
-
+        void PlayBackgroundMusic(const char* musicFile);
     private:
         //////////
         // Fenêtre
@@ -124,6 +124,7 @@ class Framework {
         int shipSize;
         int missileSize;
 
+        Mix_Music* backgroundMusic;
         //////////////////////////////
         // Initialisation du framweork
         //
