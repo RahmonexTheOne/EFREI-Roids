@@ -37,6 +37,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.26.4/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.26.4/CMakeRCCompiler.cmake"
   "CMakeFiles/3.26.4/CMakeSystem.cmake"
+  "C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2_ttf-devel-2.20.2-VC/SDL2_ttf-2.20.2/cmake/sdl2_ttf-config-version.cmake"
+  "C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2_ttf-devel-2.20.2-VC/SDL2_ttf-2.20.2/cmake/sdl2_ttf-config.cmake"
   "C:/Users/rahmo/Documents/Git/EFREI-Roids/sdl2-config.cmake"
   )
 

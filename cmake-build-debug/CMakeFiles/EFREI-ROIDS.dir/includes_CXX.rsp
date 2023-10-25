@@ -1,1 +1,1 @@
--isystem "C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2"
+-isystem "C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2" -isystem "C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2_ttf-devel-2.20.2-VC/SDL2_ttf-2.20.2/cmake/../include"

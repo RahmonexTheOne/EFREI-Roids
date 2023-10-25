@@ -68,185 +68,186 @@ include CMakeFiles/EFREI-ROIDS.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/EFREI-ROIDS.dir/flags.make
 
-CMakeFiles/EFREI-ROIDS.dir/main.cpp.obj: CMakeFiles/EFREI-ROIDS.dir/flags.make
-CMakeFiles/EFREI-ROIDS.dir/main.cpp.obj: CMakeFiles/EFREI-ROIDS.dir/includes_CXX.rsp
-CMakeFiles/EFREI-ROIDS.dir/main.cpp.obj: C:/Users/rahmo/Documents/Git/EFREI-Roids/main.cpp
-CMakeFiles/EFREI-ROIDS.dir/main.cpp.obj: CMakeFiles/EFREI-ROIDS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\rahmo\Documents\Git\EFREI-Roids\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/EFREI-ROIDS.dir/main.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EFREI-ROIDS.dir/main.cpp.obj -MF CMakeFiles\EFREI-ROIDS.dir\main.cpp.obj.d -o CMakeFiles\EFREI-ROIDS.dir\main.cpp.obj -c C:\Users\rahmo\Documents\Git\EFREI-Roids\main.cpp
+CMakeFiles/EFREI-ROIDS.dir/src/main.cpp.obj: CMakeFiles/EFREI-ROIDS.dir/flags.make
+CMakeFiles/EFREI-ROIDS.dir/src/main.cpp.obj: CMakeFiles/EFREI-ROIDS.dir/includes_CXX.rsp
+CMakeFiles/EFREI-ROIDS.dir/src/main.cpp.obj: C:/Users/rahmo/Documents/Git/EFREI-Roids/src/main.cpp
+CMakeFiles/EFREI-ROIDS.dir/src/main.cpp.obj: CMakeFiles/EFREI-ROIDS.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\rahmo\Documents\Git\EFREI-Roids\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/EFREI-ROIDS.dir/src/main.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EFREI-ROIDS.dir/src/main.cpp.obj -MF CMakeFiles\EFREI-ROIDS.dir\src\main.cpp.obj.d -o CMakeFiles\EFREI-ROIDS.dir\src\main.cpp.obj -c C:\Users\rahmo\Documents\Git\EFREI-Roids\src\main.cpp
 
-CMakeFiles/EFREI-ROIDS.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EFREI-ROIDS.dir/main.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\rahmo\Documents\Git\EFREI-Roids\main.cpp > CMakeFiles\EFREI-ROIDS.dir\main.cpp.i
+CMakeFiles/EFREI-ROIDS.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EFREI-ROIDS.dir/src/main.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\rahmo\Documents\Git\EFREI-Roids\src\main.cpp > CMakeFiles\EFREI-ROIDS.dir\src\main.cpp.i
 
-CMakeFiles/EFREI-ROIDS.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EFREI-ROIDS.dir/main.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\rahmo\Documents\Git\EFREI-Roids\main.cpp -o CMakeFiles\EFREI-ROIDS.dir\main.cpp.s
+CMakeFiles/EFREI-ROIDS.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EFREI-ROIDS.dir/src/main.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\rahmo\Documents\Git\EFREI-Roids\src\main.cpp -o CMakeFiles\EFREI-ROIDS.dir\src\main.cpp.s
 
-CMakeFiles/EFREI-ROIDS.dir/framework.cpp.obj: CMakeFiles/EFREI-ROIDS.dir/flags.make
-CMakeFiles/EFREI-ROIDS.dir/framework.cpp.obj: CMakeFiles/EFREI-ROIDS.dir/includes_CXX.rsp
-CMakeFiles/EFREI-ROIDS.dir/framework.cpp.obj: C:/Users/rahmo/Documents/Git/EFREI-Roids/framework.cpp
-CMakeFiles/EFREI-ROIDS.dir/framework.cpp.obj: CMakeFiles/EFREI-ROIDS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\rahmo\Documents\Git\EFREI-Roids\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/EFREI-ROIDS.dir/framework.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EFREI-ROIDS.dir/framework.cpp.obj -MF CMakeFiles\EFREI-ROIDS.dir\framework.cpp.obj.d -o CMakeFiles\EFREI-ROIDS.dir\framework.cpp.obj -c C:\Users\rahmo\Documents\Git\EFREI-Roids\framework.cpp
+CMakeFiles/EFREI-ROIDS.dir/src/framework.cpp.obj: CMakeFiles/EFREI-ROIDS.dir/flags.make
+CMakeFiles/EFREI-ROIDS.dir/src/framework.cpp.obj: CMakeFiles/EFREI-ROIDS.dir/includes_CXX.rsp
+CMakeFiles/EFREI-ROIDS.dir/src/framework.cpp.obj: C:/Users/rahmo/Documents/Git/EFREI-Roids/src/framework.cpp
+CMakeFiles/EFREI-ROIDS.dir/src/framework.cpp.obj: CMakeFiles/EFREI-ROIDS.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\rahmo\Documents\Git\EFREI-Roids\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/EFREI-ROIDS.dir/src/framework.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EFREI-ROIDS.dir/src/framework.cpp.obj -MF CMakeFiles\EFREI-ROIDS.dir\src\framework.cpp.obj.d -o CMakeFiles\EFREI-ROIDS.dir\src\framework.cpp.obj -c C:\Users\rahmo\Documents\Git\EFREI-Roids\src\framework.cpp
 
-CMakeFiles/EFREI-ROIDS.dir/framework.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EFREI-ROIDS.dir/framework.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\rahmo\Documents\Git\EFREI-Roids\framework.cpp > CMakeFiles\EFREI-ROIDS.dir\framework.cpp.i
+CMakeFiles/EFREI-ROIDS.dir/src/framework.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EFREI-ROIDS.dir/src/framework.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\rahmo\Documents\Git\EFREI-Roids\src\framework.cpp > CMakeFiles\EFREI-ROIDS.dir\src\framework.cpp.i
 
-CMakeFiles/EFREI-ROIDS.dir/framework.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EFREI-ROIDS.dir/framework.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\rahmo\Documents\Git\EFREI-Roids\framework.cpp -o CMakeFiles\EFREI-ROIDS.dir\framework.cpp.s
+CMakeFiles/EFREI-ROIDS.dir/src/framework.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EFREI-ROIDS.dir/src/framework.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\rahmo\Documents\Git\EFREI-Roids\src\framework.cpp -o CMakeFiles\EFREI-ROIDS.dir\src\framework.cpp.s
 
-CMakeFiles/EFREI-ROIDS.dir/Asteroid.cpp.obj: CMakeFiles/EFREI-ROIDS.dir/flags.make
-CMakeFiles/EFREI-ROIDS.dir/Asteroid.cpp.obj: CMakeFiles/EFREI-ROIDS.dir/includes_CXX.rsp
-CMakeFiles/EFREI-ROIDS.dir/Asteroid.cpp.obj: C:/Users/rahmo/Documents/Git/EFREI-Roids/Asteroid.cpp
-CMakeFiles/EFREI-ROIDS.dir/Asteroid.cpp.obj: CMakeFiles/EFREI-ROIDS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\rahmo\Documents\Git\EFREI-Roids\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/EFREI-ROIDS.dir/Asteroid.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EFREI-ROIDS.dir/Asteroid.cpp.obj -MF CMakeFiles\EFREI-ROIDS.dir\Asteroid.cpp.obj.d -o CMakeFiles\EFREI-ROIDS.dir\Asteroid.cpp.obj -c C:\Users\rahmo\Documents\Git\EFREI-Roids\Asteroid.cpp
+CMakeFiles/EFREI-ROIDS.dir/src/Asteroid.cpp.obj: CMakeFiles/EFREI-ROIDS.dir/flags.make
+CMakeFiles/EFREI-ROIDS.dir/src/Asteroid.cpp.obj: CMakeFiles/EFREI-ROIDS.dir/includes_CXX.rsp
+CMakeFiles/EFREI-ROIDS.dir/src/Asteroid.cpp.obj: C:/Users/rahmo/Documents/Git/EFREI-Roids/src/Asteroid.cpp
+CMakeFiles/EFREI-ROIDS.dir/src/Asteroid.cpp.obj: CMakeFiles/EFREI-ROIDS.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\rahmo\Documents\Git\EFREI-Roids\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/EFREI-ROIDS.dir/src/Asteroid.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EFREI-ROIDS.dir/src/Asteroid.cpp.obj -MF CMakeFiles\EFREI-ROIDS.dir\src\Asteroid.cpp.obj.d -o CMakeFiles\EFREI-ROIDS.dir\src\Asteroid.cpp.obj -c C:\Users\rahmo\Documents\Git\EFREI-Roids\src\Asteroid.cpp
 
-CMakeFiles/EFREI-ROIDS.dir/Asteroid.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EFREI-ROIDS.dir/Asteroid.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\rahmo\Documents\Git\EFREI-Roids\Asteroid.cpp > CMakeFiles\EFREI-ROIDS.dir\Asteroid.cpp.i
+CMakeFiles/EFREI-ROIDS.dir/src/Asteroid.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EFREI-ROIDS.dir/src/Asteroid.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\rahmo\Documents\Git\EFREI-Roids\src\Asteroid.cpp > CMakeFiles\EFREI-ROIDS.dir\src\Asteroid.cpp.i
 
-CMakeFiles/EFREI-ROIDS.dir/Asteroid.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EFREI-ROIDS.dir/Asteroid.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\rahmo\Documents\Git\EFREI-Roids\Asteroid.cpp -o CMakeFiles\EFREI-ROIDS.dir\Asteroid.cpp.s
+CMakeFiles/EFREI-ROIDS.dir/src/Asteroid.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EFREI-ROIDS.dir/src/Asteroid.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\rahmo\Documents\Git\EFREI-Roids\src\Asteroid.cpp -o CMakeFiles\EFREI-ROIDS.dir\src\Asteroid.cpp.s
 
-CMakeFiles/EFREI-ROIDS.dir/FlyingObject.cpp.obj: CMakeFiles/EFREI-ROIDS.dir/flags.make
-CMakeFiles/EFREI-ROIDS.dir/FlyingObject.cpp.obj: CMakeFiles/EFREI-ROIDS.dir/includes_CXX.rsp
-CMakeFiles/EFREI-ROIDS.dir/FlyingObject.cpp.obj: C:/Users/rahmo/Documents/Git/EFREI-Roids/FlyingObject.cpp
-CMakeFiles/EFREI-ROIDS.dir/FlyingObject.cpp.obj: CMakeFiles/EFREI-ROIDS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\rahmo\Documents\Git\EFREI-Roids\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/EFREI-ROIDS.dir/FlyingObject.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EFREI-ROIDS.dir/FlyingObject.cpp.obj -MF CMakeFiles\EFREI-ROIDS.dir\FlyingObject.cpp.obj.d -o CMakeFiles\EFREI-ROIDS.dir\FlyingObject.cpp.obj -c C:\Users\rahmo\Documents\Git\EFREI-Roids\FlyingObject.cpp
+CMakeFiles/EFREI-ROIDS.dir/src/FlyingObject.cpp.obj: CMakeFiles/EFREI-ROIDS.dir/flags.make
+CMakeFiles/EFREI-ROIDS.dir/src/FlyingObject.cpp.obj: CMakeFiles/EFREI-ROIDS.dir/includes_CXX.rsp
+CMakeFiles/EFREI-ROIDS.dir/src/FlyingObject.cpp.obj: C:/Users/rahmo/Documents/Git/EFREI-Roids/src/FlyingObject.cpp
+CMakeFiles/EFREI-ROIDS.dir/src/FlyingObject.cpp.obj: CMakeFiles/EFREI-ROIDS.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\rahmo\Documents\Git\EFREI-Roids\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/EFREI-ROIDS.dir/src/FlyingObject.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EFREI-ROIDS.dir/src/FlyingObject.cpp.obj -MF CMakeFiles\EFREI-ROIDS.dir\src\FlyingObject.cpp.obj.d -o CMakeFiles\EFREI-ROIDS.dir\src\FlyingObject.cpp.obj -c C:\Users\rahmo\Documents\Git\EFREI-Roids\src\FlyingObject.cpp
 
-CMakeFiles/EFREI-ROIDS.dir/FlyingObject.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EFREI-ROIDS.dir/FlyingObject.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\rahmo\Documents\Git\EFREI-Roids\FlyingObject.cpp > CMakeFiles\EFREI-ROIDS.dir\FlyingObject.cpp.i
+CMakeFiles/EFREI-ROIDS.dir/src/FlyingObject.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EFREI-ROIDS.dir/src/FlyingObject.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\rahmo\Documents\Git\EFREI-Roids\src\FlyingObject.cpp > CMakeFiles\EFREI-ROIDS.dir\src\FlyingObject.cpp.i
 
-CMakeFiles/EFREI-ROIDS.dir/FlyingObject.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EFREI-ROIDS.dir/FlyingObject.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\rahmo\Documents\Git\EFREI-Roids\FlyingObject.cpp -o CMakeFiles\EFREI-ROIDS.dir\FlyingObject.cpp.s
+CMakeFiles/EFREI-ROIDS.dir/src/FlyingObject.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EFREI-ROIDS.dir/src/FlyingObject.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\rahmo\Documents\Git\EFREI-Roids\src\FlyingObject.cpp -o CMakeFiles\EFREI-ROIDS.dir\src\FlyingObject.cpp.s
 
-CMakeFiles/EFREI-ROIDS.dir/Missile.cpp.obj: CMakeFiles/EFREI-ROIDS.dir/flags.make
-CMakeFiles/EFREI-ROIDS.dir/Missile.cpp.obj: CMakeFiles/EFREI-ROIDS.dir/includes_CXX.rsp
-CMakeFiles/EFREI-ROIDS.dir/Missile.cpp.obj: C:/Users/rahmo/Documents/Git/EFREI-Roids/Missile.cpp
-CMakeFiles/EFREI-ROIDS.dir/Missile.cpp.obj: CMakeFiles/EFREI-ROIDS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\rahmo\Documents\Git\EFREI-Roids\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/EFREI-ROIDS.dir/Missile.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EFREI-ROIDS.dir/Missile.cpp.obj -MF CMakeFiles\EFREI-ROIDS.dir\Missile.cpp.obj.d -o CMakeFiles\EFREI-ROIDS.dir\Missile.cpp.obj -c C:\Users\rahmo\Documents\Git\EFREI-Roids\Missile.cpp
+CMakeFiles/EFREI-ROIDS.dir/src/Missile.cpp.obj: CMakeFiles/EFREI-ROIDS.dir/flags.make
+CMakeFiles/EFREI-ROIDS.dir/src/Missile.cpp.obj: CMakeFiles/EFREI-ROIDS.dir/includes_CXX.rsp
+CMakeFiles/EFREI-ROIDS.dir/src/Missile.cpp.obj: C:/Users/rahmo/Documents/Git/EFREI-Roids/src/Missile.cpp
+CMakeFiles/EFREI-ROIDS.dir/src/Missile.cpp.obj: CMakeFiles/EFREI-ROIDS.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\rahmo\Documents\Git\EFREI-Roids\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/EFREI-ROIDS.dir/src/Missile.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EFREI-ROIDS.dir/src/Missile.cpp.obj -MF CMakeFiles\EFREI-ROIDS.dir\src\Missile.cpp.obj.d -o CMakeFiles\EFREI-ROIDS.dir\src\Missile.cpp.obj -c C:\Users\rahmo\Documents\Git\EFREI-Roids\src\Missile.cpp
 
-CMakeFiles/EFREI-ROIDS.dir/Missile.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EFREI-ROIDS.dir/Missile.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\rahmo\Documents\Git\EFREI-Roids\Missile.cpp > CMakeFiles\EFREI-ROIDS.dir\Missile.cpp.i
+CMakeFiles/EFREI-ROIDS.dir/src/Missile.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EFREI-ROIDS.dir/src/Missile.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\rahmo\Documents\Git\EFREI-Roids\src\Missile.cpp > CMakeFiles\EFREI-ROIDS.dir\src\Missile.cpp.i
 
-CMakeFiles/EFREI-ROIDS.dir/Missile.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EFREI-ROIDS.dir/Missile.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\rahmo\Documents\Git\EFREI-Roids\Missile.cpp -o CMakeFiles\EFREI-ROIDS.dir\Missile.cpp.s
+CMakeFiles/EFREI-ROIDS.dir/src/Missile.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EFREI-ROIDS.dir/src/Missile.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\rahmo\Documents\Git\EFREI-Roids\src\Missile.cpp -o CMakeFiles\EFREI-ROIDS.dir\src\Missile.cpp.s
 
-CMakeFiles/EFREI-ROIDS.dir/Spaceship.cpp.obj: CMakeFiles/EFREI-ROIDS.dir/flags.make
-CMakeFiles/EFREI-ROIDS.dir/Spaceship.cpp.obj: CMakeFiles/EFREI-ROIDS.dir/includes_CXX.rsp
-CMakeFiles/EFREI-ROIDS.dir/Spaceship.cpp.obj: C:/Users/rahmo/Documents/Git/EFREI-Roids/Spaceship.cpp
-CMakeFiles/EFREI-ROIDS.dir/Spaceship.cpp.obj: CMakeFiles/EFREI-ROIDS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\rahmo\Documents\Git\EFREI-Roids\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/EFREI-ROIDS.dir/Spaceship.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EFREI-ROIDS.dir/Spaceship.cpp.obj -MF CMakeFiles\EFREI-ROIDS.dir\Spaceship.cpp.obj.d -o CMakeFiles\EFREI-ROIDS.dir\Spaceship.cpp.obj -c C:\Users\rahmo\Documents\Git\EFREI-Roids\Spaceship.cpp
+CMakeFiles/EFREI-ROIDS.dir/src/Spaceship.cpp.obj: CMakeFiles/EFREI-ROIDS.dir/flags.make
+CMakeFiles/EFREI-ROIDS.dir/src/Spaceship.cpp.obj: CMakeFiles/EFREI-ROIDS.dir/includes_CXX.rsp
+CMakeFiles/EFREI-ROIDS.dir/src/Spaceship.cpp.obj: C:/Users/rahmo/Documents/Git/EFREI-Roids/src/Spaceship.cpp
+CMakeFiles/EFREI-ROIDS.dir/src/Spaceship.cpp.obj: CMakeFiles/EFREI-ROIDS.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\rahmo\Documents\Git\EFREI-Roids\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/EFREI-ROIDS.dir/src/Spaceship.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EFREI-ROIDS.dir/src/Spaceship.cpp.obj -MF CMakeFiles\EFREI-ROIDS.dir\src\Spaceship.cpp.obj.d -o CMakeFiles\EFREI-ROIDS.dir\src\Spaceship.cpp.obj -c C:\Users\rahmo\Documents\Git\EFREI-Roids\src\Spaceship.cpp
 
-CMakeFiles/EFREI-ROIDS.dir/Spaceship.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EFREI-ROIDS.dir/Spaceship.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\rahmo\Documents\Git\EFREI-Roids\Spaceship.cpp > CMakeFiles\EFREI-ROIDS.dir\Spaceship.cpp.i
+CMakeFiles/EFREI-ROIDS.dir/src/Spaceship.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EFREI-ROIDS.dir/src/Spaceship.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\rahmo\Documents\Git\EFREI-Roids\src\Spaceship.cpp > CMakeFiles\EFREI-ROIDS.dir\src\Spaceship.cpp.i
 
-CMakeFiles/EFREI-ROIDS.dir/Spaceship.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EFREI-ROIDS.dir/Spaceship.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\rahmo\Documents\Git\EFREI-Roids\Spaceship.cpp -o CMakeFiles\EFREI-ROIDS.dir\Spaceship.cpp.s
+CMakeFiles/EFREI-ROIDS.dir/src/Spaceship.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EFREI-ROIDS.dir/src/Spaceship.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\rahmo\Documents\Git\EFREI-Roids\src\Spaceship.cpp -o CMakeFiles\EFREI-ROIDS.dir\src\Spaceship.cpp.s
 
-CMakeFiles/EFREI-ROIDS.dir/Model.cpp.obj: CMakeFiles/EFREI-ROIDS.dir/flags.make
-CMakeFiles/EFREI-ROIDS.dir/Model.cpp.obj: CMakeFiles/EFREI-ROIDS.dir/includes_CXX.rsp
-CMakeFiles/EFREI-ROIDS.dir/Model.cpp.obj: C:/Users/rahmo/Documents/Git/EFREI-Roids/Model.cpp
-CMakeFiles/EFREI-ROIDS.dir/Model.cpp.obj: CMakeFiles/EFREI-ROIDS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\rahmo\Documents\Git\EFREI-Roids\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/EFREI-ROIDS.dir/Model.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EFREI-ROIDS.dir/Model.cpp.obj -MF CMakeFiles\EFREI-ROIDS.dir\Model.cpp.obj.d -o CMakeFiles\EFREI-ROIDS.dir\Model.cpp.obj -c C:\Users\rahmo\Documents\Git\EFREI-Roids\Model.cpp
+CMakeFiles/EFREI-ROIDS.dir/src/Model.cpp.obj: CMakeFiles/EFREI-ROIDS.dir/flags.make
+CMakeFiles/EFREI-ROIDS.dir/src/Model.cpp.obj: CMakeFiles/EFREI-ROIDS.dir/includes_CXX.rsp
+CMakeFiles/EFREI-ROIDS.dir/src/Model.cpp.obj: C:/Users/rahmo/Documents/Git/EFREI-Roids/src/Model.cpp
+CMakeFiles/EFREI-ROIDS.dir/src/Model.cpp.obj: CMakeFiles/EFREI-ROIDS.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\rahmo\Documents\Git\EFREI-Roids\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/EFREI-ROIDS.dir/src/Model.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EFREI-ROIDS.dir/src/Model.cpp.obj -MF CMakeFiles\EFREI-ROIDS.dir\src\Model.cpp.obj.d -o CMakeFiles\EFREI-ROIDS.dir\src\Model.cpp.obj -c C:\Users\rahmo\Documents\Git\EFREI-Roids\src\Model.cpp
 
-CMakeFiles/EFREI-ROIDS.dir/Model.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EFREI-ROIDS.dir/Model.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\rahmo\Documents\Git\EFREI-Roids\Model.cpp > CMakeFiles\EFREI-ROIDS.dir\Model.cpp.i
+CMakeFiles/EFREI-ROIDS.dir/src/Model.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EFREI-ROIDS.dir/src/Model.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\rahmo\Documents\Git\EFREI-Roids\src\Model.cpp > CMakeFiles\EFREI-ROIDS.dir\src\Model.cpp.i
 
-CMakeFiles/EFREI-ROIDS.dir/Model.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EFREI-ROIDS.dir/Model.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\rahmo\Documents\Git\EFREI-Roids\Model.cpp -o CMakeFiles\EFREI-ROIDS.dir\Model.cpp.s
+CMakeFiles/EFREI-ROIDS.dir/src/Model.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EFREI-ROIDS.dir/src/Model.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\rahmo\Documents\Git\EFREI-Roids\src\Model.cpp -o CMakeFiles\EFREI-ROIDS.dir\src\Model.cpp.s
 
-CMakeFiles/EFREI-ROIDS.dir/View.cpp.obj: CMakeFiles/EFREI-ROIDS.dir/flags.make
-CMakeFiles/EFREI-ROIDS.dir/View.cpp.obj: CMakeFiles/EFREI-ROIDS.dir/includes_CXX.rsp
-CMakeFiles/EFREI-ROIDS.dir/View.cpp.obj: C:/Users/rahmo/Documents/Git/EFREI-Roids/View.cpp
-CMakeFiles/EFREI-ROIDS.dir/View.cpp.obj: CMakeFiles/EFREI-ROIDS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\rahmo\Documents\Git\EFREI-Roids\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/EFREI-ROIDS.dir/View.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EFREI-ROIDS.dir/View.cpp.obj -MF CMakeFiles\EFREI-ROIDS.dir\View.cpp.obj.d -o CMakeFiles\EFREI-ROIDS.dir\View.cpp.obj -c C:\Users\rahmo\Documents\Git\EFREI-Roids\View.cpp
+CMakeFiles/EFREI-ROIDS.dir/src/View.cpp.obj: CMakeFiles/EFREI-ROIDS.dir/flags.make
+CMakeFiles/EFREI-ROIDS.dir/src/View.cpp.obj: CMakeFiles/EFREI-ROIDS.dir/includes_CXX.rsp
+CMakeFiles/EFREI-ROIDS.dir/src/View.cpp.obj: C:/Users/rahmo/Documents/Git/EFREI-Roids/src/View.cpp
+CMakeFiles/EFREI-ROIDS.dir/src/View.cpp.obj: CMakeFiles/EFREI-ROIDS.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\rahmo\Documents\Git\EFREI-Roids\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/EFREI-ROIDS.dir/src/View.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EFREI-ROIDS.dir/src/View.cpp.obj -MF CMakeFiles\EFREI-ROIDS.dir\src\View.cpp.obj.d -o CMakeFiles\EFREI-ROIDS.dir\src\View.cpp.obj -c C:\Users\rahmo\Documents\Git\EFREI-Roids\src\View.cpp
 
-CMakeFiles/EFREI-ROIDS.dir/View.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EFREI-ROIDS.dir/View.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\rahmo\Documents\Git\EFREI-Roids\View.cpp > CMakeFiles\EFREI-ROIDS.dir\View.cpp.i
+CMakeFiles/EFREI-ROIDS.dir/src/View.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EFREI-ROIDS.dir/src/View.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\rahmo\Documents\Git\EFREI-Roids\src\View.cpp > CMakeFiles\EFREI-ROIDS.dir\src\View.cpp.i
 
-CMakeFiles/EFREI-ROIDS.dir/View.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EFREI-ROIDS.dir/View.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\rahmo\Documents\Git\EFREI-Roids\View.cpp -o CMakeFiles\EFREI-ROIDS.dir\View.cpp.s
+CMakeFiles/EFREI-ROIDS.dir/src/View.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EFREI-ROIDS.dir/src/View.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\rahmo\Documents\Git\EFREI-Roids\src\View.cpp -o CMakeFiles\EFREI-ROIDS.dir\src\View.cpp.s
 
-CMakeFiles/EFREI-ROIDS.dir/Controller.cpp.obj: CMakeFiles/EFREI-ROIDS.dir/flags.make
-CMakeFiles/EFREI-ROIDS.dir/Controller.cpp.obj: CMakeFiles/EFREI-ROIDS.dir/includes_CXX.rsp
-CMakeFiles/EFREI-ROIDS.dir/Controller.cpp.obj: C:/Users/rahmo/Documents/Git/EFREI-Roids/Controller.cpp
-CMakeFiles/EFREI-ROIDS.dir/Controller.cpp.obj: CMakeFiles/EFREI-ROIDS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\rahmo\Documents\Git\EFREI-Roids\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/EFREI-ROIDS.dir/Controller.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EFREI-ROIDS.dir/Controller.cpp.obj -MF CMakeFiles\EFREI-ROIDS.dir\Controller.cpp.obj.d -o CMakeFiles\EFREI-ROIDS.dir\Controller.cpp.obj -c C:\Users\rahmo\Documents\Git\EFREI-Roids\Controller.cpp
+CMakeFiles/EFREI-ROIDS.dir/src/Controller.cpp.obj: CMakeFiles/EFREI-ROIDS.dir/flags.make
+CMakeFiles/EFREI-ROIDS.dir/src/Controller.cpp.obj: CMakeFiles/EFREI-ROIDS.dir/includes_CXX.rsp
+CMakeFiles/EFREI-ROIDS.dir/src/Controller.cpp.obj: C:/Users/rahmo/Documents/Git/EFREI-Roids/src/Controller.cpp
+CMakeFiles/EFREI-ROIDS.dir/src/Controller.cpp.obj: CMakeFiles/EFREI-ROIDS.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\rahmo\Documents\Git\EFREI-Roids\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/EFREI-ROIDS.dir/src/Controller.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EFREI-ROIDS.dir/src/Controller.cpp.obj -MF CMakeFiles\EFREI-ROIDS.dir\src\Controller.cpp.obj.d -o CMakeFiles\EFREI-ROIDS.dir\src\Controller.cpp.obj -c C:\Users\rahmo\Documents\Git\EFREI-Roids\src\Controller.cpp
 
-CMakeFiles/EFREI-ROIDS.dir/Controller.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EFREI-ROIDS.dir/Controller.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\rahmo\Documents\Git\EFREI-Roids\Controller.cpp > CMakeFiles\EFREI-ROIDS.dir\Controller.cpp.i
+CMakeFiles/EFREI-ROIDS.dir/src/Controller.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EFREI-ROIDS.dir/src/Controller.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\rahmo\Documents\Git\EFREI-Roids\src\Controller.cpp > CMakeFiles\EFREI-ROIDS.dir\src\Controller.cpp.i
 
-CMakeFiles/EFREI-ROIDS.dir/Controller.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EFREI-ROIDS.dir/Controller.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\rahmo\Documents\Git\EFREI-Roids\Controller.cpp -o CMakeFiles\EFREI-ROIDS.dir\Controller.cpp.s
+CMakeFiles/EFREI-ROIDS.dir/src/Controller.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EFREI-ROIDS.dir/src/Controller.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\rahmo\Documents\Git\EFREI-Roids\src\Controller.cpp -o CMakeFiles\EFREI-ROIDS.dir\src\Controller.cpp.s
 
-CMakeFiles/EFREI-ROIDS.dir/Menu.cpp.obj: CMakeFiles/EFREI-ROIDS.dir/flags.make
-CMakeFiles/EFREI-ROIDS.dir/Menu.cpp.obj: CMakeFiles/EFREI-ROIDS.dir/includes_CXX.rsp
-CMakeFiles/EFREI-ROIDS.dir/Menu.cpp.obj: C:/Users/rahmo/Documents/Git/EFREI-Roids/Menu.cpp
-CMakeFiles/EFREI-ROIDS.dir/Menu.cpp.obj: CMakeFiles/EFREI-ROIDS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\rahmo\Documents\Git\EFREI-Roids\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/EFREI-ROIDS.dir/Menu.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EFREI-ROIDS.dir/Menu.cpp.obj -MF CMakeFiles\EFREI-ROIDS.dir\Menu.cpp.obj.d -o CMakeFiles\EFREI-ROIDS.dir\Menu.cpp.obj -c C:\Users\rahmo\Documents\Git\EFREI-Roids\Menu.cpp
+CMakeFiles/EFREI-ROIDS.dir/src/Menu.cpp.obj: CMakeFiles/EFREI-ROIDS.dir/flags.make
+CMakeFiles/EFREI-ROIDS.dir/src/Menu.cpp.obj: CMakeFiles/EFREI-ROIDS.dir/includes_CXX.rsp
+CMakeFiles/EFREI-ROIDS.dir/src/Menu.cpp.obj: C:/Users/rahmo/Documents/Git/EFREI-Roids/src/Menu.cpp
+CMakeFiles/EFREI-ROIDS.dir/src/Menu.cpp.obj: CMakeFiles/EFREI-ROIDS.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\rahmo\Documents\Git\EFREI-Roids\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/EFREI-ROIDS.dir/src/Menu.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EFREI-ROIDS.dir/src/Menu.cpp.obj -MF CMakeFiles\EFREI-ROIDS.dir\src\Menu.cpp.obj.d -o CMakeFiles\EFREI-ROIDS.dir\src\Menu.cpp.obj -c C:\Users\rahmo\Documents\Git\EFREI-Roids\src\Menu.cpp
 
-CMakeFiles/EFREI-ROIDS.dir/Menu.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EFREI-ROIDS.dir/Menu.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\rahmo\Documents\Git\EFREI-Roids\Menu.cpp > CMakeFiles\EFREI-ROIDS.dir\Menu.cpp.i
+CMakeFiles/EFREI-ROIDS.dir/src/Menu.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EFREI-ROIDS.dir/src/Menu.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\rahmo\Documents\Git\EFREI-Roids\src\Menu.cpp > CMakeFiles\EFREI-ROIDS.dir\src\Menu.cpp.i
 
-CMakeFiles/EFREI-ROIDS.dir/Menu.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EFREI-ROIDS.dir/Menu.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\rahmo\Documents\Git\EFREI-Roids\Menu.cpp -o CMakeFiles\EFREI-ROIDS.dir\Menu.cpp.s
+CMakeFiles/EFREI-ROIDS.dir/src/Menu.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EFREI-ROIDS.dir/src/Menu.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\rahmo\Documents\Git\EFREI-Roids\src\Menu.cpp -o CMakeFiles\EFREI-ROIDS.dir\src\Menu.cpp.s
 
 # Object files for target EFREI-ROIDS
 EFREI__ROIDS_OBJECTS = \
-"CMakeFiles/EFREI-ROIDS.dir/main.cpp.obj" \
-"CMakeFiles/EFREI-ROIDS.dir/framework.cpp.obj" \
-"CMakeFiles/EFREI-ROIDS.dir/Asteroid.cpp.obj" \
-"CMakeFiles/EFREI-ROIDS.dir/FlyingObject.cpp.obj" \
-"CMakeFiles/EFREI-ROIDS.dir/Missile.cpp.obj" \
-"CMakeFiles/EFREI-ROIDS.dir/Spaceship.cpp.obj" \
-"CMakeFiles/EFREI-ROIDS.dir/Model.cpp.obj" \
-"CMakeFiles/EFREI-ROIDS.dir/View.cpp.obj" \
-"CMakeFiles/EFREI-ROIDS.dir/Controller.cpp.obj" \
-"CMakeFiles/EFREI-ROIDS.dir/Menu.cpp.obj"
+"CMakeFiles/EFREI-ROIDS.dir/src/main.cpp.obj" \
+"CMakeFiles/EFREI-ROIDS.dir/src/framework.cpp.obj" \
+"CMakeFiles/EFREI-ROIDS.dir/src/Asteroid.cpp.obj" \
+"CMakeFiles/EFREI-ROIDS.dir/src/FlyingObject.cpp.obj" \
+"CMakeFiles/EFREI-ROIDS.dir/src/Missile.cpp.obj" \
+"CMakeFiles/EFREI-ROIDS.dir/src/Spaceship.cpp.obj" \
+"CMakeFiles/EFREI-ROIDS.dir/src/Model.cpp.obj" \
+"CMakeFiles/EFREI-ROIDS.dir/src/View.cpp.obj" \
+"CMakeFiles/EFREI-ROIDS.dir/src/Controller.cpp.obj" \
+"CMakeFiles/EFREI-ROIDS.dir/src/Menu.cpp.obj"
 
 # External object files for target EFREI-ROIDS
 EFREI__ROIDS_EXTERNAL_OBJECTS =
 
-EFREI-ROIDS.exe: CMakeFiles/EFREI-ROIDS.dir/main.cpp.obj
-EFREI-ROIDS.exe: CMakeFiles/EFREI-ROIDS.dir/framework.cpp.obj
-EFREI-ROIDS.exe: CMakeFiles/EFREI-ROIDS.dir/Asteroid.cpp.obj
-EFREI-ROIDS.exe: CMakeFiles/EFREI-ROIDS.dir/FlyingObject.cpp.obj
-EFREI-ROIDS.exe: CMakeFiles/EFREI-ROIDS.dir/Missile.cpp.obj
-EFREI-ROIDS.exe: CMakeFiles/EFREI-ROIDS.dir/Spaceship.cpp.obj
-EFREI-ROIDS.exe: CMakeFiles/EFREI-ROIDS.dir/Model.cpp.obj
-EFREI-ROIDS.exe: CMakeFiles/EFREI-ROIDS.dir/View.cpp.obj
-EFREI-ROIDS.exe: CMakeFiles/EFREI-ROIDS.dir/Controller.cpp.obj
-EFREI-ROIDS.exe: CMakeFiles/EFREI-ROIDS.dir/Menu.cpp.obj
+EFREI-ROIDS.exe: CMakeFiles/EFREI-ROIDS.dir/src/main.cpp.obj
+EFREI-ROIDS.exe: CMakeFiles/EFREI-ROIDS.dir/src/framework.cpp.obj
+EFREI-ROIDS.exe: CMakeFiles/EFREI-ROIDS.dir/src/Asteroid.cpp.obj
+EFREI-ROIDS.exe: CMakeFiles/EFREI-ROIDS.dir/src/FlyingObject.cpp.obj
+EFREI-ROIDS.exe: CMakeFiles/EFREI-ROIDS.dir/src/Missile.cpp.obj
+EFREI-ROIDS.exe: CMakeFiles/EFREI-ROIDS.dir/src/Spaceship.cpp.obj
+EFREI-ROIDS.exe: CMakeFiles/EFREI-ROIDS.dir/src/Model.cpp.obj
+EFREI-ROIDS.exe: CMakeFiles/EFREI-ROIDS.dir/src/View.cpp.obj
+EFREI-ROIDS.exe: CMakeFiles/EFREI-ROIDS.dir/src/Controller.cpp.obj
+EFREI-ROIDS.exe: CMakeFiles/EFREI-ROIDS.dir/src/Menu.cpp.obj
 EFREI-ROIDS.exe: CMakeFiles/EFREI-ROIDS.dir/build.make
 EFREI-ROIDS.exe: C:/Users/rahmo/Documents/Git/EFREI-Roids/lib/libSDL2main.a
 EFREI-ROIDS.exe: C:/Users/rahmo/Documents/Git/EFREI-Roids/lib/libSDL2.dll.a
+EFREI-ROIDS.exe: C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2_ttf-devel-2.20.2-VC/SDL2_ttf-2.20.2/cmake/../lib/x64/SDL2_ttf.lib
 EFREI-ROIDS.exe: CMakeFiles/EFREI-ROIDS.dir/linkLibs.rsp
 EFREI-ROIDS.exe: CMakeFiles/EFREI-ROIDS.dir/objects1.rsp
 EFREI-ROIDS.exe: CMakeFiles/EFREI-ROIDS.dir/link.txt

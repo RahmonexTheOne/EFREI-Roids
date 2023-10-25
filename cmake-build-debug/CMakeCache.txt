@@ -289,6 +289,9 @@ SDL2_image_DIR:PATH=SDL2_image_DIR-NOTFOUND
 //The directory containing a CMake configuration file for SDL2_mixer.
 SDL2_mixer_DIR:PATH=SDL2_mixer_DIR-NOTFOUND
 
+//The directory containing a CMake configuration file for SDL2_ttf::SDL2_ttf.
+"SDL2_ttf::SDL2_ttf_DIR":PATH=SDL2_ttf::SDL2_ttf_DIR-NOTFOUND
+
 //The directory containing a CMake configuration file for SDL2_ttf.
 SDL2_ttf_DIR:PATH=SDL2_ttf_DIR-NOTFOUND
 

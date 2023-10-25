@@ -128,245 +128,245 @@ EFREI-ROIDS/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/build
 .PHONY : EFREI-ROIDS/fast
 
-Asteroid.obj: Asteroid.cpp.obj
-.PHONY : Asteroid.obj
+src/Asteroid.obj: src/Asteroid.cpp.obj
+.PHONY : src/Asteroid.obj
 
 # target to build an object file
-Asteroid.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/Asteroid.cpp.obj
-.PHONY : Asteroid.cpp.obj
+src/Asteroid.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/src/Asteroid.cpp.obj
+.PHONY : src/Asteroid.cpp.obj
 
-Asteroid.i: Asteroid.cpp.i
-.PHONY : Asteroid.i
+src/Asteroid.i: src/Asteroid.cpp.i
+.PHONY : src/Asteroid.i
 
 # target to preprocess a source file
-Asteroid.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/Asteroid.cpp.i
-.PHONY : Asteroid.cpp.i
+src/Asteroid.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/src/Asteroid.cpp.i
+.PHONY : src/Asteroid.cpp.i
 
-Asteroid.s: Asteroid.cpp.s
-.PHONY : Asteroid.s
+src/Asteroid.s: src/Asteroid.cpp.s
+.PHONY : src/Asteroid.s
 
 # target to generate assembly for a file
-Asteroid.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/Asteroid.cpp.s
-.PHONY : Asteroid.cpp.s
+src/Asteroid.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/src/Asteroid.cpp.s
+.PHONY : src/Asteroid.cpp.s
 
-Controller.obj: Controller.cpp.obj
-.PHONY : Controller.obj
+src/Controller.obj: src/Controller.cpp.obj
+.PHONY : src/Controller.obj
 
 # target to build an object file
-Controller.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/Controller.cpp.obj
-.PHONY : Controller.cpp.obj
+src/Controller.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/src/Controller.cpp.obj
+.PHONY : src/Controller.cpp.obj
 
-Controller.i: Controller.cpp.i
-.PHONY : Controller.i
+src/Controller.i: src/Controller.cpp.i
+.PHONY : src/Controller.i
 
 # target to preprocess a source file
-Controller.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/Controller.cpp.i
-.PHONY : Controller.cpp.i
+src/Controller.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/src/Controller.cpp.i
+.PHONY : src/Controller.cpp.i
 
-Controller.s: Controller.cpp.s
-.PHONY : Controller.s
+src/Controller.s: src/Controller.cpp.s
+.PHONY : src/Controller.s
 
 # target to generate assembly for a file
-Controller.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/Controller.cpp.s
-.PHONY : Controller.cpp.s
+src/Controller.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/src/Controller.cpp.s
+.PHONY : src/Controller.cpp.s
 
-FlyingObject.obj: FlyingObject.cpp.obj
-.PHONY : FlyingObject.obj
+src/FlyingObject.obj: src/FlyingObject.cpp.obj
+.PHONY : src/FlyingObject.obj
 
 # target to build an object file
-FlyingObject.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/FlyingObject.cpp.obj
-.PHONY : FlyingObject.cpp.obj
+src/FlyingObject.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/src/FlyingObject.cpp.obj
+.PHONY : src/FlyingObject.cpp.obj
 
-FlyingObject.i: FlyingObject.cpp.i
-.PHONY : FlyingObject.i
+src/FlyingObject.i: src/FlyingObject.cpp.i
+.PHONY : src/FlyingObject.i
 
 # target to preprocess a source file
-FlyingObject.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/FlyingObject.cpp.i
-.PHONY : FlyingObject.cpp.i
+src/FlyingObject.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/src/FlyingObject.cpp.i
+.PHONY : src/FlyingObject.cpp.i
 
-FlyingObject.s: FlyingObject.cpp.s
-.PHONY : FlyingObject.s
+src/FlyingObject.s: src/FlyingObject.cpp.s
+.PHONY : src/FlyingObject.s
 
 # target to generate assembly for a file
-FlyingObject.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/FlyingObject.cpp.s
-.PHONY : FlyingObject.cpp.s
+src/FlyingObject.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/src/FlyingObject.cpp.s
+.PHONY : src/FlyingObject.cpp.s
 
-Menu.obj: Menu.cpp.obj
-.PHONY : Menu.obj
+src/Menu.obj: src/Menu.cpp.obj
+.PHONY : src/Menu.obj
 
 # target to build an object file
-Menu.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/Menu.cpp.obj
-.PHONY : Menu.cpp.obj
+src/Menu.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/src/Menu.cpp.obj
+.PHONY : src/Menu.cpp.obj
 
-Menu.i: Menu.cpp.i
-.PHONY : Menu.i
+src/Menu.i: src/Menu.cpp.i
+.PHONY : src/Menu.i
 
 # target to preprocess a source file
-Menu.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/Menu.cpp.i
-.PHONY : Menu.cpp.i
+src/Menu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/src/Menu.cpp.i
+.PHONY : src/Menu.cpp.i
 
-Menu.s: Menu.cpp.s
-.PHONY : Menu.s
+src/Menu.s: src/Menu.cpp.s
+.PHONY : src/Menu.s
 
 # target to generate assembly for a file
-Menu.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/Menu.cpp.s
-.PHONY : Menu.cpp.s
+src/Menu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/src/Menu.cpp.s
+.PHONY : src/Menu.cpp.s
 
-Missile.obj: Missile.cpp.obj
-.PHONY : Missile.obj
+src/Missile.obj: src/Missile.cpp.obj
+.PHONY : src/Missile.obj
 
 # target to build an object file
-Missile.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/Missile.cpp.obj
-.PHONY : Missile.cpp.obj
+src/Missile.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/src/Missile.cpp.obj
+.PHONY : src/Missile.cpp.obj
 
-Missile.i: Missile.cpp.i
-.PHONY : Missile.i
+src/Missile.i: src/Missile.cpp.i
+.PHONY : src/Missile.i
 
 # target to preprocess a source file
-Missile.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/Missile.cpp.i
-.PHONY : Missile.cpp.i
+src/Missile.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/src/Missile.cpp.i
+.PHONY : src/Missile.cpp.i
 
-Missile.s: Missile.cpp.s
-.PHONY : Missile.s
+src/Missile.s: src/Missile.cpp.s
+.PHONY : src/Missile.s
 
 # target to generate assembly for a file
-Missile.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/Missile.cpp.s
-.PHONY : Missile.cpp.s
+src/Missile.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/src/Missile.cpp.s
+.PHONY : src/Missile.cpp.s
 
-Model.obj: Model.cpp.obj
-.PHONY : Model.obj
+src/Model.obj: src/Model.cpp.obj
+.PHONY : src/Model.obj
 
 # target to build an object file
-Model.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/Model.cpp.obj
-.PHONY : Model.cpp.obj
+src/Model.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/src/Model.cpp.obj
+.PHONY : src/Model.cpp.obj
 
-Model.i: Model.cpp.i
-.PHONY : Model.i
+src/Model.i: src/Model.cpp.i
+.PHONY : src/Model.i
 
 # target to preprocess a source file
-Model.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/Model.cpp.i
-.PHONY : Model.cpp.i
+src/Model.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/src/Model.cpp.i
+.PHONY : src/Model.cpp.i
 
-Model.s: Model.cpp.s
-.PHONY : Model.s
+src/Model.s: src/Model.cpp.s
+.PHONY : src/Model.s
 
 # target to generate assembly for a file
-Model.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/Model.cpp.s
-.PHONY : Model.cpp.s
+src/Model.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/src/Model.cpp.s
+.PHONY : src/Model.cpp.s
 
-Spaceship.obj: Spaceship.cpp.obj
-.PHONY : Spaceship.obj
+src/Spaceship.obj: src/Spaceship.cpp.obj
+.PHONY : src/Spaceship.obj
 
 # target to build an object file
-Spaceship.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/Spaceship.cpp.obj
-.PHONY : Spaceship.cpp.obj
+src/Spaceship.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/src/Spaceship.cpp.obj
+.PHONY : src/Spaceship.cpp.obj
 
-Spaceship.i: Spaceship.cpp.i
-.PHONY : Spaceship.i
+src/Spaceship.i: src/Spaceship.cpp.i
+.PHONY : src/Spaceship.i
 
 # target to preprocess a source file
-Spaceship.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/Spaceship.cpp.i
-.PHONY : Spaceship.cpp.i
+src/Spaceship.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/src/Spaceship.cpp.i
+.PHONY : src/Spaceship.cpp.i
 
-Spaceship.s: Spaceship.cpp.s
-.PHONY : Spaceship.s
+src/Spaceship.s: src/Spaceship.cpp.s
+.PHONY : src/Spaceship.s
 
 # target to generate assembly for a file
-Spaceship.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/Spaceship.cpp.s
-.PHONY : Spaceship.cpp.s
+src/Spaceship.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/src/Spaceship.cpp.s
+.PHONY : src/Spaceship.cpp.s
 
-View.obj: View.cpp.obj
-.PHONY : View.obj
+src/View.obj: src/View.cpp.obj
+.PHONY : src/View.obj
 
 # target to build an object file
-View.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/View.cpp.obj
-.PHONY : View.cpp.obj
+src/View.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/src/View.cpp.obj
+.PHONY : src/View.cpp.obj
 
-View.i: View.cpp.i
-.PHONY : View.i
+src/View.i: src/View.cpp.i
+.PHONY : src/View.i
 
 # target to preprocess a source file
-View.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/View.cpp.i
-.PHONY : View.cpp.i
+src/View.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/src/View.cpp.i
+.PHONY : src/View.cpp.i
 
-View.s: View.cpp.s
-.PHONY : View.s
+src/View.s: src/View.cpp.s
+.PHONY : src/View.s
 
 # target to generate assembly for a file
-View.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/View.cpp.s
-.PHONY : View.cpp.s
+src/View.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/src/View.cpp.s
+.PHONY : src/View.cpp.s
 
-framework.obj: framework.cpp.obj
-.PHONY : framework.obj
+src/framework.obj: src/framework.cpp.obj
+.PHONY : src/framework.obj
 
 # target to build an object file
-framework.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/framework.cpp.obj
-.PHONY : framework.cpp.obj
+src/framework.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/src/framework.cpp.obj
+.PHONY : src/framework.cpp.obj
 
-framework.i: framework.cpp.i
-.PHONY : framework.i
+src/framework.i: src/framework.cpp.i
+.PHONY : src/framework.i
 
 # target to preprocess a source file
-framework.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/framework.cpp.i
-.PHONY : framework.cpp.i
+src/framework.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/src/framework.cpp.i
+.PHONY : src/framework.cpp.i
 
-framework.s: framework.cpp.s
-.PHONY : framework.s
+src/framework.s: src/framework.cpp.s
+.PHONY : src/framework.s
 
 # target to generate assembly for a file
-framework.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/framework.cpp.s
-.PHONY : framework.cpp.s
+src/framework.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/src/framework.cpp.s
+.PHONY : src/framework.cpp.s
 
-main.obj: main.cpp.obj
-.PHONY : main.obj
+src/main.obj: src/main.cpp.obj
+.PHONY : src/main.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+src/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/src/main.cpp.obj
+.PHONY : src/main.cpp.obj
 
-main.i: main.cpp.i
-.PHONY : main.i
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -377,36 +377,36 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... EFREI-ROIDS
-	@echo ... Asteroid.obj
-	@echo ... Asteroid.i
-	@echo ... Asteroid.s
-	@echo ... Controller.obj
-	@echo ... Controller.i
-	@echo ... Controller.s
-	@echo ... FlyingObject.obj
-	@echo ... FlyingObject.i
-	@echo ... FlyingObject.s
-	@echo ... Menu.obj
-	@echo ... Menu.i
-	@echo ... Menu.s
-	@echo ... Missile.obj
-	@echo ... Missile.i
-	@echo ... Missile.s
-	@echo ... Model.obj
-	@echo ... Model.i
-	@echo ... Model.s
-	@echo ... Spaceship.obj
-	@echo ... Spaceship.i
-	@echo ... Spaceship.s
-	@echo ... View.obj
-	@echo ... View.i
-	@echo ... View.s
-	@echo ... framework.obj
-	@echo ... framework.i
-	@echo ... framework.s
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... src/Asteroid.obj
+	@echo ... src/Asteroid.i
+	@echo ... src/Asteroid.s
+	@echo ... src/Controller.obj
+	@echo ... src/Controller.i
+	@echo ... src/Controller.s
+	@echo ... src/FlyingObject.obj
+	@echo ... src/FlyingObject.i
+	@echo ... src/FlyingObject.s
+	@echo ... src/Menu.obj
+	@echo ... src/Menu.i
+	@echo ... src/Menu.s
+	@echo ... src/Missile.obj
+	@echo ... src/Missile.i
+	@echo ... src/Missile.s
+	@echo ... src/Model.obj
+	@echo ... src/Model.i
+	@echo ... src/Model.s
+	@echo ... src/Spaceship.obj
+	@echo ... src/Spaceship.i
+	@echo ... src/Spaceship.s
+	@echo ... src/View.obj
+	@echo ... src/View.i
+	@echo ... src/View.s
+	@echo ... src/framework.obj
+	@echo ... src/framework.i
+	@echo ... src/framework.s
+	@echo ... src/main.obj
+	@echo ... src/main.i
+	@echo ... src/main.s
 .PHONY : help
 
 

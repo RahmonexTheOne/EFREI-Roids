@@ -1,6 +1,6 @@
 CMakeFiles/EFREI-ROIDS.dir/Menu.cpp.obj: \
  C:\Users\rahmo\Documents\Git\EFREI-Roids\Menu.cpp \
- C:\Users\rahmo\Documents\Git\EFREI-Roids\Menu.hpp \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/hpp/Menu.hpp \
  C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL.h \
  C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL_main.h \
  C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL_stdinc.h \
@@ -237,7 +237,7 @@ CMakeFiles/EFREI-ROIDS.dir/Menu.cpp.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator_args.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tuple \
- C:\Users\rahmo\Documents\Git\EFREI-Roids\framework.hpp \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/hpp/framework.hpp \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/string \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stringfwd.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/char_traits.h \
@@ -267,4 +267,4 @@ CMakeFiles/EFREI-ROIDS.dir/Menu.cpp.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cerrno \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/charconv.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_string.tcc \
- C:\Users\rahmo\Documents\Git\EFREI-Roids\include/SDL2/SDL.h
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/hpp/framework.hpp

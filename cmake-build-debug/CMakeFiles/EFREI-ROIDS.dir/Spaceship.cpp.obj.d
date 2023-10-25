@@ -166,5 +166,5 @@ CMakeFiles/EFREI-ROIDS.dir/Spaceship.cpp.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/x86_64-w64-mingw32/include/stdint.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ctime \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/parse_numbers.h \
- C:\Users\rahmo\Documents\Git\EFREI-Roids\Spaceship.hpp \
- C:\Users\rahmo\Documents\Git\EFREI-Roids\FlyingObject.hpp
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/hpp/Spaceship.hpp \
+ C:\Users\rahmo\Documents\Git\EFREI-Roids\include/hpp/FlyingObject.hpp
