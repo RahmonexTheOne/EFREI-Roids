@@ -7,6 +7,7 @@
 #define FRAMEWORK_HPP_
 
 #include <string>
+#include <SDL_ttf.h>
 #include "SDL.h"
 
 using std::string;
@@ -103,7 +104,8 @@ class Framework {
         SDL_Texture * GetTexture(string imgName);
         SDL_Renderer* GetRenderer();
         void PlayBackgroundMusic(const char* musicFile);
-    private:
+        void RenderText(const std::string& text, int x, int y, TTF_Font* font, SDL_Color color);
+private:
         //////////
         // Fenêtre
         SDL_Window *   window;

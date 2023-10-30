@@ -7,6 +7,7 @@
 #include "View.hpp"
 #include "framework.hpp"
 #include "Menu.hpp"
+#include "GameOver.hpp"
 
 
 class Controller {
@@ -30,6 +31,7 @@ private :
     Framework* framework;
     View* view;
     Menu* menu;
+    GameOver* gameOver;
     SDL_Renderer* renderer;
     SDL_Texture* backgroundTexture;
 

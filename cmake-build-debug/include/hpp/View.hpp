@@ -18,7 +18,6 @@ public:
 
     void Refresh(std::vector<FlyingObject *>, Framework* framework);
     void RenderTopBar(Framework* framework, Spaceship* spaceship);
-    void RenderText(Framework* framework, const std::string& text, int x, int y, TTF_Font* font, SDL_Color color);
 
 private :
     Uint32 startTime;

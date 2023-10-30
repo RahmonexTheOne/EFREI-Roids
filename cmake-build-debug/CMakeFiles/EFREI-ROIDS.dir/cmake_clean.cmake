@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/EFREI-ROIDS.dir/src/Controller.cpp.obj.d"
   "CMakeFiles/EFREI-ROIDS.dir/src/FlyingObject.cpp.obj"
   "CMakeFiles/EFREI-ROIDS.dir/src/FlyingObject.cpp.obj.d"
+  "CMakeFiles/EFREI-ROIDS.dir/src/GameOver.cpp.obj"
+  "CMakeFiles/EFREI-ROIDS.dir/src/GameOver.cpp.obj.d"
   "CMakeFiles/EFREI-ROIDS.dir/src/Menu.cpp.obj"
   "CMakeFiles/EFREI-ROIDS.dir/src/Menu.cpp.obj.d"
   "CMakeFiles/EFREI-ROIDS.dir/src/Missile.cpp.obj"

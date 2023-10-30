@@ -95,6 +95,9 @@
 		<Unit filename="C:/Users/rahmo/Documents/Git/EFREI-Roids/include/hpp/FlyingObject.hpp">
 			<Option target="EFREI-ROIDS"/>
 		</Unit>
+		<Unit filename="C:/Users/rahmo/Documents/Git/EFREI-Roids/include/hpp/GameOver.hpp">
+			<Option target="EFREI-ROIDS"/>
+		</Unit>
 		<Unit filename="C:/Users/rahmo/Documents/Git/EFREI-Roids/include/hpp/Menu.hpp">
 			<Option target="EFREI-ROIDS"/>
 		</Unit>
@@ -120,6 +123,9 @@
 			<Option target="EFREI-ROIDS"/>
 		</Unit>
 		<Unit filename="C:/Users/rahmo/Documents/Git/EFREI-Roids/src/FlyingObject.cpp">
+			<Option target="EFREI-ROIDS"/>
+		</Unit>
+		<Unit filename="C:/Users/rahmo/Documents/Git/EFREI-Roids/src/GameOver.cpp">
 			<Option target="EFREI-ROIDS"/>
 		</Unit>
 		<Unit filename="C:/Users/rahmo/Documents/Git/EFREI-Roids/src/Menu.cpp">

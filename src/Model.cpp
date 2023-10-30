@@ -86,6 +86,8 @@ int Model::Update(Framework* framework) {
                             //Add the two other asteroids
                             flyingObjects.push_back(asteroidToExplode->Explode(asteroidToExplode->GetSpeed(),missile->GetAngle()+30));
                             flyingObjects.push_back(asteroidToExplode->Explode(asteroidToExplode->GetSpeed(),missile->GetAngle()-30));
+                            //2 new asteroids
+                            nbAsteroids = nbAsteroids + 2;
                         }
 
                         // Remove Missile from the vector
@@ -120,6 +122,13 @@ int Model::Update(Framework* framework) {
             }
         }
     }
+
+    std::cout << nbAsteroids << std::endl;
+    if(nbAsteroids==0){
+        std::cout << "you Won !" << std::endl;
+        return 1;
+    }
+
     return 0;
 
     //Test if there are still Asteroids in the Level

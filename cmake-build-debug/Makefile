@@ -200,6 +200,30 @@ src/FlyingObject.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/src/FlyingObject.cpp.s
 .PHONY : src/FlyingObject.cpp.s
 
+src/GameOver.obj: src/GameOver.cpp.obj
+.PHONY : src/GameOver.obj
+
+# target to build an object file
+src/GameOver.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/src/GameOver.cpp.obj
+.PHONY : src/GameOver.cpp.obj
+
+src/GameOver.i: src/GameOver.cpp.i
+.PHONY : src/GameOver.i
+
+# target to preprocess a source file
+src/GameOver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/src/GameOver.cpp.i
+.PHONY : src/GameOver.cpp.i
+
+src/GameOver.s: src/GameOver.cpp.s
+.PHONY : src/GameOver.s
+
+# target to generate assembly for a file
+src/GameOver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/src/GameOver.cpp.s
+.PHONY : src/GameOver.cpp.s
+
 src/Menu.obj: src/Menu.cpp.obj
 .PHONY : src/Menu.obj
 
@@ -386,6 +410,9 @@ help:
 	@echo ... src/FlyingObject.obj
 	@echo ... src/FlyingObject.i
 	@echo ... src/FlyingObject.s
+	@echo ... src/GameOver.obj
+	@echo ... src/GameOver.i
+	@echo ... src/GameOver.s
 	@echo ... src/Menu.obj
 	@echo ... src/Menu.i
 	@echo ... src/Menu.s
