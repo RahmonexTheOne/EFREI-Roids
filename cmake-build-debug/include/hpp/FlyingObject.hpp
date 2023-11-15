@@ -12,9 +12,9 @@ public :
     // -------
     // * x, y : position dans l'écran
     // * size : diamètre de l'objet
-    FlyingObject(double x, double y, double size);
-
+    FlyingObject(double x, double y, double size, double speed, double angle);
     //----
+
     /////////////////////////////
     // Détermination de collision
     // calcul basé sur l'hypothèse que les objets sont sphériques
@@ -31,6 +31,8 @@ public :
     double GetX();
     double GetY();
     double GetSize();
+    double GetSpeed();
+    double GetAngle();
     virtual std::string GetTypeName() const;
 
     //////////
@@ -38,14 +40,8 @@ public :
     void SetX(double x);
     void SetY(double y);
     void SetSize(double size);
-
-
-
-
-    /////////////////////////
-    //-------------------------Déplacement de l'objet :
-    // déplace selon le vecteur de vitesse de l'objet
-    void Move();
+    void SetSpeed(double speed);
+    void SetAngle(double angle);
 
 
     ///////////////////////////////////////
@@ -65,6 +61,8 @@ private :
     double x;
     double y;
     double size;
+    double speed;
+    double angle;
 
 };
 

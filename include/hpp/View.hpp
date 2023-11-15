@@ -14,7 +14,7 @@ class View{
 public:
 
     //---------------------Constructor :
-    View(Framework* framework);
+    View(Framework* framework, int actualLevel);
 
     void Refresh(std::vector<FlyingObject *>, Framework* framework);
     void RenderTopBar(Framework* framework, Spaceship* spaceship);
@@ -22,6 +22,7 @@ public:
 private :
     Uint32 startTime;
     Uint32 elapsedTime;
+    int actualLevel;
 
 
 };

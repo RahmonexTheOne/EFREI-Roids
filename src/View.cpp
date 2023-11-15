@@ -9,10 +9,10 @@
 using namespace std;
 
 //------------------Constructors :
-View::View(Framework* framework) {
+View::View(Framework* framework, int actualLevel) {
     startTime = SDL_GetTicks();
     elapsedTime = 0;
-
+    this->actualLevel = actualLevel;
 }
 
 void View::RenderTopBar(Framework* framework, Spaceship* spaceship) {
@@ -24,7 +24,7 @@ void View::RenderTopBar(Framework* framework, Spaceship* spaceship) {
     SDL_Color textColor = {255, 255, 255, 255};
 
     // Render the level text
-    std::string levelText = "Level: 1";
+    std::string levelText = "Level: " + std::to_string(actualLevel);
     framework->RenderText( levelText, 10,10,headerFont,textColor);
 
     // Render the shield health text

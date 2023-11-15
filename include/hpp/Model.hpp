@@ -13,7 +13,7 @@ class Model {
 
 public :
 
-    Model(Framework* framework);
+    Model(Framework* framework, double shipSize, int nbAsteroids, double minSize, double maxSize,double asteroidSpeed);
     int Update(Framework* framework);
     //------------Actions :
     void ChooseAction(int action);
@@ -22,7 +22,7 @@ public :
     void RotateRight();
     void RotateLeft();
     void ShootMissile();
-    void InitializeAsteroids(Framework* framework);
+    void InitializeAsteroids(Framework* framework, double minSize, double maxSize, double asteroidSpeed);
     SDL_Texture* GetRandomAsteroidTexture(Framework* framework);
 
     //----------Getters :

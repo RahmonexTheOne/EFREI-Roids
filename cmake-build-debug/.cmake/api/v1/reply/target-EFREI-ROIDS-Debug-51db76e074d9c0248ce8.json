@@ -31,19 +31,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 48,
+				"line" : 50,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 49,
+				"line" : 51,
 				"parent" : 0
 			},
 			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 44,
+				"line" : 46,
 				"parent" : 0
 			},
 			{
@@ -93,7 +93,8 @@
 				7,
 				8,
 				9,
-				19
+				19,
+				21
 			]
 		}
 	],
@@ -170,7 +171,8 @@
 				7,
 				8,
 				9,
-				19
+				19,
+				21
 			]
 		},
 		{
@@ -186,7 +188,8 @@
 				16,
 				17,
 				18,
-				20
+				20,
+				22
 			]
 		}
 	],
@@ -306,6 +309,17 @@
 		{
 			"backtrace" : 1,
 			"path" : "include/hpp/GameOver.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/Level.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "include/hpp/Level.hpp",
 			"sourceGroupIndex" : 1
 		}
 	],

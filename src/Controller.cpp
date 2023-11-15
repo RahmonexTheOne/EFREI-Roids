@@ -7,9 +7,14 @@ using namespace std;
 //------------------Constructors :
 
 Controller::Controller(int fps, int shipSize, int missileSize){
-    this->view = new View(framework);
-    this->framework = new Framework(fps,shipSize,missileSize);
-    this->model = new Model(framework);
+    //Create The Level
+    this->level = new Level();
+    level->CreateLevel();
+    //Create Model View Framework with the level arguments
+    this->view = new View(framework,level->GetActualLevel());
+    this->framework = new Framework(fps,level->GetSpaceshipSize(),missileSize);
+    this->model = new Model(framework,level->GetSpaceshipSize(),level->GetNbAsteroids(), level->GetAsteroidMinSize(), level->GetAsteroidMaxSize(), level->GetAsteroidSpeed());
+    //Interfaces
     this->menu = new Menu(framework);
     this->gameOver = new GameOver(framework);
     this->renderer = framework->GetRenderer();

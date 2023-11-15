@@ -224,6 +224,30 @@ src/GameOver.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/src/GameOver.cpp.s
 .PHONY : src/GameOver.cpp.s
 
+src/Level.obj: src/Level.cpp.obj
+.PHONY : src/Level.obj
+
+# target to build an object file
+src/Level.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/src/Level.cpp.obj
+.PHONY : src/Level.cpp.obj
+
+src/Level.i: src/Level.cpp.i
+.PHONY : src/Level.i
+
+# target to preprocess a source file
+src/Level.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/src/Level.cpp.i
+.PHONY : src/Level.cpp.i
+
+src/Level.s: src/Level.cpp.s
+.PHONY : src/Level.s
+
+# target to generate assembly for a file
+src/Level.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/src/Level.cpp.s
+.PHONY : src/Level.cpp.s
+
 src/Menu.obj: src/Menu.cpp.obj
 .PHONY : src/Menu.obj
 
@@ -413,6 +437,9 @@ help:
 	@echo ... src/GameOver.obj
 	@echo ... src/GameOver.i
 	@echo ... src/GameOver.s
+	@echo ... src/Level.obj
+	@echo ... src/Level.i
+	@echo ... src/Level.s
 	@echo ... src/Menu.obj
 	@echo ... src/Menu.i
 	@echo ... src/Menu.s

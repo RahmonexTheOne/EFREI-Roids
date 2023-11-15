@@ -6,28 +6,24 @@
 using namespace std;
 
 //-------------------------------------------------------------------Constructors :
-Model::Model(Framework* framework) {
+Model::Model(Framework* framework, double shipSize, int nbAsteroids, double minSize, double maxSize, double asteroidSpeed) {
 
     //----------------Create Spaceship :
-    this->spaceship = new Spaceship(framework->GetScreenWidth()/2,framework->GetScreenHeight()/2,60,0);
+    this->spaceship = new Spaceship(framework->GetScreenWidth()/2,framework->GetScreenHeight()/2,shipSize,0);
     //-------------------------------
 
-
     //-----------------Create Asteroid :
-    this->nbAsteroids = 5;
+    this->nbAsteroids = nbAsteroids;
     for(int i = 0; i <nbAsteroids; i++){
-        InitializeAsteroids(framework);
+        InitializeAsteroids(framework, minSize, maxSize, asteroidSpeed);
     }
     flyingObjects.insert(flyingObjects.end(), asteroids.begin(), asteroids.end());
-
-
     //----------------------------------
+
     //Adding them to the flyingObjects list
     flyingObjects.push_back(spaceship);
 
     this->missileNotOnScreen=false;
-
-
 }
 //-----------------------------------------------------------------------------
 
@@ -156,11 +152,11 @@ void Model::ChooseAction(int action) {
 
 
 void Model::SpeedUp() {
-    spaceship->SpeedUp(10);
+    spaceship->SpeedUp(5);
 }
 
 void Model::SpeedDown() {
-    spaceship->SpeedDown(10);
+    spaceship->SpeedDown(5);
 }
 
 void Model::RotateRight() {
@@ -252,7 +248,7 @@ SDL_Texture* Model::GetRandomAsteroidTexture(Framework* framework) {
 
 
 //------------------------------------------------------------------------------Asteroids Inititialization
-void Model::InitializeAsteroids(Framework* framework) {
+void Model::InitializeAsteroids(Framework* framework, double minSize, double maxSize, double asteroidSpeed) {
     //---Espace de creation :
     std::random_device generator;
     std::uniform_int_distribution<int> spaceDistribution(0, 7);
@@ -301,7 +297,10 @@ void Model::InitializeAsteroids(Framework* framework) {
     std::uniform_int_distribution<int> angleValues(-180, 180);
     int angle = angleValues(generator);
 
-    Asteroid* asteroidGenerated = new Asteroid(xToUse,yToUse,100, 10, angle,2, GetRandomAsteroidTexture(framework));
+    std::uniform_real_distribution<double> sizeValues(minSize, maxSize);
+    double size = sizeValues(generator);
+
+    Asteroid* asteroidGenerated = new Asteroid(xToUse,yToUse,size, asteroidSpeed, angle,2, GetRandomAsteroidTexture(framework));
     asteroids.push_back(asteroidGenerated);//add the asteroids generated to list asteroids
     //flyingObjects.push_back(asteroidGenerated);
 }

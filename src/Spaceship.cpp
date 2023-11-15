@@ -6,7 +6,7 @@
 
 //-----------------------------------------Constructors :
 
-Spaceship::Spaceship(double x, double y, double size, double angle) : FlyingObject( x, y, size ,10,angle){
+Spaceship::Spaceship(double x, double y, double size, double angle) : FlyingObject( x, y, size ,0,angle){
     this -> warning = false;
     this -> shieldLevel = 1.0;
 }
