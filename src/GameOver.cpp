@@ -65,6 +65,7 @@ int GameOver::ShowGameOver(bool win) {
                 } else if (mouseX >= quitButtonRect.x && mouseX < (quitButtonRect.x + quitButtonRect.w) &&
                            mouseY >= quitButtonRect.y && mouseY < (quitButtonRect.y + quitButtonRect.h)) {
                     //Quit the game
+                    exit(0);
                     return -1;
                 }
             }

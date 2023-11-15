@@ -17,9 +17,10 @@ class Controller {
 public :
 
     //---------------------Constructor :
-    Controller(int fps, int shipSize, int missileSize);
+    Controller();
 
     void LaunchGame();
+    void Reset();
 
     //-------------Getters :
     Framework* GetFramework();
