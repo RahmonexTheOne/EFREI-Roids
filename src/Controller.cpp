@@ -7,7 +7,6 @@ using namespace std;
 //------------------Constructors :
 
 Controller::Controller(int fps, int shipSize, int missileSize){
-
     this->view = new View(framework);
     this->framework = new Framework(fps,shipSize,missileSize);
     this->model = new Model(framework);
@@ -16,58 +15,36 @@ Controller::Controller(int fps, int shipSize, int missileSize){
     this->renderer = framework->GetRenderer();
     //Load background
     backgroundTexture = framework->GetTexture("fondjeu.bmp");
-
 }
 
 
 
 void Controller::LaunchGame() {
-
     int menuResult = menu->ShowMenu();
-    bool win;
-    bool boolGameOver = false;
 
-    if (menuResult == 0) {
-        while (!boolGameOver) { // Change to a game loop controlled by the gameOver flag
+    while (menuResult == 0) {
+        bool win = false;
+        bool boolGameOver = false;
+
+        while (!boolGameOver) {
             model->ChooseAction(framework->GetInput());
-
             int resultModelUpdate = model->Update(framework);
 
-            if (resultModelUpdate == -1) {
-                win = false;
+            if (resultModelUpdate == -1 || resultModelUpdate == 1) {
+                // Game over (win or lose)
+                win = (resultModelUpdate == 1);
                 boolGameOver = true;
-                // When the game is over, show the game over menu
+
                 int gameOverResult = gameOver->ShowGameOver(win);
 
                 if (gameOverResult == 0) {
                     // Restart the game
                     boolGameOver = false;
-                    win = false;
                 } else if (gameOverResult == 1) {
                     // Go back to the main menu
                     menuResult = menu->ShowMenu();
                     if (menuResult != 0) {
-                        boolGameOver = true; // Exit the game loop
-                    }
-                }
-            } else if (resultModelUpdate == 0) {
-                // Continue the game
-            } else if (resultModelUpdate == 1){
-                // Win
-                win = true;
-                boolGameOver = true;
-                // When the game is over, show the game over menu
-                int gameOverResult = gameOver->ShowGameOver(win);
-
-                if (gameOverResult == 0) {
-                    // Restart the game
-                    boolGameOver = false;
-                    win = false;
-                } else if (gameOverResult == 1) {
-                    // Go back to the main menu
-                    menuResult = menu->ShowMenu();
-                    std::cout << "Trying to go to main menu" << std::endl;
-                    if (menuResult != 0) {
+                        // Exit the game loop
                         boolGameOver = true;
                     }
                 }
@@ -79,10 +56,7 @@ void Controller::LaunchGame() {
             // Refresh the view
             view->Refresh(model->GetFlyingObjects(), framework);
         }
-
     }
-
-
 }
 
 

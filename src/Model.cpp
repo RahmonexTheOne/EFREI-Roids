@@ -202,7 +202,6 @@ std::vector<FlyingObject *> Model::GetFlyingObjects() {
 
 
 std::vector<FlyingObject*> Model::GetFlyingObjectsInGame(std::vector<FlyingObject*>& allFlyingObjects, Framework* framework) {
-
     // Check all the objects in the game
     for (auto it = allFlyingObjects.begin(); it != allFlyingObjects.end();) {
         FlyingObject* object = *it;
@@ -219,9 +218,7 @@ std::vector<FlyingObject*> Model::GetFlyingObjectsInGame(std::vector<FlyingObjec
             }
         }
         ++it;
-
     }
-
     return allFlyingObjects;
 }
 //----------------------------------------------------------------------------------------------------------
