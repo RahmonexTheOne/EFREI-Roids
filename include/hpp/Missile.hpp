@@ -14,7 +14,6 @@ public :
     // * size : diamètre du missile
     // * speed : vitesse de déplacement
     // * angle : orientation
-
     Missile(double x, double y, double size, double speed, double angle);
 
 
@@ -36,13 +35,9 @@ public :
     bool NotOnScreen(double screenWidth, double screenHeight);
 
     std::string GetTypeName() const override;
-    double GetAngle();
-    double GetSpeed();
 
 
 private :
-    double angle;
-    double speed;
 
 
 

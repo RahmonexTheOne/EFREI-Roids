@@ -1,10 +1,6 @@
 #include <iostream>
-#include <SDL_keycode.h>
 #include <random>
 #include "../include/hpp/Model.hpp"
-#include "../include/hpp/Spaceship.hpp"
-#include "../include/hpp/Asteroid.hpp"
-#include "../include/hpp/Missile.hpp"
 
 
 using namespace std;
@@ -23,7 +19,6 @@ Model::Model(Framework* framework) {
         InitializeAsteroids(framework);
     }
     flyingObjects.insert(flyingObjects.end(), asteroids.begin(), asteroids.end());
-    //vector<FlyingObject *> flyingObjects(asteroids.begin(), asteroids.end()); //add that asteroids list to flying object list
 
 
     //----------------------------------
@@ -44,10 +39,8 @@ Model::Model(Framework* framework) {
 
 int Model::Update(Framework* framework) {
 
-    //Update the list of Objects :
-    Model::GetFlyingObjectsInGame(flyingObjects, framework);
     //Move the objects (different move methods so we need dynamic cast):
-    for (FlyingObject* object : flyingObjects){
+    for (FlyingObject* object : Model::GetFlyingObjectsInGame(flyingObjects, framework)){
         if(object!=nullptr){
             if (object->GetTypeName()=="Missile"){
                 Missile* missile = dynamic_cast<Missile*>(object); // Cast to Missile
@@ -56,16 +49,10 @@ int Model::Update(Framework* framework) {
                     this->missileNotOnScreen= true;
                 }
             }
-            else if(object->GetTypeName()=="Asteroid"){
-                Asteroid* asteroid = dynamic_cast<Asteroid*>(object); // Cast to Asteroid
-                asteroid->Move(framework->GetScreenWidth(), framework->GetScreenHeight());
-            }
-            else if(object->GetTypeName()=="Spaceship"){
-                Spaceship* spaceship = dynamic_cast<Spaceship*>(object); // Cast to Spaceship
-                spaceship->Move(framework->GetScreenWidth(), framework->GetScreenHeight());
+            else if(object->GetTypeName()=="Spaceship" || object->GetTypeName()=="Asteroid"){
+                object->Move(framework->GetScreenWidth(), framework->GetScreenHeight());
             }
         }
-
     }
 
 
@@ -209,8 +196,6 @@ void Model::ShootMissile() {
 //------------------------------------------------------------------------------------------------------Getters:
 std::vector<FlyingObject *> Model::GetFlyingObjects() {
     std::vector<FlyingObject*> allFlyingObjects(flyingObjects.begin(), flyingObjects.end());
-    //Add the list of vectors of asteroids
-    //allFlyingObjects.insert(allFlyingObjects.end(), asteroids.begin(), asteroids.end());
     return allFlyingObjects;
 }
 
@@ -219,7 +204,7 @@ std::vector<FlyingObject *> Model::GetFlyingObjects() {
 std::vector<FlyingObject*> Model::GetFlyingObjectsInGame(std::vector<FlyingObject*>& allFlyingObjects, Framework* framework) {
 
     // Check all the objects in the game
-    for (auto it = flyingObjects.begin(); it != flyingObjects.end();) {
+    for (auto it = allFlyingObjects.begin(); it != allFlyingObjects.end();) {
         FlyingObject* object = *it;
 
         // Check if the object is a missile
@@ -228,7 +213,7 @@ std::vector<FlyingObject*> Model::GetFlyingObjectsInGame(std::vector<FlyingObjec
 
             // Check if the missile is not on the screen
             if (missile->NotOnScreen(framework->GetScreenWidth(), framework->GetScreenHeight())) {
-                it = flyingObjects.erase(it);// Remove the missile from flyingObjects
+                it = allFlyingObjects.erase(it);// Remove the missile from flyingObjects
                 delete missile;
                 continue;
             }
@@ -237,7 +222,7 @@ std::vector<FlyingObject*> Model::GetFlyingObjectsInGame(std::vector<FlyingObjec
 
     }
 
-    return flyingObjects;
+    return allFlyingObjects;
 }
 //----------------------------------------------------------------------------------------------------------
 

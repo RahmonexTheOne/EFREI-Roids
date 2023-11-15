@@ -6,9 +6,7 @@ using namespace std;
 
 //------------------Constructors :
 
-Missile::Missile(double x, double y, double size, double speed, double angle) : FlyingObject( x, y, size ) {
-    this -> speed = speed;
-    this -> angle = angle;
+Missile::Missile(double x, double y, double size, double speed, double angle) : FlyingObject( x, y, size, speed, angle ) {
 }
 
 //------------------ Destructors :
@@ -20,37 +18,29 @@ Missile::~Missile() = default;
 //----------------Other Functions
 
 void Missile::Move(double screenWidth, double screenHeight) {
-    double speedX = Missile::GetSpeed() * sin(FlyingObject::DegToRad(Missile::GetAngle()));
-    double speedY = Missile::GetSpeed() * cos(FlyingObject::DegToRad(Missile::GetAngle()));
+    double speedX = GetSpeed() * sin(DegToRad(GetAngle()));
+    double speedY = GetSpeed() * cos(DegToRad(GetAngle()));
 
-    if (FlyingObject::GetX() + speed >= screenWidth || FlyingObject::GetX() + speed <= 0 ||
-        FlyingObject::GetY() + speed >= screenHeight || FlyingObject::GetY() + speed <= 0) {
+    if (GetX() + GetSpeed() >= screenWidth || GetX() + GetSpeed() <= 0 ||
+        GetY() + GetSpeed() >= screenHeight || GetY() + GetSpeed() <= 0) {
 
     }
     else {
-        FlyingObject::SetX(FlyingObject::GetX() + speedX);
-        FlyingObject::SetY(FlyingObject::GetY() + speedY);
+        SetX(GetX() + speedX);
+        SetY(GetY() + speedY);
     }
 }
 
 
 //Getters :
-double Missile::GetAngle() {
-    return angle;
-}
-
-double Missile::GetSpeed() {
-    return speed;
-}
 std::string Missile::GetTypeName() const {
     return "Missile";
 }
 
 bool Missile::NotOnScreen(double screenWidth, double screenHeight) {
-    if (FlyingObject::GetX() + speed >= screenWidth || FlyingObject::GetX() + speed <= 0 ||
-        FlyingObject::GetY() + speed >= screenHeight || FlyingObject::GetY() + speed <= 0) {
+    if (GetX() + GetSpeed() >= screenWidth || GetX() + GetSpeed() <= 0 ||
+        GetY() + GetSpeed() >= screenHeight || GetY() + GetSpeed() <= 0) {
         return true;
-
     }
     else {
         return false;

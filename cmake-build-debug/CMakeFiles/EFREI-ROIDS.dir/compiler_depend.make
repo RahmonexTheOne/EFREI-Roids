@@ -687,7 +687,6 @@ CMakeFiles/EFREI-ROIDS.dir/src/Controller.cpp.obj: C:/Users/rahmo/Documents/Git/
   C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/vector.tcc \
   C:/Users/rahmo/Documents/Git/EFREI-Roids/include/hpp/View.hpp \
   C:/Users/rahmo/Documents/Git/EFREI-Roids/include/hpp/Menu.hpp \
-  C:/Users/rahmo/Documents/Git/EFREI-Roids/include/hpp/GameOver.hpp \
   C:/Users/rahmo/Documents/Git/EFREI-Roids/include/hpp/GameOver.hpp
 
 CMakeFiles/EFREI-ROIDS.dir/src/FlyingObject.cpp.obj: C:/Users/rahmo/Documents/Git/EFREI-Roids/src/FlyingObject.cpp \
@@ -1702,21 +1701,6 @@ CMakeFiles/EFREI-ROIDS.dir/src/Model.cpp.obj: C:/Users/rahmo/Documents/Git/EFREI
   C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ostream.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
   C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc \
-  C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL_keycode.h \
-  C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL_stdinc.h \
-  C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL_config.h \
-  C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL_platform.h \
-  C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/begin_code.h \
-  C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/close_code.h \
-  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/x86_64-w64-mingw32/include/winsdkver.h \
-  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/x86_64-w64-mingw32/include/winapifamily.h \
-  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/x86_64-w64-mingw32/include/sdkddkver.h \
-  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdarg.h \
-  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/x86_64-w64-mingw32/include/stdarg.h \
-  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/x86_64-w64-mingw32/include/_mingw_stdarg.h \
-  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdint.h \
-  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/x86_64-w64-mingw32/include/stdint.h \
-  C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL_scancode.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/random \
   C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cmath \
   C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/x86_64-w64-mingw32/include/math.h \
@@ -1735,6 +1719,8 @@ CMakeFiles/EFREI-ROIDS.dir/src/Model.cpp.obj: C:/Users/rahmo/Documents/Git/EFREI
   C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/poly_laguerre.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/riemann_zeta.tcc \
   C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdint \
+  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdint.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/x86_64-w64-mingw32/include/stdint.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/random.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/vector \
   C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_uninitialized.h \
@@ -1766,6 +1752,17 @@ CMakeFiles/EFREI-ROIDS.dir/src/Model.cpp.obj: C:/Users/rahmo/Documents/Git/EFREI
   C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2_ttf-devel-2.20.2-VC/SDL2_ttf-2.20.2/include/SDL_ttf.h \
   C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL.h \
   C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL_main.h \
+  C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL_stdinc.h \
+  C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL_config.h \
+  C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL_platform.h \
+  C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/begin_code.h \
+  C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/close_code.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/x86_64-w64-mingw32/include/winsdkver.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/x86_64-w64-mingw32/include/winapifamily.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/x86_64-w64-mingw32/include/sdkddkver.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdarg.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/x86_64-w64-mingw32/include/stdarg.h \
+  C:/Program\ Files/JetBrains/CLion\ 2023.2.2/bin/mingw/x86_64-w64-mingw32/include/_mingw_stdarg.h \
   C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL_assert.h \
   C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL_atomic.h \
   C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL_audio.h \
@@ -1881,6 +1878,7 @@ CMakeFiles/EFREI-ROIDS.dir/src/Model.cpp.obj: C:/Users/rahmo/Documents/Git/EFREI
   C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL_blendmode.h \
   C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL_keyboard.h \
   C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL_keycode.h \
+  C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL_scancode.h \
   C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL_mouse.h \
   C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL_joystick.h \
   C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL_guid.h \
@@ -1907,9 +1905,6 @@ CMakeFiles/EFREI-ROIDS.dir/src/Model.cpp.obj: C:/Users/rahmo/Documents/Git/EFREI
   C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/SDL_misc.h \
   C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/begin_code.h \
   C:/Users/rahmo/Documents/Git/EFREI-Roids/include/SDL2/close_code.h \
-  C:/Users/rahmo/Documents/Git/EFREI-Roids/include/hpp/Missile.hpp \
-  C:/Users/rahmo/Documents/Git/EFREI-Roids/include/hpp/Spaceship.hpp \
-  C:/Users/rahmo/Documents/Git/EFREI-Roids/include/hpp/Asteroid.hpp \
   C:/Users/rahmo/Documents/Git/EFREI-Roids/include/hpp/Missile.hpp
 
 CMakeFiles/EFREI-ROIDS.dir/src/Spaceship.cpp.obj: C:/Users/rahmo/Documents/Git/EFREI-Roids/src/Spaceship.cpp \

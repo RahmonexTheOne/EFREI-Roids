@@ -19,26 +19,9 @@ public :
 
     //////////
     //---------------------Getters :
-    double GetSpeed();
-    double GetAngle();
     SDL_Texture* GetTexture();
     std::string GetTypeName() const override;
     double GetNbExplosionsLeft();
-
-    //////////
-    //---------------------Setters :
-    void SetSpeed(double speed);
-    void SetAngle(double angle);
-
-
-    ///////////////////////////////////////
-    // Déplacement de l'objet avec réentrée
-    // déplace selon le vecteur de vitesse de l'objet
-    // en cas de sortie des limites de l'écran, fait réapparaitre l'objet
-    // de l'autre côté
-    // -------
-    // * screenWidth, screenHeight : taille de l'écran
-    void Move(double screenWidth, double screenHeight);
 
 
     ///////////////////////////////////////
@@ -58,8 +41,6 @@ public :
 
 
 private :
-    double speed;
-    double angle;
     SDL_Texture* texture;
     int nbExplosionsLeft;
 

@@ -20,14 +20,10 @@ public :
 
     //////////
     // Getters
-    double GetAngle();
-    double GetSpeed();
     bool GetWarning();
     double GetShieldLevel();
     std::string GetTypeName() const override;
 
-    void SetAngle(double angle);
-    void SetSpeed(double speed);
     void SetShieldLevel(double shieldLevel);
     void SetWarning(bool warning);
 
@@ -64,8 +60,6 @@ public :
     void Move(double screenWidth, double screenHeight);
 
 private :
-    double angle;
-    double speed;
     bool warning;
     double shieldLevel;
     std::chrono::time_point<std::chrono::system_clock> invincibilityEndTime;

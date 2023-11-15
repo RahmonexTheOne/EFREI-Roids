@@ -1,6 +1,5 @@
 #include <iostream>
 #include "../include/hpp/Controller.hpp"
-#include "../include/hpp/GameOver.hpp"
 
 
 using namespace std;
@@ -47,7 +46,6 @@ void Controller::LaunchGame() {
                 } else if (gameOverResult == 1) {
                     // Go back to the main menu
                     menuResult = menu->ShowMenu();
-                    std::cout << "Trying to go to main menu" << std::endl;
                     if (menuResult != 0) {
                         boolGameOver = true; // Exit the game loop
                     }
