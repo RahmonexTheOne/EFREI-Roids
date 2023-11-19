@@ -110,6 +110,9 @@
 		<Unit filename="C:/Users/rahmo/Documents/Git/EFREI-Roids/include/hpp/Model.hpp">
 			<Option target="EFREI-ROIDS"/>
 		</Unit>
+		<Unit filename="C:/Users/rahmo/Documents/Git/EFREI-Roids/include/hpp/SettingsMenu.hpp">
+			<Option target="EFREI-ROIDS"/>
+		</Unit>
 		<Unit filename="C:/Users/rahmo/Documents/Git/EFREI-Roids/include/hpp/Spaceship.hpp">
 			<Option target="EFREI-ROIDS"/>
 		</Unit>
@@ -141,6 +144,9 @@
 			<Option target="EFREI-ROIDS"/>
 		</Unit>
 		<Unit filename="C:/Users/rahmo/Documents/Git/EFREI-Roids/src/Model.cpp">
+			<Option target="EFREI-ROIDS"/>
+		</Unit>
+		<Unit filename="C:/Users/rahmo/Documents/Git/EFREI-Roids/src/SettingsMenu.cpp">
 			<Option target="EFREI-ROIDS"/>
 		</Unit>
 		<Unit filename="C:/Users/rahmo/Documents/Git/EFREI-Roids/src/Spaceship.cpp">

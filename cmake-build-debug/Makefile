@@ -320,6 +320,30 @@ src/Model.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/src/Model.cpp.s
 .PHONY : src/Model.cpp.s
 
+src/SettingsMenu.obj: src/SettingsMenu.cpp.obj
+.PHONY : src/SettingsMenu.obj
+
+# target to build an object file
+src/SettingsMenu.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/src/SettingsMenu.cpp.obj
+.PHONY : src/SettingsMenu.cpp.obj
+
+src/SettingsMenu.i: src/SettingsMenu.cpp.i
+.PHONY : src/SettingsMenu.i
+
+# target to preprocess a source file
+src/SettingsMenu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/src/SettingsMenu.cpp.i
+.PHONY : src/SettingsMenu.cpp.i
+
+src/SettingsMenu.s: src/SettingsMenu.cpp.s
+.PHONY : src/SettingsMenu.s
+
+# target to generate assembly for a file
+src/SettingsMenu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EFREI-ROIDS.dir\build.make CMakeFiles/EFREI-ROIDS.dir/src/SettingsMenu.cpp.s
+.PHONY : src/SettingsMenu.cpp.s
+
 src/Spaceship.obj: src/Spaceship.cpp.obj
 .PHONY : src/Spaceship.obj
 
@@ -449,6 +473,9 @@ help:
 	@echo ... src/Model.obj
 	@echo ... src/Model.i
 	@echo ... src/Model.s
+	@echo ... src/SettingsMenu.obj
+	@echo ... src/SettingsMenu.i
+	@echo ... src/SettingsMenu.s
 	@echo ... src/Spaceship.obj
 	@echo ... src/Spaceship.i
 	@echo ... src/Spaceship.s

@@ -13,9 +13,12 @@ Controller::Controller(){
     //Create Model View Framework with the level arguments
     this->view = new View(framework,level->GetActualLevel());
     this->framework = new Framework(30,level->GetSpaceshipSize(),10);
-    this->model = new Model(framework,level->GetSpaceshipSize(),level->GetNbAsteroids(), level->GetAsteroidMinSize(), level->GetAsteroidMaxSize(), level->GetAsteroidSpeed());
+    shipImage = "spaceship.bmp";
+    shipImageWarning = "redSpaceship.bmp";
+    this->model = new Model(framework,level->GetSpaceshipSize(),level->GetNbAsteroids(), level->GetAsteroidMinSize(), level->GetAsteroidMaxSize(), level->GetAsteroidSpeed(), shipImage, shipImageWarning);
     //Interfaces
     this->menu = new Menu(framework);
+    this->settingsMenu = new SettingsMenu(framework);
     this->gameOver = new GameOver(framework);
     this->renderer = framework->GetRenderer();
     //Load background
@@ -25,6 +28,43 @@ Controller::Controller(){
 
 
 void Controller::LaunchGame() {
+
+    int menuResult = menu->ShowMenu();
+    while(true){
+        if(menuResult==1){
+            int settingsMenuResult = settingsMenu->ShowSettingsMenu();
+            if (settingsMenuResult==-1){
+                MenuPlay();
+            }
+            else if(settingsMenuResult == 1){
+                shipImage = "spaceship.bmp";
+                shipImageWarning = "redSpaceship.bmp";
+                framework->SetShipTexture(shipImage,shipImageWarning);
+            }
+            else if(settingsMenuResult == 2){
+                shipImage = "spaceship2.bmp";
+                shipImageWarning = "redSpaceship2.bmp";
+                framework->SetShipTexture(shipImage,shipImageWarning);
+            }
+            else if(settingsMenuResult == 3){
+                shipImage = "spaceship3.bmp";
+                shipImageWarning = "redSpaceship3.bmp";
+                framework->SetShipTexture(shipImage,shipImageWarning);
+            }
+            else if(settingsMenuResult == 4){
+                shipImage = "spaceship4.bmp";
+                shipImageWarning = "redSpaceship4.bmp";
+                framework->SetShipTexture(shipImage,shipImageWarning);
+            }
+        }
+
+    }
+
+
+
+}
+
+void Controller::MenuPlay(){
     int menuResult = menu->ShowMenu();
 
     while (menuResult == 0) {
@@ -51,7 +91,7 @@ void Controller::LaunchGame() {
                     boolGameOver = false;
                 } else if (gameOverResult == 1) {
                     // Go back to the main menu
-                    menuResult = menu->ShowMenu();
+                    LaunchGame();
                     if (menuResult != 0) {
                         // Exit the game loop
                         boolGameOver = true;
@@ -74,7 +114,7 @@ void Controller::Reset() {
     //Create Model View Framework with the level arguments
     this->view = new View(framework,level->GetActualLevel());
     this->framework = new Framework(30,level->GetSpaceshipSize(),10);
-    this->model = new Model(framework,level->GetSpaceshipSize(),level->GetNbAsteroids(), level->GetAsteroidMinSize(), level->GetAsteroidMaxSize(), level->GetAsteroidSpeed());
+    this->model = new Model(framework,level->GetSpaceshipSize(),level->GetNbAsteroids(), level->GetAsteroidMinSize(), level->GetAsteroidMaxSize(), level->GetAsteroidSpeed(), shipImage, shipImageWarning);
     //Interfaces
     this->menu = new Menu(framework);
     this->gameOver = new GameOver(framework);

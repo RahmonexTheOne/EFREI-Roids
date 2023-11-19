@@ -9,6 +9,7 @@
 #include "Menu.hpp"
 #include "GameOver.hpp"
 #include "Level.hpp"
+#include "SettingsMenu.hpp"
 
 
 class Controller {
@@ -33,12 +34,15 @@ private :
     Framework* framework;
     View* view;
     Menu* menu;
+    SettingsMenu* settingsMenu;
     Level* level;
     GameOver* gameOver;
     SDL_Renderer* renderer;
     SDL_Texture* backgroundTexture;
+    std::string shipImage;
+    std::string shipImageWarning;
 
-
+    void MenuPlay();
 };
 
 

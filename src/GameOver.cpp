@@ -25,8 +25,8 @@ GameOver::~GameOver() {
 
 void GameOver::LoadTextures() {
     //Load button images
-    replayButtonTexture = framework->GetTexture("playButton.bmp");
-    mainMenuButtonTexture = framework->GetTexture("settingsButton.bmp");
+    replayButtonTexture = framework->GetTexture("replayButton.bmp");
+    mainMenuButtonTexture = framework->GetTexture("mainmenuButton.bmp");
     quitButtonTexture = framework->GetTexture("quitButton.bmp");
 
     //Load background
@@ -38,9 +38,11 @@ int GameOver::ShowGameOver(bool win) {
     bool inGameOver = true;
     SDL_Event e;
     if(win){
+        replayButtonTexture = framework->GetTexture("nextLevelButton.bmp");
         backgroundTexture = framework->GetTexture("fondjeuWon.bmp");
     }
     else {
+        replayButtonTexture = framework->GetTexture("replayButton.bmp");
         backgroundTexture = framework->GetTexture("fondjeuLost.bmp");
     }
 

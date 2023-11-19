@@ -55,6 +55,7 @@ int Menu::ShowMenu() {
                 } else if (mouseX >= settingsButtonRect.x && mouseX < (settingsButtonRect.x + settingsButtonRect.w) &&
                            mouseY >= settingsButtonRect.y && mouseY < (settingsButtonRect.y + settingsButtonRect.h)) {
                     //settings menu
+                    return 1;
                 } else if (mouseX >= quitButtonRect.x && mouseX < (quitButtonRect.x + quitButtonRect.w) &&
                            mouseY >= quitButtonRect.y && mouseY < (quitButtonRect.y + quitButtonRect.h)) {
                     //Quit the game

@@ -13,7 +13,7 @@ class Model {
 
 public :
 
-    Model(Framework* framework, double shipSize, int nbAsteroids, double minSize, double maxSize,double asteroidSpeed);
+    Model(Framework* framework, double shipSize, int nbAsteroids, double minSize, double maxSize,double asteroidSpeed,std::string imagePath, std::string imagePathWarning);
     int Update(Framework* framework);
     //------------Actions :
     void ChooseAction(int action);

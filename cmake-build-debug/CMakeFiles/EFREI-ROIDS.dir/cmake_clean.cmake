@@ -15,6 +15,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/EFREI-ROIDS.dir/src/Missile.cpp.obj.d"
   "CMakeFiles/EFREI-ROIDS.dir/src/Model.cpp.obj"
   "CMakeFiles/EFREI-ROIDS.dir/src/Model.cpp.obj.d"
+  "CMakeFiles/EFREI-ROIDS.dir/src/SettingsMenu.cpp.obj"
+  "CMakeFiles/EFREI-ROIDS.dir/src/SettingsMenu.cpp.obj.d"
   "CMakeFiles/EFREI-ROIDS.dir/src/Spaceship.cpp.obj"
   "CMakeFiles/EFREI-ROIDS.dir/src/Spaceship.cpp.obj.d"
   "CMakeFiles/EFREI-ROIDS.dir/src/View.cpp.obj"

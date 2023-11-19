@@ -248,6 +248,12 @@ void Framework::Init(int width, int height, int fps, int shipSize, int missileSi
     this->missileSize = missileSize;
 }
 
+
+void Framework::SetShipTexture(std::string imagePath, std::string imagePathWarning){
+    textureShip = GetTexture(imagePath);
+    textureShipWarning = GetTexture(imagePathWarning);
+}
+
 void Framework::RenderText(const std::string& text, int x, int y, TTF_Font* font, SDL_Color color) {
                     if (font == nullptr) {
                         cerr << "Error: Font is not loaded." << endl;

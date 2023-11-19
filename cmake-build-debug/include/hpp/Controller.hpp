@@ -8,6 +8,8 @@
 #include "framework.hpp"
 #include "Menu.hpp"
 #include "GameOver.hpp"
+#include "Level.hpp"
+#include "SettingsMenu.hpp"
 
 
 class Controller {
@@ -16,9 +18,10 @@ class Controller {
 public :
 
     //---------------------Constructor :
-    Controller(int fps, int shipSize, int missileSize);
+    Controller();
 
     void LaunchGame();
+    void Reset();
 
     //-------------Getters :
     Framework* GetFramework();
@@ -31,11 +34,14 @@ private :
     Framework* framework;
     View* view;
     Menu* menu;
+    SettingsMenu* settingsMenu;
+    Level* level;
     GameOver* gameOver;
     SDL_Renderer* renderer;
     SDL_Texture* backgroundTexture;
 
 
+    void MenuPlay();
 };
 
 

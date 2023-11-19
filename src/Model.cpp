@@ -6,10 +6,11 @@
 using namespace std;
 
 //-------------------------------------------------------------------Constructors :
-Model::Model(Framework* framework, double shipSize, int nbAsteroids, double minSize, double maxSize, double asteroidSpeed) {
+Model::Model(Framework* framework, double shipSize, int nbAsteroids, double minSize, double maxSize, double asteroidSpeed,std::string imagePath, std::string imagePathWarning) {
 
     //----------------Create Spaceship :
     this->spaceship = new Spaceship(framework->GetScreenWidth()/2,framework->GetScreenHeight()/2,shipSize,0);
+    framework->SetShipTexture(imagePath,imagePathWarning);
     //-------------------------------
 
     //-----------------Create Asteroid :

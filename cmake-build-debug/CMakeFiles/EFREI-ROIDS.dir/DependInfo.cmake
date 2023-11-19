@@ -16,6 +16,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/rahmo/Documents/Git/EFREI-Roids/src/Menu.cpp" "CMakeFiles/EFREI-ROIDS.dir/src/Menu.cpp.obj" "gcc" "CMakeFiles/EFREI-ROIDS.dir/src/Menu.cpp.obj.d"
   "C:/Users/rahmo/Documents/Git/EFREI-Roids/src/Missile.cpp" "CMakeFiles/EFREI-ROIDS.dir/src/Missile.cpp.obj" "gcc" "CMakeFiles/EFREI-ROIDS.dir/src/Missile.cpp.obj.d"
   "C:/Users/rahmo/Documents/Git/EFREI-Roids/src/Model.cpp" "CMakeFiles/EFREI-ROIDS.dir/src/Model.cpp.obj" "gcc" "CMakeFiles/EFREI-ROIDS.dir/src/Model.cpp.obj.d"
+  "C:/Users/rahmo/Documents/Git/EFREI-Roids/src/SettingsMenu.cpp" "CMakeFiles/EFREI-ROIDS.dir/src/SettingsMenu.cpp.obj" "gcc" "CMakeFiles/EFREI-ROIDS.dir/src/SettingsMenu.cpp.obj.d"
   "C:/Users/rahmo/Documents/Git/EFREI-Roids/src/Spaceship.cpp" "CMakeFiles/EFREI-ROIDS.dir/src/Spaceship.cpp.obj" "gcc" "CMakeFiles/EFREI-ROIDS.dir/src/Spaceship.cpp.obj.d"
   "C:/Users/rahmo/Documents/Git/EFREI-Roids/src/View.cpp" "CMakeFiles/EFREI-ROIDS.dir/src/View.cpp.obj" "gcc" "CMakeFiles/EFREI-ROIDS.dir/src/View.cpp.obj.d"
   "C:/Users/rahmo/Documents/Git/EFREI-Roids/src/framework.cpp" "CMakeFiles/EFREI-ROIDS.dir/src/framework.cpp.obj" "gcc" "CMakeFiles/EFREI-ROIDS.dir/src/framework.cpp.obj.d"

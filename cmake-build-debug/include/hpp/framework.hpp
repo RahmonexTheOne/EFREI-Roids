@@ -105,6 +105,7 @@ class Framework {
         SDL_Renderer* GetRenderer();
         void PlayBackgroundMusic(const char* musicFile);
         void RenderText(const std::string& text, int x, int y, TTF_Font* font, SDL_Color color);
+        void SetShipTexture(string imagePath,std::string imagePathWarning);
 private:
         //////////
         // Fenêtre

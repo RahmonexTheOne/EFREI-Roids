@@ -327,4 +327,5 @@ CMakeFiles/EFREI-ROIDS.dir/src/main.cpp.obj: \
  C:/Users/rahmo/Documents/Git/EFREI-Roids/include/hpp/View.hpp \
  C:/Users/rahmo/Documents/Git/EFREI-Roids/include/hpp/Menu.hpp \
  C:/Users/rahmo/Documents/Git/EFREI-Roids/include/hpp/GameOver.hpp \
- C:/Users/rahmo/Documents/Git/EFREI-Roids/include/hpp/Level.hpp
+ C:/Users/rahmo/Documents/Git/EFREI-Roids/include/hpp/Level.hpp \
+ C:/Users/rahmo/Documents/Git/EFREI-Roids/include/hpp/SettingsMenu.hpp

@@ -41,6 +41,8 @@ set(
         include/hpp/GameOver.hpp
         src/Level.cpp
         include/hpp/Level.hpp
+        src/SettingsMenu.cpp
+        include/hpp/SettingsMenu.hpp
 )
 
 find_package(SDL2 REQUIRED)
