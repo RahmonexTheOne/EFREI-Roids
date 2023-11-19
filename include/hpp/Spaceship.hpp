@@ -57,15 +57,15 @@ public :
     // * duration : durée pendant laquelle le vaisseau est invincible
     void SetInvincibleFor(double duration);
 
-    void Move(double screenWidth, double screenHeight);
+    void ShipMove(double screenWidth, double screenHeight);
+
 
 private :
+    double  m_xSpeed;
+    double m_ySpeed;
     bool warning;
     double shieldLevel;
     std::chrono::time_point<std::chrono::system_clock> invincibilityEndTime;
-
-
-
 
 };
 

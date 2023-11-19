@@ -34,7 +34,6 @@ Model::Model(Framework* framework, double shipSize, int nbAsteroids, double minS
 //-----------------------------------------------------------------Update :
 
 int Model::Update(Framework* framework) {
-
     //Move the objects (different move methods so we need dynamic cast):
     for (FlyingObject* object : Model::GetFlyingObjectsInGame(flyingObjects, framework)){
         if(object!=nullptr){
@@ -45,7 +44,11 @@ int Model::Update(Framework* framework) {
                     this->missileNotOnScreen= true;
                 }
             }
-            else if(object->GetTypeName()=="Spaceship" || object->GetTypeName()=="Asteroid"){
+            else if(object->GetTypeName()=="Spaceship"){
+                Spaceship* spaceship = dynamic_cast<Spaceship*>(object); // Cast to Spaceship
+                spaceship->ShipMove(framework->GetScreenWidth(), framework->GetScreenHeight());
+            }
+            else{
                 object->Move(framework->GetScreenWidth(), framework->GetScreenHeight());
             }
         }
@@ -152,11 +155,11 @@ void Model::ChooseAction(int action) {
 
 
 void Model::SpeedUp() {
-    spaceship->SpeedUp(5);
+    spaceship->SpeedUp(0.4);
 }
 
 void Model::SpeedDown() {
-    spaceship->SpeedDown(5);
+    spaceship->SpeedDown(0.4);
 }
 
 void Model::RotateRight() {
@@ -302,7 +305,6 @@ void Model::InitializeAsteroids(Framework* framework, double minSize, double max
 
     Asteroid* asteroidGenerated = new Asteroid(xToUse,yToUse,size, asteroidSpeed, angle,2, GetRandomAsteroidTexture(framework));
     asteroids.push_back(asteroidGenerated);//add the asteroids generated to list asteroids
-    //flyingObjects.push_back(asteroidGenerated);
 }
 
 

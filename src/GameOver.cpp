@@ -1,6 +1,5 @@
 #include <SDL_ttf.h>
 #include "../include/hpp/GameOver.hpp"
-#include "../include/hpp/framework.hpp"
 
 GameOver::GameOver(Framework* framework) {
     this->framework = framework;

@@ -1,4 +1,3 @@
-#include <iostream>
 #include <cmath>
 #include "../include/hpp/Missile.hpp"
 

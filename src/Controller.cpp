@@ -59,7 +59,7 @@ void Controller::LaunchGame() {
                 }
             }
 
-            // Render the background GIF
+            // Render the background
             SDL_RenderCopy(renderer, backgroundTexture, NULL, NULL);
 
             // Refresh the view
@@ -70,7 +70,6 @@ void Controller::LaunchGame() {
 
 void Controller::Reset() {
     //Create The Level
-    //this->level = new Level();
     level->CreateLevel();
     //Create Model View Framework with the level arguments
     this->view = new View(framework,level->GetActualLevel());
@@ -82,6 +81,7 @@ void Controller::Reset() {
     this->renderer = framework->GetRenderer();
     //Load background
     backgroundTexture = framework->GetTexture("fondjeu.bmp");
+    SDL_RenderCopy(renderer, backgroundTexture, NULL, NULL);
 
 }
 

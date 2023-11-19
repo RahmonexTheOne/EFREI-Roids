@@ -1,79 +1,77 @@
-:hardbreaks:
-= Projet EFREIRoids 
+= EFREI-Roids
 
-== Sujet
+EFREI-Roids is an interactive game project built using SDL for graphics and gameplay.
 
-Le but de ce projet est d'implémenter un clone simplifié d'Asteroids. Le joueur pilote un vaisseau naviguant dans un champ d'astéroïdes. Le vaisseau doit détruire tous les astéroïdes en leur tirant dessus, en évitant les collisions. 
+== Overview
 
-== Fonctionnalités 
-L'ensemble des objets à l'écran (vaisseau, astéroïdes, missile) sont de forme ronde, afin de faciliter la gestion des hitbox. L'image du vaisseau permet de déterminer l'avant du vaisseau. 
+EFREI-Roids is a space-themed game where players control a spaceship and navigate through space, avoiding asteroids and shooting missiles to destroy them. The game offers different levels with increasing difficulty.
 
- 
+== Table of Contents
 
-Les astéroïdes se déplacent selon une vitesse constante, déterminée aléatoirement. 
+* <<#installation, Installation>>
+* <<#usage, Usage>>
+* <<#features, Features>>
+* <<#contributing, Contributing>>
+* <<#license, License>>
 
- 
+[[installation]]
+== Installation
 
-Le vaisseau a un déplacement déterminé par l'inertie, c'est-à-dire que, sans action du joueur, il se déplace en ligne droite, sans perte de vitesse. Le joueur peut utiliser le clavier pour modifier l'orientation du vaisseau, ou pour activer la poussée motrice, ce qui fera dévier et accélérer/ralentir le vaisseau dans le sens de son orientation. 
+To run EFREI-Roids locally, follow these steps:
 
- 
+1. Clone the repository:
 
-Lorsque le vaisseau touche un astéroïde, son niveau de bouclier baisse. Si le bouclier était déjà à 0, le vaisseau est détruit. 
+[source,bash]
+----
+git clone https://github.com/your-username/EFREI-Roids.git
+----
 
- 
+2. Navigate to the project directory:
 
-Lorsque le vaisseau ou un astéroïde sort de l'écran, il réentre par le côté opposé. 
+[source,bash]
+----
+cd EFREI-Roids
+----
 
- 
+3. Build the project using CMake:
 
-Le vaisseau tire des projectiles ronds plus petits que le vaisseau et les astéroïdes, se déplaçant à vitesse constante et dans la direction correspondant à l'orientation du vaisseau. Un seul projectile est présent à la fois à l'écran. 
+[source,bash]
+----
+cmake .
+make
+----
 
- 
+4. Run the game:
 
-Lorsque le projectile touche un astéroïde de grande taille celui-ci explose en deux astéroïdes plus petits. Si l'astéroïde est trop petit, il est totalement détruit. Lorsqu'un projectile touche un astéroïde, ou qu'il sort de l'écran, il disparait. 
+[source,bash]
+----
+./EFREI-Roids
+----
 
- 
+[[usage]]
+== Usage
 
-Le jeu se termine lorsque le vaisseau est détruit (défaite), tous les astéroïdes sont détruits (victoire), ou lorsque le joueur appuie sur la touche échap (abandon). 
+Once the game is running, follow on-screen instructions to navigate the spaceship, avoid asteroids, and shoot missiles. Use arrow keys for movement and the spacebar to fire missiles.
 
-== Séquencement du projet 
+[[features]]
+== Features
 
-. Prendre en main le Framework d'affichage
-_Notions : Utilisation d'objets, appel de méthode_
+* Multiple levels with increasing difficulty.
+* Spaceship movement and controls.
+* Asteroid generation and collision detection.
+* Missile firing and destruction of asteroids.
+* Shield health and invincibility features.
 
-. Créer une classe Asteroid
-_Notions : Classes, encapsulation_
+[[contributing]]
+== Contributing
 
-. Créer une classe Missile 
-_Notions : Héritage, pointeurs sur objet, réservation et libération de mémoire_ 
+Contributions to EFREI-Roids are welcome! Feel free to submit bug reports, feature requests, or contribute code improvements through pull requests.
 
-. Implémenter la collision entre un missile et un astéroïde 
-_Notions : Généricité, méthodes statiques, cmath, géométrie_
+[[license]]
+== License
 
-. Créer une classe Spaceship 
-_Notions : Héritage, cmath, géométrie_
+This project is licensed under the link:LICENSE[MIT License].
 
+== Getting Help
 
-. Implémenter un modèle MVC - Le Contrôleur 
-_Notions : Design Patterns, MVC, généricité, vector, pointeurs sur objet_
-
-. Implémenter un modèle MVC - Le Modèle 
-_Notions : Design Patterns, MVC, généricité, vector, pointeurs sur objet_
-
-. Implémenter un jeu complet - La Vue 
-_Notions : Design Patterns, MVC, généricité, vector, pointeurs sur objet_
-
-. Initialiser aléatoirement l'astéroïde 
-_Notions : random_ 
-
-. Implémentez des mécanismes de destruction 
-_Notions : MVC, pointeurs sur objet, réservation et libération de mémoire_
-
-. Implémentez un système de bouclier du vaisseau
-Notions : chrono 
-
-. Gérer un ensemble dynamique d'astéroïdes 
-_Notions : vector, généricité, pointeurs sur objets, réservation et libération de mémoire_
-
-. Implémenter l'explosion d'astéroïdes 
-_Notions : MVC, vector, réservation et libération de mémoire_
+If you need assistance or have questions about the project, feel free to open an issue or contact Your Name <link-to-your-profile>.

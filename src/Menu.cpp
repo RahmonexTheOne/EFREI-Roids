@@ -1,6 +1,5 @@
 #include <SDL_ttf.h>
 #include "../include/hpp/Menu.hpp"
-#include "../include/hpp/framework.hpp"
 
 Menu::Menu(Framework* framework) {
     this->framework = framework;

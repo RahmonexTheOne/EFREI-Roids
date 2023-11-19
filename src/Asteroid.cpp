@@ -1,10 +1,6 @@
-#include <iostream>
-#include <valarray>
-#include <SDL_render.h>
 #include <vector>
 #include <random>
 #include "../include/hpp/Asteroid.hpp"
-#include "../include/hpp/framework.hpp"
 
 using namespace std;
 
@@ -32,7 +28,6 @@ std::string Asteroid::GetTypeName() const {
     return "Asteroid";
 }
 //------------------------
-
 
 
 
